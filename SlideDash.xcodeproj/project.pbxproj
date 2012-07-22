@@ -20,6 +20,8 @@
 		3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC0811515BB84CD003BB12C /* InfoPlist.strings */; };
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
+		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
+		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
 		3DC0811B15BB84CD003BB12C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
+		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 				3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */,
 				3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */,
 				3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */,
+				D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 		3DC0810B15BB84CD003BB12C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */,
 				3DC0810C15BB84CD003BB12C /* UIKit.framework */,
 				3DC0810E15BB84CD003BB12C /* Foundation.framework */,
 				3DC0811015BB84CD003BB12C /* CoreGraphics.framework */,
@@ -96,6 +102,7 @@
 				3DF37F4715BB855D00322903 /* UI Templates */,
 				3DC0811B15BB84CD003BB12C /* AppDelegate.h */,
 				3DC0811C15BB84CD003BB12C /* AppDelegate.m */,
+				D693A0FC15BB871200101222 /* FBiOSSDK.framework */,
 				3DC0811315BB84CD003BB12C /* Supporting Files */,
 			);
 			path = SlideDash;
@@ -180,6 +187,7 @@
 				3D2DECBA15BB85B0002111B7 /* HorizontalWidget.xib in Resources */,
 				3D2DECBB15BB85B0002111B7 /* PagedViewController.xib in Resources */,
 				3D2DECBC15BB85B0002111B7 /* VerticalWidget.xib in Resources */,
+				D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +271,14 @@
 		3DC0812715BB84CD003BB12C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SlideDash\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,9 +287,14 @@
 		3DC0812815BB84CD003BB12C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SlideDash\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
