@@ -17,7 +17,7 @@
 @interface EventsModel : NSObject
 
 @property (assign) id<EventsModelDelegate>delegate;
-- (NSDictionary *)getNextEvent;
+- (void)getNextEvent;
 - (void)updateStack;
 - (void)getEventsFromCalendarAndPushToStack;
 - (void)queryAndPushFacebookEventsToStack;

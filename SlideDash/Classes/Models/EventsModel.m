@@ -30,9 +30,10 @@
     }
     return self;
 }
-- (NSDictionary *)getNextEvent {
-    NSDictionary *nextEvent = [self popEventFromStack];
-    return nextEvent;
+- (void)getNextEvent {
+
+    [self getEventsFromCalendarAndPushToStack];
+    [self queryAndPushFacebookEventsToStack];
 }
 - (NSDictionary *)popEventFromStack {
     NSDictionary *poppedEvent = nil;
@@ -122,7 +123,6 @@
              FBGraphObject *eventObject = (FBGraphObject *)result;
              NSArray *arrayOfFacebookEvents = [eventObject objectForKey:@"data"];
              [self performSelectorOnMainThread:@selector(parseArrayOfFacebookEvents:) withObject:arrayOfFacebookEvents waitUntilDone:YES];
-             [self sortStack];
          }
      }];
     
@@ -173,6 +173,7 @@
     }
     NSLog(@"parsed array = %@", array);
     [self.arrayOfSortedEvents addObjectsFromArray:array];
+    [self updateStack];
 
 }
 - (void)pushEventsToStack:(NSArray *)events {
@@ -187,13 +188,13 @@
     NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
     [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
     NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);    
-    [self.delegate didGetNextEvent:[self getNextEvent]];
+    [self.delegate didGetNextEvent:[self popEventFromStack]];
 }
-- (void)sortStack {
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
-    NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
-    [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
-    NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);
-}
+//- (void)sortStack {
+//    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
+//    NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
+//    [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
+//    NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);
+//}
 
 @end

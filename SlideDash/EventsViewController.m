@@ -47,21 +47,7 @@
 
 - (void)loadNewEvent {
     
-//    NSDictionary *newEvent = [self.eventHandler getNextEvent];
-//    
-//    if ([newEvent objectForKey:@"eventName"]) {
-//        self.mainLabel.text = [newEvent objectForKey:@"eventName"];
-//    } else {
-//        NSLog(@"no eventName");
-//    }
-//    
-//    if ([newEvent objectForKey:@"eventLocation"]) {
-//        self.subTitle.text = [newEvent objectForKey:@"eventLocation"];
-//    } else if ([newEvent objectForKey:@"eventLocationTitle"]) {
-//        self.subTitle.text = [newEvent objectForKey:@"eventLocationTitle"];
-//    } else 
-//        NSLog(@"no location");
-//    }
+    [self.eventHandler getNextEvent];
     
 }
 
