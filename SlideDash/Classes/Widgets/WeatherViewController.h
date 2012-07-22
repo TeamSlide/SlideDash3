@@ -11,11 +11,13 @@
 
 @interface WeatherViewController : WidgetViewController {
     NSString *_zipCode;
+    NSUserDefaults *_zipCodeUserDefaults;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImage;
 
 @property (copy, nonatomic) NSString *zipCode;
+@property (strong, nonatomic) NSUserDefaults *zipCodeUserDefaults;
 
 @end
