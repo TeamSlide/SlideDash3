@@ -7,6 +7,7 @@
 //
 
 #import "DashboardViewController.h"
+#import "WeatherViewController.h"
 
 @interface DashboardViewController ()
 
@@ -30,6 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    WeatherViewController *weatherWidget = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
+    
+    [[self leftWidget] addSubview:[weatherWidget view]];
+    
+//    [[self view] addSubview:[weatherWidget view]];
+    
 	// Do any additional setup after loading the view.
 }
 
