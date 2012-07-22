@@ -20,6 +20,7 @@
 		3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC0811515BB84CD003BB12C /* InfoPlist.strings */; };
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
+		D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63383E915BBB69E0035BB36 /* EventKit.framework */; };
 		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
 		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
 		D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D693A10A15BB8AA200101222 /* FacebookViewController.m */; };
@@ -45,6 +46,7 @@
 		3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
 		3DC0811B15BB84CD003BB12C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D63383E915BBB69E0035BB36 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
 		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
 		D693A10915BB8AA200101222 /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */,
 				3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */,
 				3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */,
 				3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		3DC080FD15BB84CD003BB12C = {
 			isa = PBXGroup;
 			children = (
+				D63383E915BBB69E0035BB36 /* EventKit.framework */,
 				3DC0811215BB84CD003BB12C /* SlideDash */,
 				3DC0810B15BB84CD003BB12C /* Frameworks */,
 				3DC0810915BB84CD003BB12C /* Products */,
