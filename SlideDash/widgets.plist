@@ -3,7 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>horizontal</key>
-	<string></string>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Twitter</string>
+			<key>icon</key>
+			<string>twitter</string>
+			<key>id</key>
+			<string>TWITTER</string>
+		</dict>
+	</array>
 	<key>vertical</key>
 	<array>
 		<dict>

@@ -44,6 +44,8 @@
 		3D654C4D15BC0F530070CB50 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C4815BC0F530070CB50 /* FacebookViewController.m */; };
 		3D654C4E15BC0F530070CB50 /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C4A15BC0F530070CB50 /* TweetViewController.m */; };
 		3D654C4F15BC0F530070CB50 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C4C15BC0F530070CB50 /* WeatherViewController.m */; };
+		3D654C5215BC106D0070CB50 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5015BC106D0070CB50 /* twitter.png */; };
+		3D654C5315BC106D0070CB50 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5115BC106D0070CB50 /* twitter@2x.png */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -100,6 +102,8 @@
 		3D654C4A15BC0F530070CB50 /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TweetViewController.m; path = Classes/Widgets/TweetViewController.m; sourceTree = "<group>"; };
 		3D654C4B15BC0F530070CB50 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherViewController.h; path = Classes/Widgets/WeatherViewController.h; sourceTree = "<group>"; };
 		3D654C4C15BC0F530070CB50 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherViewController.m; path = Classes/Widgets/WeatherViewController.m; sourceTree = "<group>"; };
+		3D654C5015BC106D0070CB50 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Assets/UI/twitter.png; sourceTree = "<group>"; };
+		3D654C5115BC106D0070CB50 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "Assets/UI/twitter@2x.png"; sourceTree = "<group>"; };
 		3D9C7C8215BBDE1C00D9F62A /* widgets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widgets.plist; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -187,6 +191,8 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3D654C5015BC106D0070CB50 /* twitter.png */,
+				3D654C5115BC106D0070CB50 /* twitter@2x.png */,
 				3D654C2115BC0EB60070CB50 /* AddDash.png */,
 				3D654C2215BC0EB60070CB50 /* AddDash@2x.png */,
 				3D654C2315BC0EB60070CB50 /* AddDashselected.png */,
@@ -379,6 +385,8 @@
 				3D654C2E15BC0EB60070CB50 /* addwidget@2x.png in Resources */,
 				3D654C2F15BC0EB60070CB50 /* NavigationBarLogo.png in Resources */,
 				3D654C3015BC0EB60070CB50 /* NavigationBarLogo@2x.png in Resources */,
+				3D654C5215BC106D0070CB50 /* twitter.png in Resources */,
+				3D654C5315BC106D0070CB50 /* twitter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

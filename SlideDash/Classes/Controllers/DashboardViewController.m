@@ -8,6 +8,7 @@
 
 #import "DashboardViewController.h"
 #import "WeatherViewController.h"
+#import "TweetViewController.h"
 
 #define kAddWidgetButtonTag 42
 
@@ -70,12 +71,15 @@
 {
     UIView *view = [self.view viewWithTag:location];
     
-    NSLog(@"Add widget at location: %d", location);
-    
     if ([widget isEqualToString:@"WEATHER"])
     {
         WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
         [view addSubview:weatherWidgetController.view];
+    }
+    else if ([widget isEqualToString:@"TWITTER"])
+    {
+        TweetViewController *tweetViewController = [[TweetViewController alloc] initWithNibName:@"Tweet" bundle:nil];
+        [view addSubview:tweetViewController.view];
     }
     
     // Hide the "Add widget" button
