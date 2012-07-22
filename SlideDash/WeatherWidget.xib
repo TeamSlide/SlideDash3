@@ -39,7 +39,7 @@
 					<object class="IBUILabel" id="480163015">
 						<reference key="NSNextResponder" ref="644910976"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 133}, {104, 63}}</string>
+						<string key="NSFrame">{{8, 133}, {128, 63}}</string>
 						<reference key="NSSuperview" ref="644910976"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -49,7 +49,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Label</string>
+						<string key="IBUIText">188 F</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -62,11 +62,11 @@
 							<string key="name">Helvetica-Bold</string>
 							<string key="family">Helvetica</string>
 							<int key="traits">2</int>
-							<double key="pointSize">25</double>
+							<double key="pointSize">50</double>
 						</object>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">25</double>
+							<double key="NSSize">50</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>

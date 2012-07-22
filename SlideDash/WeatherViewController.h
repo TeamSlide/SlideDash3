@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WeatherViewController : UIViewController
+@interface WeatherViewController : UIViewController {
+    NSString *_zipCode;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherImage;
+
+@property (copy, nonatomic) NSString *zipCode;
 
 @end
