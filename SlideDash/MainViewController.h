@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageViewManager.h"
+
+@class DashboardViewController;
+@class PageViewManager;
 
 @interface MainViewController : UIViewController<UIAlertViewDelegate> {
     PageViewManager *pageViewManager;
@@ -15,7 +17,7 @@
     IBOutlet UIPageControl *pageControl;
     IBOutlet UIView *slideMenu;
     BOOL isAnimatingMenu;
-    NSMutableArray *dashboardViews;
+    NSMutableArray *dashboardViewControllers;
 }
 
 - (IBAction)addDashboardClicked:(id)sender;

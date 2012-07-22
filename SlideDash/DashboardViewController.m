@@ -56,4 +56,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)addWidgetClicked:(id)sender {
+    UIButton *button = (UIButton*)sender;
+    NSLog(@"Add widget: %d", button.tag);
+}
 @end
