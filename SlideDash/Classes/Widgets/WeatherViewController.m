@@ -7,12 +7,15 @@
 //
 
 #import "WeatherViewController.h"
+#import "WeatherSettingsViewController.h"
 
 @interface WeatherViewController () {
     NSData *data;
 }
 
 @property (strong, nonatomic) NSData *data;
+
+- (void)beforeGo;
 
 @end
 
@@ -22,6 +25,7 @@
 @synthesize data;
 
 @synthesize zipCode = _zipCode;
+@synthesize zipCodeUserDefaults = _zipCodeUserDefaults;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,27 +40,35 @@
 {
     [super viewDidLoad];
     
+    [self setZipCodeUserDefaults:[NSUserDefaults standardUserDefaults]];
+    
+    [self beforeGo];
+}
+
+- (void)beforeGo {
+    
     dispatch_queue_t queue = dispatch_queue_create("q", NULL);
     dispatch_async(queue, ^{
-    
-    if ([self zipCode] == nil) {
-        [self setZipCode:[NSString stringWithString:@"95231"]];
-    }
-    
-    NSString *zipCodeToAppend = [NSString stringWithString:[self zipCode]];
-    
-    
-    NSString *primaryURLString = [NSString stringWithString:@"http://slidedash.codemonkey.io/weather/"];
-    primaryURLString = [primaryURLString stringByAppendingString:zipCodeToAppend];
-    
-    NSString *urlString = [NSString stringWithString:primaryURLString];
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    
-    [self setData:[NSData dataWithContentsOfURL:url]];
-    
-    [self performSelectorOnMainThread:@selector(go) withObject:nil waitUntilDone:NO];
-    
+        
+        if ([self zipCode] == nil) {
+            [[self zipCodeUserDefaults] setObject:@"95231" forKey:@"zipCodeNSUserDefaultKey"];
+            [self setZipCode:[NSString stringWithString:[[self zipCodeUserDefaults] objectForKey:@"zipCodeNSUserDefaultKey"]]];
+        }
+        
+        NSString *zipCodeToAppend = [NSString stringWithString:[self zipCode]];
+        
+        
+        NSString *primaryURLString = [NSString stringWithString:@"http://slidedash.codemonkey.io/weather/"];
+        primaryURLString = [primaryURLString stringByAppendingString:zipCodeToAppend];
+        
+        NSString *urlString = [NSString stringWithString:primaryURLString];
+        
+        NSURL *url = [NSURL URLWithString:urlString];
+        
+        [self setData:[NSData dataWithContentsOfURL:url]];
+        
+        [self performSelectorOnMainThread:@selector(go) withObject:nil waitUntilDone:NO];
+        
     });
 }
 
@@ -95,7 +107,7 @@
             } else if (weatherCode == 3 || weatherCode == 4 || (weatherCode >= 37 && weatherCode <= 39) || weatherCode == 45 || weatherCode == 47) {
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"thunder" ofType:@"png"];
             } else if (weatherCode == 32 || weatherCode == 34) {
-                weatherImagPath = [[NSBundle mainBundle] pathForResource:@"WeatherSun" ofType:@"png"];
+                weatherImagPath = [[NSBundle mainBundle] pathForResource:@"Sunny" ofType:@"png"];
             } else if (weatherCode == 24) {
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"windy2" ofType:@"png"];
             } else if (weatherCode == 0) {
@@ -103,7 +115,7 @@
             } else if (weatherCode == 33){
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"noun_moon" ofType:@"png"];
             } else {
-                weatherImagPath = [[NSBundle mainBundle] pathForResource:@"WeatherSun" ofType:@"png"];
+                weatherImagPath = [[NSBundle mainBundle] pathForResource:@"Sunny" ofType:@"png"];
             }
             
             UIImage *weatherImageFile = [UIImage imageWithContentsOfFile:weatherImagPath];
@@ -119,6 +131,17 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setZipCode:[[self zipCodeUserDefaults] objectForKey:@"zipCodeNSUserDefaultKey"]];
+    
+    
+    NSLog(@"zipcode: %@", [[NSUserDefaults standardUserDefaults] objectForKey:@"zipCodeNSUserDefaultKey"]);
+    //[NSUserDefaults standardUserDefaults] setObject:<#(id)#> forKey:<#(NSString *)#>
+    [self beforeGo];
+}
+
 - (void)viewDidUnload
 {
     [self setTempLabel:nil];
@@ -131,6 +154,17 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark Overidden Methods
+
+- (void) settingsButtonClicked:(id)sender {
+    NSLog(@"weather settings");
+    WeatherSettingsViewController *wsvc = [[WeatherSettingsViewController alloc] initWithNibName:@"WeatherSettingsViewController" bundle:nil];
+    [wsvc setZipCodeNSUserDefaultKey:@"zipCodeNSUserDefaultKey"];
+    
+    UINavigationController *weatherNavCon  = [[UINavigationController alloc] initWithRootViewController:wsvc];
+    [self presentModalViewController:weatherNavCon animated:YES];
 }
 
 @end
