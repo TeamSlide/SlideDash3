@@ -11,6 +11,7 @@
 #import "TweetViewController.h"
 #import "FacebookNotificationsViewController.h"
 #import "CommuteViewController.h"
+#import "EventsViewController.h"
 
 #define kAddWidgetButtonTag 42
 
@@ -94,6 +95,10 @@
     else if ([widget isEqualToString:@"COMMUTE"])
     {
        widgetViewController = [[CommuteViewController alloc] initWithNibName:@"CommuteViewController" bundle:nil];
+    }
+    else if ([widget isEqualToString:@"EVENT"])
+    {
+        widgetViewController = [[EventsViewController alloc] initWithNibName:@"EventsViewController" bundle:nil];
     }
     
     if (widgetViewController != nil)

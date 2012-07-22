@@ -10,9 +10,15 @@
 
 @class FBSession;
 
+@protocol EventsModelDelegate <NSObject>
+- (void)didGetNextEvent:(NSDictionary *)event;
+@end
+
 @interface EventsModel : NSObject
 
-- (NSDictionary *)getNextEvent;
+@property (assign) id<EventsModelDelegate>delegate;
+- (void)getNextEvent;
+- (void)updateStack;
 - (void)getEventsFromCalendarAndPushToStack;
 - (void)queryAndPushFacebookEventsToStack;
 

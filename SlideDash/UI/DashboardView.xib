@@ -114,7 +114,6 @@
 								<string key="NSFrame">{{113, 2}, {70, 70}}</string>
 								<reference key="NSSuperview" ref="571526740"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">42</int>
@@ -220,13 +219,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="928521873"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="563196793">
-								<int key="NSID">2</int>
-							</object>
-						</object>
+						<reference key="IBUIBackgroundColor" ref="965895661"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="41885492">
@@ -237,11 +230,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="907968286"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<reference key="NSCustomColorSpace" ref="563196793"/>
-						</object>
+						<reference key="IBUIBackgroundColor" ref="965895661"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="930712390">
@@ -252,11 +241,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="571526740"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-							<reference key="NSCustomColorSpace" ref="563196793"/>
-						</object>
+						<reference key="IBUIBackgroundColor" ref="965895661"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>

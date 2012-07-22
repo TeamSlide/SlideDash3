@@ -304,6 +304,15 @@
         <image name="addwidget.png" width="20" height="20"/>
     </resources>
     <classes>
+<<<<<<< HEAD
+        <class className="CommuteSettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommuteSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonClicked:"/>
+            </relationships>
+        </class>
+=======
+>>>>>>> remotes/origin/event-horizon
         <class className="FacebookViewController" superclassName="WidgetViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookViewController.h"/>
             <relationships>

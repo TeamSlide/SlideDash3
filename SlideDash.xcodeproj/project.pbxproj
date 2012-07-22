@@ -76,12 +76,14 @@
 		3DBCE46315BCA0CA005CCBDE /* Sunny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45B15BCA0CA005CCBDE /* Sunny@2x.png */; };
 		3DBCE46415BCA0CA005CCBDE /* thunder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45C15BCA0CA005CCBDE /* thunder@2x.png */; };
 		3DBCE46515BCA0CA005CCBDE /* windy2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45D15BCA0CA005CCBDE /* windy2@2x.png */; };
-		3DBCE46C15BCA165005CCBDE /* noun_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46615BCA165005CCBDE /* noun_bus.png */; };
-		3DBCE46D15BCA165005CCBDE /* noun_bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46715BCA165005CCBDE /* noun_bus@2x.png */; };
-		3DBCE46E15BCA165005CCBDE /* noun_car.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46815BCA165005CCBDE /* noun_car.png */; };
-		3DBCE46F15BCA165005CCBDE /* noun_car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46915BCA165005CCBDE /* noun_car@2x.png */; };
-		3DBCE47015BCA165005CCBDE /* noun_traintram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46A15BCA165005CCBDE /* noun_traintram.png */; };
-		3DBCE47115BCA165005CCBDE /* noun_traintram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE46B15BCA165005CCBDE /* noun_traintram@2x.png */; };
+		3DBCE47915BCA3FB005CCBDE /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCE47715BCA3FB005CCBDE /* EventsViewController.m */; };
+		3DBCE47A15BCA3FB005CCBDE /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE47815BCA3FB005CCBDE /* EventsViewController.xib */; };
+		3DBCE48215BCA4FA005CCBDE /* noun_bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE47C15BCA4FA005CCBDE /* noun_bus.png */; };
+		3DBCE48315BCA4FA005CCBDE /* noun_bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE47D15BCA4FA005CCBDE /* noun_bus@2x.png */; };
+		3DBCE48415BCA4FA005CCBDE /* noun_car.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE47E15BCA4FA005CCBDE /* noun_car.png */; };
+		3DBCE48515BCA4FA005CCBDE /* noun_car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE47F15BCA4FA005CCBDE /* noun_car@2x.png */; };
+		3DBCE48615BCA4FA005CCBDE /* noun_traintram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE48015BCA4FA005CCBDE /* noun_traintram.png */; };
+		3DBCE48715BCA4FA005CCBDE /* noun_traintram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE48115BCA4FA005CCBDE /* noun_traintram@2x.png */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -181,12 +183,15 @@
 		3DBCE45B15BCA0CA005CCBDE /* Sunny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sunny@2x.png"; path = "Assets/Weather/Sunny@2x.png"; sourceTree = "<group>"; };
 		3DBCE45C15BCA0CA005CCBDE /* thunder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thunder@2x.png"; path = "Assets/Weather/thunder@2x.png"; sourceTree = "<group>"; };
 		3DBCE45D15BCA0CA005CCBDE /* windy2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "windy2@2x.png"; path = "Assets/Weather/windy2@2x.png"; sourceTree = "<group>"; };
-		3DBCE46615BCA165005CCBDE /* noun_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_bus.png; path = Assets/UI/noun_bus.png; sourceTree = "<group>"; };
-		3DBCE46715BCA165005CCBDE /* noun_bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_bus@2x.png"; path = "Assets/UI/noun_bus@2x.png"; sourceTree = "<group>"; };
-		3DBCE46815BCA165005CCBDE /* noun_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_car.png; path = Assets/UI/noun_car.png; sourceTree = "<group>"; };
-		3DBCE46915BCA165005CCBDE /* noun_car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_car@2x.png"; path = "Assets/UI/noun_car@2x.png"; sourceTree = "<group>"; };
-		3DBCE46A15BCA165005CCBDE /* noun_traintram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_traintram.png; path = Assets/UI/noun_traintram.png; sourceTree = "<group>"; };
-		3DBCE46B15BCA165005CCBDE /* noun_traintram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_traintram@2x.png"; path = "Assets/UI/noun_traintram@2x.png"; sourceTree = "<group>"; };
+		3DBCE47615BCA3FB005CCBDE /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		3DBCE47715BCA3FB005CCBDE /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		3DBCE47815BCA3FB005CCBDE /* EventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
+		3DBCE47C15BCA4FA005CCBDE /* noun_bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_bus.png; path = Assets/UI/noun_bus.png; sourceTree = "<group>"; };
+		3DBCE47D15BCA4FA005CCBDE /* noun_bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_bus@2x.png"; path = "Assets/UI/noun_bus@2x.png"; sourceTree = "<group>"; };
+		3DBCE47E15BCA4FA005CCBDE /* noun_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_car.png; path = Assets/UI/noun_car.png; sourceTree = "<group>"; };
+		3DBCE47F15BCA4FA005CCBDE /* noun_car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_car@2x.png"; path = "Assets/UI/noun_car@2x.png"; sourceTree = "<group>"; };
+		3DBCE48015BCA4FA005CCBDE /* noun_traintram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_traintram.png; path = Assets/UI/noun_traintram.png; sourceTree = "<group>"; };
+		3DBCE48115BCA4FA005CCBDE /* noun_traintram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_traintram@2x.png"; path = "Assets/UI/noun_traintram@2x.png"; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -297,12 +302,12 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3DBCE46615BCA165005CCBDE /* noun_bus.png */,
-				3DBCE46715BCA165005CCBDE /* noun_bus@2x.png */,
-				3DBCE46815BCA165005CCBDE /* noun_car.png */,
-				3DBCE46915BCA165005CCBDE /* noun_car@2x.png */,
-				3DBCE46A15BCA165005CCBDE /* noun_traintram.png */,
-				3DBCE46B15BCA165005CCBDE /* noun_traintram@2x.png */,
+				3DBCE47C15BCA4FA005CCBDE /* noun_bus.png */,
+				3DBCE47D15BCA4FA005CCBDE /* noun_bus@2x.png */,
+				3DBCE47E15BCA4FA005CCBDE /* noun_car.png */,
+				3DBCE47F15BCA4FA005CCBDE /* noun_car@2x.png */,
+				3DBCE48015BCA4FA005CCBDE /* noun_traintram.png */,
+				3DBCE48115BCA4FA005CCBDE /* noun_traintram@2x.png */,
 				3DBCE44015BC9FE5005CCBDE /* FBfriends.png */,
 				3DBCE44115BC9FE5005CCBDE /* FBfriends@2x.png */,
 				3DBCE44215BC9FE5005CCBDE /* FBmessages.png */,
@@ -337,6 +342,9 @@
 		3D654C3115BC0F0F0070CB50 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DBCE47615BCA3FB005CCBDE /* EventsViewController.h */,
+				3DBCE47715BCA3FB005CCBDE /* EventsViewController.m */,
+				3DBCE47815BCA3FB005CCBDE /* EventsViewController.xib */,
 				3D654C3815BC0F3C0070CB50 /* DashboardViewController.h */,
 				3D654C3915BC0F3C0070CB50 /* DashboardViewController.m */,
 				3D654C3A15BC0F3C0070CB50 /* MainViewController.h */,
@@ -564,12 +572,13 @@
 				3DBCE46315BCA0CA005CCBDE /* Sunny@2x.png in Resources */,
 				3DBCE46415BCA0CA005CCBDE /* thunder@2x.png in Resources */,
 				3DBCE46515BCA0CA005CCBDE /* windy2@2x.png in Resources */,
-				3DBCE46C15BCA165005CCBDE /* noun_bus.png in Resources */,
-				3DBCE46D15BCA165005CCBDE /* noun_bus@2x.png in Resources */,
-				3DBCE46E15BCA165005CCBDE /* noun_car.png in Resources */,
-				3DBCE46F15BCA165005CCBDE /* noun_car@2x.png in Resources */,
-				3DBCE47015BCA165005CCBDE /* noun_traintram.png in Resources */,
-				3DBCE47115BCA165005CCBDE /* noun_traintram@2x.png in Resources */,
+				3DBCE47A15BCA3FB005CCBDE /* EventsViewController.xib in Resources */,
+				3DBCE48215BCA4FA005CCBDE /* noun_bus.png in Resources */,
+				3DBCE48315BCA4FA005CCBDE /* noun_bus@2x.png in Resources */,
+				3DBCE48415BCA4FA005CCBDE /* noun_car.png in Resources */,
+				3DBCE48515BCA4FA005CCBDE /* noun_car@2x.png in Resources */,
+				3DBCE48615BCA4FA005CCBDE /* noun_traintram.png in Resources */,
+				3DBCE48715BCA4FA005CCBDE /* noun_traintram@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +607,7 @@
 				3DF81A0F15BC760500D0BF9F /* ISO8601DateFormatter.m in Sources */,
 				3DC56CBE15BC98CB00749F03 /* CommuteSettingsViewController.m in Sources */,
 				3DBCE45315BCA013005CCBDE /* WeatherSettingsViewController.m in Sources */,
+				3DBCE47915BCA3FB005CCBDE /* EventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
