@@ -8,13 +8,18 @@
 
 #import "WeatherViewController.h"
 
-@interface WeatherViewController ()
+@interface WeatherViewController () {
+    NSData *data;
+}
+
+@property (strong, nonatomic) NSData *data;
 
 @end
 
 @implementation WeatherViewController
 @synthesize tempLabel;
 @synthesize weatherImage;
+@synthesize data;
 
 @synthesize zipCode = _zipCode;
 
@@ -48,11 +53,17 @@
     
     NSURL *url = [NSURL URLWithString:urlString];
     
-    NSData *data = [NSData dataWithContentsOfURL:url];
+    [self setData:[NSData dataWithContentsOfURL:url]];
     
+    [self performSelectorOnMainThread:@selector(go) withObject:nil waitUntilDone:NO];
+    
+    });
+}
+
+- (void)go {
     id result;
     
-    if (data != nil) {
+    if ([self data] != nil) {
         NSError *error =nil;
         
         result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
@@ -106,7 +117,6 @@
         
         [[self tempLabel] setText:[NSString stringWithString:@"off"]];
     }
-    });
 }
 
 - (void)viewDidUnload
