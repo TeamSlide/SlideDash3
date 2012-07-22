@@ -52,6 +52,8 @@
 		3D654C5C15BC13440070CB50 /* facebook_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5915BC13440070CB50 /* facebook_message.png */; };
 		3D654C5D15BC13440070CB50 /* facebook_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5A15BC13440070CB50 /* facebook_notification.png */; };
 		3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */; };
+		3DB5ABCD15BC6CA400AAC355 /* EventsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */; };
+		3DB5ABD015BC6CBE00AAC355 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3DBBD5B915BC156E0038267B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B715BC156E0038267B /* calendar.png */; };
 		3DBBD5BA15BC156E0038267B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B815BC156E0038267B /* facebook.png */; };
 		3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BD15BC16390038267B /* WidgetViewController.m */; };
@@ -126,6 +128,10 @@
 		3D654C5E15BC13740070CB50 /* FacebookNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookNotificationsViewController.h; path = Classes/Widgets/FacebookNotificationsViewController.h; sourceTree = "<group>"; };
 		3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookNotificationsViewController.m; path = Classes/Widgets/FacebookNotificationsViewController.m; sourceTree = "<group>"; };
 		3D9C7C8215BBDE1C00D9F62A /* widgets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widgets.plist; sourceTree = "<group>"; };
+		3DB5ABCB15BC6CA400AAC355 /* EventsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsModel.h; path = Classes/Models/EventsModel.h; sourceTree = "<group>"; };
+		3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsModel.m; path = Classes/Models/EventsModel.m; sourceTree = "<group>"; };
+		3DB5ABCE15BC6CBE00AAC355 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISO8601DateFormatter.h; path = Classes/ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISO8601DateFormatter.m; path = Classes/ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		3DBBD5B715BC156E0038267B /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = Assets/UI/calendar.png; sourceTree = "<group>"; };
 		3DBBD5B815BC156E0038267B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Assets/UI/facebook.png; sourceTree = "<group>"; };
 		3DBBD5BC15BC16390038267B /* WidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidgetViewController.h; path = Classes/Widgets/WidgetViewController.h; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 		3D654BDC15BC0E760070CB50 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3DB5ABCE15BC6CBE00AAC355 /* ISO8601DateFormatter.h */,
+				3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */,
+				3DB5ABC915BC6C9A00AAC355 /* Models */,
 				3D654C3515BC0F300070CB50 /* PageViewManager.h */,
 				3D654C3615BC0F300070CB50 /* PageViewManager.m */,
 				3D654C3415BC0F240070CB50 /* Test */,
@@ -295,6 +304,15 @@
 				3D654C4215BC0F450070CB50 /* EmbededTweetViewController.m */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		3DB5ABC915BC6C9A00AAC355 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5ABCB15BC6CA400AAC355 /* EventsModel.h */,
+				3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		3DC080FD15BB84CD003BB12C = {
@@ -470,6 +488,8 @@
 				3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */,
 				3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */,
 				3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */,
+				3DB5ABCD15BC6CA400AAC355 /* EventsModel.m in Sources */,
+				3DB5ABD015BC6CBE00AAC355 /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
