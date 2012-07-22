@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KWU-BF-7qK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KWU-BF-7qK">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -19,6 +19,76 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="97" y="-162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hgb-qg-bfe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yv-qc-8E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="CommuteSettingsViewController" definesPresentationContext="YES" id="qej-j8-aah" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6xm-94-8U8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TAS-ph-Mpx" kind="relationship" relationship="rootViewController" id="NsO-h4-Mb6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-829" y="453"/>
+        </scene>
+        <!--Commute Settings View Controller-->
+        <scene sceneID="Gle-zr-slk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJu-s3-xxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="TAS-ph-Mpx" customClass="CommuteSettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0hn-Pm-dXC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="5S2-Xe-fLd">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DaE-Bn-73v">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Default destination:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7yU-iX-TKP">
+                                                    <rect key="frame" x="11" y="11" width="120" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="HhU-rE-p3F">
+                                                    <rect key="frame" x="139" y="5" width="172" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="TAS-ph-Mpx" id="c3f-Kk-gur"/>
+                            <outlet property="delegate" destination="TAS-ph-Mpx" id="dj9-eK-V2U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WS9-9f-lPz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aVs-pV-yhr">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="TAS-ph-Mpx" id="4O8-6c-XdE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-395" y="453"/>
         </scene>
         <!--Facebook View Controller-->
         <scene sceneID="iep-vP-RSg">
@@ -235,10 +305,15 @@
         <image name="addwidget.png" width="20" height="20"/>
     </resources>
     <classes>
-        <class className="FacebookViewController" superclassName="UIViewController">
+        <class className="CommuteSettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CommuteSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelButtonClicked:"/>
+            </relationships>
+        </class>
+        <class className="FacebookViewController" superclassName="WidgetViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FacebookViewController.h"/>
             <relationships>
-                <relationship kind="action" name="facebookPressed:"/>
                 <relationship kind="outlet" name="facebook" candidateClass="UIButton"/>
             </relationships>
         </class>
@@ -263,6 +338,12 @@
             <relationships>
                 <relationship kind="outlet" name="widgetImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="widgetNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WidgetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WidgetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="settingsButtonClicked:"/>
             </relationships>
         </class>
     </classes>

@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "WidgetViewController.h"
 
-@interface CommuteViewController : WidgetViewController
+@interface CommuteViewController : WidgetViewController<CLLocationManagerDelegate>
 {
-
+    CLLocationManager *locationManager;
+    CLLocation *lastLocation;
 }
+- (IBAction)settingsButtonClicked:(id)sender;
 
 @property(nonatomic, strong) IBOutlet UILabel * line_id;
 @property (strong, nonatomic) IBOutlet UIImageView *TransPortTypeImg;
