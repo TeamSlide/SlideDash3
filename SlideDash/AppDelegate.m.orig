@@ -10,6 +10,10 @@
 
 @implementation AppDelegate
 @synthesize window;
+<<<<<<< HEAD
+
+=======
+>>>>>>> remotes/origin/twitter
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
