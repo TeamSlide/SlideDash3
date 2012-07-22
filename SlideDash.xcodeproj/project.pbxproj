@@ -97,8 +97,8 @@
 		3DC0811215BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXGroup;
 			children = (
-				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				3D2DECAE15BB859E002111B7 /* MainViewController.h */,
+				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
 				D693A10915BB8AA200101222 /* FacebookViewController.h */,
 				D693A10A15BB8AA200101222 /* FacebookViewController.m */,

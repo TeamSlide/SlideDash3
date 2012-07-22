@@ -48,6 +48,7 @@
  facebook
  */
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    NSLog(@"catching facebook");
     return [FBSession.activeSession handleOpenURL:url]; 
 }
 
