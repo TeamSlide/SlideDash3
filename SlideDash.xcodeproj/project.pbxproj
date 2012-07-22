@@ -68,6 +68,14 @@
 		3DBCE44F15BC9FE5005CCBDE /* gradientTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44715BC9FE5005CCBDE /* gradientTop@2x.png */; };
 		3DBCE45315BCA013005CCBDE /* WeatherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCE45215BCA013005CCBDE /* WeatherSettingsViewController.m */; };
 		3DBCE45515BCA04B005CCBDE /* WeatherSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45415BCA04B005CCBDE /* WeatherSettingsViewController.xib */; };
+		3DBCE45E15BCA0CA005CCBDE /* cloudy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45615BCA0CA005CCBDE /* cloudy@2x.png */; };
+		3DBCE45F15BCA0CA005CCBDE /* CloudywRain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45715BCA0CA005CCBDE /* CloudywRain@2x.png */; };
+		3DBCE46015BCA0CA005CCBDE /* FOG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45815BCA0CA005CCBDE /* FOG@2x.png */; };
+		3DBCE46115BCA0CA005CCBDE /* hail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45915BCA0CA005CCBDE /* hail@2x.png */; };
+		3DBCE46215BCA0CA005CCBDE /* rain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45A15BCA0CA005CCBDE /* rain@2x.png */; };
+		3DBCE46315BCA0CA005CCBDE /* Sunny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45B15BCA0CA005CCBDE /* Sunny@2x.png */; };
+		3DBCE46415BCA0CA005CCBDE /* thunder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45C15BCA0CA005CCBDE /* thunder@2x.png */; };
+		3DBCE46515BCA0CA005CCBDE /* windy2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45D15BCA0CA005CCBDE /* windy2@2x.png */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -159,6 +167,14 @@
 		3DBCE45115BCA013005CCBDE /* WeatherSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherSettingsViewController.h; path = Classes/Widgets/WeatherSettingsViewController.h; sourceTree = "<group>"; };
 		3DBCE45215BCA013005CCBDE /* WeatherSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherSettingsViewController.m; path = Classes/Widgets/WeatherSettingsViewController.m; sourceTree = "<group>"; };
 		3DBCE45415BCA04B005CCBDE /* WeatherSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherSettingsViewController.xib; path = Classes/Widgets/WeatherSettingsViewController.xib; sourceTree = "<group>"; };
+		3DBCE45615BCA0CA005CCBDE /* cloudy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloudy@2x.png"; path = "Assets/Weather/cloudy@2x.png"; sourceTree = "<group>"; };
+		3DBCE45715BCA0CA005CCBDE /* CloudywRain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CloudywRain@2x.png"; path = "Assets/Weather/CloudywRain@2x.png"; sourceTree = "<group>"; };
+		3DBCE45815BCA0CA005CCBDE /* FOG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FOG@2x.png"; path = "Assets/Weather/FOG@2x.png"; sourceTree = "<group>"; };
+		3DBCE45915BCA0CA005CCBDE /* hail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hail@2x.png"; path = "Assets/Weather/hail@2x.png"; sourceTree = "<group>"; };
+		3DBCE45A15BCA0CA005CCBDE /* rain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rain@2x.png"; path = "Assets/Weather/rain@2x.png"; sourceTree = "<group>"; };
+		3DBCE45B15BCA0CA005CCBDE /* Sunny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sunny@2x.png"; path = "Assets/Weather/Sunny@2x.png"; sourceTree = "<group>"; };
+		3DBCE45C15BCA0CA005CCBDE /* thunder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thunder@2x.png"; path = "Assets/Weather/thunder@2x.png"; sourceTree = "<group>"; };
+		3DBCE45D15BCA0CA005CCBDE /* windy2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "windy2@2x.png"; path = "Assets/Weather/windy2@2x.png"; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -241,6 +257,14 @@
 		3D654C0515BC0E9F0070CB50 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				3DBCE45615BCA0CA005CCBDE /* cloudy@2x.png */,
+				3DBCE45715BCA0CA005CCBDE /* CloudywRain@2x.png */,
+				3DBCE45815BCA0CA005CCBDE /* FOG@2x.png */,
+				3DBCE45915BCA0CA005CCBDE /* hail@2x.png */,
+				3DBCE45A15BCA0CA005CCBDE /* rain@2x.png */,
+				3DBCE45B15BCA0CA005CCBDE /* Sunny@2x.png */,
+				3DBCE45C15BCA0CA005CCBDE /* thunder@2x.png */,
+				3DBCE45D15BCA0CA005CCBDE /* windy2@2x.png */,
 				3D654C0715BC0EAF0070CB50 /* cloudy.png */,
 				3D654C0815BC0EAF0070CB50 /* CloudywRain.png */,
 				3D654C0915BC0EAF0070CB50 /* FOG.png */,
@@ -514,6 +538,14 @@
 				3DBCE44E15BC9FE5005CCBDE /* gradientBottom@2x.png in Resources */,
 				3DBCE44F15BC9FE5005CCBDE /* gradientTop@2x.png in Resources */,
 				3DBCE45515BCA04B005CCBDE /* WeatherSettingsViewController.xib in Resources */,
+				3DBCE45E15BCA0CA005CCBDE /* cloudy@2x.png in Resources */,
+				3DBCE45F15BCA0CA005CCBDE /* CloudywRain@2x.png in Resources */,
+				3DBCE46015BCA0CA005CCBDE /* FOG@2x.png in Resources */,
+				3DBCE46115BCA0CA005CCBDE /* hail@2x.png in Resources */,
+				3DBCE46215BCA0CA005CCBDE /* rain@2x.png in Resources */,
+				3DBCE46315BCA0CA005CCBDE /* Sunny@2x.png in Resources */,
+				3DBCE46415BCA0CA005CCBDE /* thunder@2x.png in Resources */,
+				3DBCE46515BCA0CA005CCBDE /* windy2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
