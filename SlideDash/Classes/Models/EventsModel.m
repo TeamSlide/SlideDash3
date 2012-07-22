@@ -121,49 +121,59 @@
              
              FBGraphObject *eventObject = (FBGraphObject *)result;
              NSArray *arrayOfFacebookEvents = [eventObject objectForKey:@"data"];
-             NSMutableDictionary *parsedEvent = [[NSMutableDictionary alloc] init];
-             NSMutableArray *array = [[NSMutableArray alloc] init];
-             for (NSDictionary *actualEvent in arrayOfFacebookEvents) {
-                 // set eventName
-                 if ([actualEvent objectForKey:@"name"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"name"] forKey:@"eventName"];
-                 }
-                 // set eventLocation (title)
-                 if ([actualEvent objectForKey:@"location"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"location"] forKey:@"eventLocationTitle"];
-                 }    
-                 // set eventLocation
-                 if ([actualEvent objectForKey:@"venue"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"venue"] forKey:@"eventLocation"];
-                 }
-                 // set eventTime
-                 if ([actualEvent objectForKey:@"start_time"]) {
-                     NSLog(@"unformatted time = %@",[actualEvent objectForKey:@"start_time"]);
-                     
-                     ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
-
-                     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:+0]];
-
-                     [formatter setFormat:ISO8601DateFormatCalendar];
-                     [formatter setIncludeTime:NO];
-//                     [formatter setParsesStrictly:YES];
-                     
-                     NSDate *properDate = [formatter dateFromString:[actualEvent objectForKey:@"start_time"]];
-                     
-                     [parsedEvent setObject:properDate forKey:@"eventTime"];
-                 }
-                 // set eventType
-                 [parsedEvent setObject:@"fb" forKey:@"eventType"];
-                 
-                 [array addObject:parsedEvent];
-             }
-             [self performSelectorOnMainThread:@selector(pushEventsToStack:) withObject:array waitUntilDone:YES];
+             [self performSelectorOnMainThread:@selector(parseArrayOfFacebookEvents:) withObject:arrayOfFacebookEvents waitUntilDone:YES];
              [self sortStack];
          }
      }];
     
     [eventConnection start];
 
+    
+}
+- (void)parseArrayOfFacebookEvents:(NSArray *)arrayOfFacebookEvents {
+
+    NSLog(@"array of facebook events pre parse = %@",arrayOfFacebookEvents);
+    
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+        
+    for (NSMutableDictionary *actualEvent in arrayOfFacebookEvents) {
+
+        NSMutableDictionary *parsedEvent = [[NSMutableDictionary alloc] init];
+        
+        NSLog(@"actual event = %@", actualEvent);
+        // set eventName
+        if ([actualEvent objectForKey:@"name"]) {
+            [parsedEvent setObject:[actualEvent objectForKey:@"name"] forKey:@"eventName"];
+        }
+        // set eventLocation (title)
+        if ([actualEvent objectForKey:@"location"]) {
+            [parsedEvent setObject:[actualEvent objectForKey:@"location"] forKey:@"eventLocationTitle"];
+        }    
+        // set eventLocation
+        if ([actualEvent objectForKey:@"venue"]) {
+            [parsedEvent setObject:[actualEvent objectForKey:@"venue"] forKey:@"eventLocation"];
+        }
+        // set eventTime
+        if ([actualEvent objectForKey:@"start_time"]) {
+            NSLog(@"unformatted time = %@",[actualEvent objectForKey:@"start_time"]);
+            
+            ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
+            [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:+0]];
+            [formatter setFormat:ISO8601DateFormatCalendar];
+            [formatter setIncludeTime:NO];
+            //                     [formatter setParsesStrictly:YES];
+            NSDate *properDate = [formatter dateFromString:[actualEvent objectForKey:@"start_time"]];
+            [parsedEvent setObject:properDate forKey:@"eventTime"];
+        }
+        
+        // set eventType
+        [parsedEvent setObject:@"fb" forKey:@"eventType"];
+        
+        [array addObject:parsedEvent];
+    }
+    NSLog(@"parsed array = %@", array);
+
+    
     
 }
 - (void)pushEventsToStack:(NSArray *)events {

@@ -68,6 +68,8 @@
 		3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD815BC1AE00099297B /* facebook_signin.png */; };
 		3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */; };
 		D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63383E915BBB69E0035BB36 /* EventKit.framework */; };
+		D63433D415BC6EBB00C95107 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63433D215BC6EBB00C95107 /* EventsViewController.m */; };
+		D63433DC15BC76F200C95107 /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63433DB15BC76F200C95107 /* EventsViewController.xib */; };
 		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
 		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
 /* End PBXBuildFile section */
@@ -152,6 +154,9 @@
 		3DDDBFD815BC1AE00099297B /* facebook_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_signin.png; path = Assets/UI/facebook_signin.png; sourceTree = "<group>"; };
 		3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook_signin@2x.png"; path = "Assets/UI/facebook_signin@2x.png"; sourceTree = "<group>"; };
 		D63383E915BBB69E0035BB36 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		D63433D115BC6EBB00C95107 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		D63433D215BC6EBB00C95107 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		D63433DB15BC76F200C95107 /* EventsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
 		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +210,7 @@
 				3D654BFD15BC0E990070CB50 /* DashboardView.xib */,
 				3D654BFE15BC0E990070CB50 /* MainStoryboard.storyboard */,
 				3D654BFF15BC0E990070CB50 /* Tweet.xib */,
+				D63433DB15BC76F200C95107 /* EventsViewController.xib */,
 				3D654C0015BC0E990070CB50 /* WeatherWidget.xib */,
 			);
 			name = UI;
@@ -265,6 +271,8 @@
 				3D654C3B15BC0F3C0070CB50 /* MainViewController.m */,
 				3D654C3C15BC0F3C0070CB50 /* SelectWidgetViewController.h */,
 				3D654C3D15BC0F3C0070CB50 /* SelectWidgetViewController.m */,
+				D63433D115BC6EBB00C95107 /* EventsViewController.h */,
+				D63433D215BC6EBB00C95107 /* EventsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -464,6 +472,7 @@
 				3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */,
 				2A0E9BBC15BC6AEF00D92A1C /* noun_moon.png in Resources */,
 				2A0E9BBD15BC6AEF00D92A1C /* noun_moon@2x.png in Resources */,
+				D63433DC15BC76F200C95107 /* EventsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +499,7 @@
 				3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */,
 				3DB5ABCD15BC6CA400AAC355 /* EventsModel.m in Sources */,
 				3DB5ABD015BC6CBE00AAC355 /* ISO8601DateFormatter.m in Sources */,
+				D63433D415BC6EBB00C95107 /* EventsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
