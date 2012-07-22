@@ -2,18 +2,14 @@
 //  AppDelegate.h
 //  SlideDash
 //
-//  Created by gVince on 7/21/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Mathias Hansen on 21/07/12.
+//  Copyright (c) 2012 teamslide. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ViewController *viewController;
 
 @end

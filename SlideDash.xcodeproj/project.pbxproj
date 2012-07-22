@@ -7,187 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A7C64D915BB1AF1000E3943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C64D815BB1AF1000E3943 /* UIKit.framework */; };
-		2A7C64DB15BB1AF1000E3943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C64DA15BB1AF1000E3943 /* Foundation.framework */; };
-		2A7C64DD15BB1AF1000E3943 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C64DC15BB1AF1000E3943 /* CoreGraphics.framework */; };
-		2A7C64E315BB1AF1000E3943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A7C64E115BB1AF1000E3943 /* InfoPlist.strings */; };
-		2A7C64E515BB1AF1000E3943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C64E415BB1AF1000E3943 /* main.m */; };
-		2A7C64E915BB1AF1000E3943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C64E815BB1AF1000E3943 /* AppDelegate.m */; };
-		2A7C64EC15BB1AF1000E3943 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C64EB15BB1AF1000E3943 /* ViewController.m */; };
-		2A7C64EF15BB1AF1000E3943 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7C64ED15BB1AF1000E3943 /* ViewController.xib */; };
-		3DBB9E2115BB73B100067443 /* PageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB9E2015BB73B100067443 /* PageViewManager.m */; };
-		3DBB9E2415BB746A00067443 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBB9E2315BB746A00067443 /* MainStoryboard.storyboard */; };
-		3DBB9E2715BB76A300067443 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB9E2615BB76A300067443 /* MainViewController.m */; };
-		D6009A9E15BB52A9007CCC3E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6009A9D15BB52A9007CCC3E /* iPhone.storyboard */; };
-		D63768D015BB612400821773 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768C715BB612400821773 /* Calendar.png */; };
-		D63768D115BB612400821773 /* f_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768C815BB612400821773 /* f_logo.png */; };
-		D63768D215BB612400821773 /* FB People.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768C915BB612400821773 /* FB People.png */; };
-		D63768D315BB612400821773 /* FBmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CA15BB612400821773 /* FBmessage.png */; };
-		D63768D415BB612400821773 /* fbworld.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CB15BB612400821773 /* fbworld.png */; };
-		D63768D515BB612400821773 /* Slidedashlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CC15BB612400821773 /* Slidedashlogo.png */; };
-		D63768D615BB612400821773 /* Sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CD15BB612400821773 /* Sunny.png */; };
-		D63768D715BB612400821773 /* twitter-bird-light-bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CE15BB612400821773 /* twitter-bird-light-bgs.png */; };
-		D63768D815BB612400821773 /* wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = D63768CF15BB612400821773 /* wireframe.png */; };
-		D63C3B3615BB5DDF0059F721 /* PagedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C3B3515BB5DDF0059F721 /* PagedViewController.xib */; };
-		D66EABDC15BB57D8003E4387 /* VerticalWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EABDB15BB57D8003E4387 /* VerticalWidget.xib */; };
-		D66EABE315BB57E2003E4387 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EABDE15BB57E2003E4387 /* DashboardView.xib */; };
-		D66EABE415BB57E2003E4387 /* GitaddedDAVEL.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D66EABDF15BB57E2003E4387 /* GitaddedDAVEL.rtf */; };
-		D66EABE515BB57E2003E4387 /* hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = D66EABE015BB57E2003E4387 /* hello.txt */; };
-		D66EABE615BB57E2003E4387 /* HorizontalWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66EABE115BB57E2003E4387 /* HorizontalWidget.xib */; };
-		D66EABE715BB57E2003E4387 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D66EABE215BB57E2003E4387 /* README.md */; };
+		3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECAD15BB859E002111B7 /* MainViewController.m */; };
+		3D2DECB315BB859E002111B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */; };
+		3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECB015BB859E002111B7 /* PageViewManager.m */; };
+		3D2DECB915BB85B0002111B7 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECB515BB85B0002111B7 /* DashboardView.xib */; };
+		3D2DECBA15BB85B0002111B7 /* HorizontalWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECB615BB85B0002111B7 /* HorizontalWidget.xib */; };
+		3D2DECBB15BB85B0002111B7 /* PagedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECB715BB85B0002111B7 /* PagedViewController.xib */; };
+		3D2DECBC15BB85B0002111B7 /* VerticalWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECB815BB85B0002111B7 /* VerticalWidget.xib */; };
+		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
+		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
+		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
+		3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC0811515BB84CD003BB12C /* InfoPlist.strings */; };
+		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
+		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A7C64D415BB1AF1000E3943 /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A7C64D815BB1AF1000E3943 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2A7C64DA15BB1AF1000E3943 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2A7C64DC15BB1AF1000E3943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2A7C64E015BB1AF1000E3943 /* SlideDash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideDash-Info.plist"; sourceTree = "<group>"; };
-		2A7C64E215BB1AF1000E3943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2A7C64E415BB1AF1000E3943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A7C64E615BB1AF1000E3943 /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
-		2A7C64E715BB1AF1000E3943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2A7C64E815BB1AF1000E3943 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A7C64EA15BB1AF1000E3943 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A7C64EB15BB1AF1000E3943 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2A7C64EE15BB1AF1000E3943 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		3DBB9E1F15BB73B100067443 /* PageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewManager.h; sourceTree = "<group>"; };
-		3DBB9E2015BB73B100067443 /* PageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewManager.m; sourceTree = "<group>"; };
-		3DBB9E2315BB746A00067443 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3DBB9E2515BB76A300067443 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		3DBB9E2615BB76A300067443 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		D6009A9D15BB52A9007CCC3E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		D63768C715BB612400821773 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
-		D63768C815BB612400821773 /* f_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f_logo.png; sourceTree = "<group>"; };
-		D63768C915BB612400821773 /* FB People.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB People.png"; sourceTree = "<group>"; };
-		D63768CA15BB612400821773 /* FBmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBmessage.png; sourceTree = "<group>"; };
-		D63768CB15BB612400821773 /* fbworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbworld.png; sourceTree = "<group>"; };
-		D63768CC15BB612400821773 /* Slidedashlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slidedashlogo.png; sourceTree = "<group>"; };
-		D63768CD15BB612400821773 /* Sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sunny.png; sourceTree = "<group>"; };
-		D63768CE15BB612400821773 /* twitter-bird-light-bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-bird-light-bgs.png"; sourceTree = "<group>"; };
-		D63768CF15BB612400821773 /* wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireframe.png; sourceTree = "<group>"; };
-		D63C3B3515BB5DDF0059F721 /* PagedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagedViewController.xib; sourceTree = "<group>"; };
-		D66EABDB15BB57D8003E4387 /* VerticalWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalWidget.xib; sourceTree = "<group>"; };
-		D66EABDE15BB57E2003E4387 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
-		D66EABDF15BB57E2003E4387 /* GitaddedDAVEL.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = GitaddedDAVEL.rtf; sourceTree = "<group>"; };
-		D66EABE015BB57E2003E4387 /* hello.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.txt; sourceTree = "<group>"; };
-		D66EABE115BB57E2003E4387 /* HorizontalWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalWidget.xib; sourceTree = "<group>"; };
-		D66EABE215BB57E2003E4387 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3D2DECAD15BB859E002111B7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3D2DECAE15BB859E002111B7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3D2DECB015BB859E002111B7 /* PageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewManager.m; sourceTree = "<group>"; };
+		3D2DECB115BB859E002111B7 /* PageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewManager.h; sourceTree = "<group>"; };
+		3D2DECB515BB85B0002111B7 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
+		3D2DECB615BB85B0002111B7 /* HorizontalWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalWidget.xib; sourceTree = "<group>"; };
+		3D2DECB715BB85B0002111B7 /* PagedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagedViewController.xib; sourceTree = "<group>"; };
+		3D2DECB815BB85B0002111B7 /* VerticalWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalWidget.xib; sourceTree = "<group>"; };
+		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DC0811015BB84CD003BB12C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3DC0811415BB84CD003BB12C /* SlideDash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideDash-Info.plist"; sourceTree = "<group>"; };
+		3DC0811615BB84CD003BB12C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DC0811815BB84CD003BB12C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
+		3DC0811B15BB84CD003BB12C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A7C64D115BB1AF1000E3943 /* Frameworks */ = {
+		3DC0810515BB84CD003BB12C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7C64D915BB1AF1000E3943 /* UIKit.framework in Frameworks */,
-				2A7C64DB15BB1AF1000E3943 /* Foundation.framework in Frameworks */,
-				2A7C64DD15BB1AF1000E3943 /* CoreGraphics.framework in Frameworks */,
+				3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */,
+				3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */,
+				3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A7C64C915BB1AF0000E3943 = {
+		3DC080FD15BB84CD003BB12C = {
 			isa = PBXGroup;
 			children = (
-				2A7C64DE15BB1AF1000E3943 /* SlideDash */,
-				2A7C64D715BB1AF1000E3943 /* Frameworks */,
-				2A7C64D515BB1AF1000E3943 /* Products */,
+				3DC0811215BB84CD003BB12C /* SlideDash */,
+				3DC0810B15BB84CD003BB12C /* Frameworks */,
+				3DC0810915BB84CD003BB12C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2A7C64D515BB1AF1000E3943 /* Products */ = {
+		3DC0810915BB84CD003BB12C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A7C64D415BB1AF1000E3943 /* SlideDash.app */,
+				3DC0810815BB84CD003BB12C /* SlideDash.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A7C64D715BB1AF1000E3943 /* Frameworks */ = {
+		3DC0810B15BB84CD003BB12C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A7C64D815BB1AF1000E3943 /* UIKit.framework */,
-				2A7C64DA15BB1AF1000E3943 /* Foundation.framework */,
-				2A7C64DC15BB1AF1000E3943 /* CoreGraphics.framework */,
+				3DC0810C15BB84CD003BB12C /* UIKit.framework */,
+				3DC0810E15BB84CD003BB12C /* Foundation.framework */,
+				3DC0811015BB84CD003BB12C /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A7C64DE15BB1AF1000E3943 /* SlideDash */ = {
+		3DC0811215BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXGroup;
 			children = (
-				2A7C64E715BB1AF1000E3943 /* AppDelegate.h */,
-				2A7C64E815BB1AF1000E3943 /* AppDelegate.m */,
-				2A7C64EA15BB1AF1000E3943 /* ViewController.h */,
-				2A7C64EB15BB1AF1000E3943 /* ViewController.m */,
-				2A7C64ED15BB1AF1000E3943 /* ViewController.xib */,
-				D66EABE815BB57EB003E4387 /* Sachin, Erica, Fang, UI */,
-				2A7C64DF15BB1AF1000E3943 /* Supporting Files */,
-				3DBB9E1F15BB73B100067443 /* PageViewManager.h */,
-				3DBB9E2015BB73B100067443 /* PageViewManager.m */,
-				3DBB9E2315BB746A00067443 /* MainStoryboard.storyboard */,
-				3DBB9E2515BB76A300067443 /* MainViewController.h */,
-				3DBB9E2615BB76A300067443 /* MainViewController.m */,
+				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
+				3D2DECAE15BB859E002111B7 /* MainViewController.h */,
+				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
+				3D2DECB015BB859E002111B7 /* PageViewManager.m */,
+				3D2DECB115BB859E002111B7 /* PageViewManager.h */,
+				3DF37F4715BB855D00322903 /* UI Templates */,
+				3DC0811B15BB84CD003BB12C /* AppDelegate.h */,
+				3DC0811C15BB84CD003BB12C /* AppDelegate.m */,
+				3DC0811315BB84CD003BB12C /* Supporting Files */,
 			);
 			path = SlideDash;
 			sourceTree = "<group>";
 		};
-		2A7C64DF15BB1AF1000E3943 /* Supporting Files */ = {
+		3DC0811315BB84CD003BB12C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A7C64E015BB1AF1000E3943 /* SlideDash-Info.plist */,
-				2A7C64E115BB1AF1000E3943 /* InfoPlist.strings */,
-				2A7C64E415BB1AF1000E3943 /* main.m */,
-				2A7C64E615BB1AF1000E3943 /* SlideDash-Prefix.pch */,
+				3DC0811415BB84CD003BB12C /* SlideDash-Info.plist */,
+				3DC0811515BB84CD003BB12C /* InfoPlist.strings */,
+				3DC0811815BB84CD003BB12C /* main.m */,
+				3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D63768C615BB612400821773 /* VISDE Elements */ = {
+		3DF37F4715BB855D00322903 /* UI Templates */ = {
 			isa = PBXGroup;
 			children = (
-				D63768C715BB612400821773 /* Calendar.png */,
-				D63768C815BB612400821773 /* f_logo.png */,
-				D63768C915BB612400821773 /* FB People.png */,
-				D63768CA15BB612400821773 /* FBmessage.png */,
-				D63768CB15BB612400821773 /* fbworld.png */,
-				D63768CC15BB612400821773 /* Slidedashlogo.png */,
-				D63768CD15BB612400821773 /* Sunny.png */,
-				D63768CE15BB612400821773 /* twitter-bird-light-bgs.png */,
-				D63768CF15BB612400821773 /* wireframe.png */,
+				3D2DECB515BB85B0002111B7 /* DashboardView.xib */,
+				3D2DECB615BB85B0002111B7 /* HorizontalWidget.xib */,
+				3D2DECB715BB85B0002111B7 /* PagedViewController.xib */,
+				3D2DECB815BB85B0002111B7 /* VerticalWidget.xib */,
 			);
-			path = "VISDE Elements";
-			sourceTree = "<group>";
-		};
-		D66EABE815BB57EB003E4387 /* Sachin, Erica, Fang, UI */ = {
-			isa = PBXGroup;
-			children = (
-				D63768C615BB612400821773 /* VISDE Elements */,
-				D66EABDB15BB57D8003E4387 /* VerticalWidget.xib */,
-				D63C3B3515BB5DDF0059F721 /* PagedViewController.xib */,
-				D66EABDE15BB57E2003E4387 /* DashboardView.xib */,
-				D66EABDF15BB57E2003E4387 /* GitaddedDAVEL.rtf */,
-				D66EABE015BB57E2003E4387 /* hello.txt */,
-				D66EABE115BB57E2003E4387 /* HorizontalWidget.xib */,
-				D66EABE215BB57E2003E4387 /* README.md */,
-				D6009A9D15BB52A9007CCC3E /* iPhone.storyboard */,
-			);
-			name = "Sachin, Erica, Fang, UI";
+			name = "UI Templates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A7C64D315BB1AF1000E3943 /* SlideDash */ = {
+		3DC0810715BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A7C64F215BB1AF1000E3943 /* Build configuration list for PBXNativeTarget "SlideDash" */;
+			buildConfigurationList = 3DC0812615BB84CD003BB12C /* Build configuration list for PBXNativeTarget "SlideDash" */;
 			buildPhases = (
-				2A7C64D015BB1AF1000E3943 /* Sources */,
-				2A7C64D115BB1AF1000E3943 /* Frameworks */,
-				2A7C64D215BB1AF1000E3943 /* Resources */,
+				3DC0810415BB84CD003BB12C /* Sources */,
+				3DC0810515BB84CD003BB12C /* Frameworks */,
+				3DC0810615BB84CD003BB12C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -195,104 +140,85 @@
 			);
 			name = SlideDash;
 			productName = SlideDash;
-			productReference = 2A7C64D415BB1AF1000E3943 /* SlideDash.app */;
+			productReference = 3DC0810815BB84CD003BB12C /* SlideDash.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2A7C64CB15BB1AF0000E3943 /* Project object */ = {
+		3DC080FF15BB84CD003BB12C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = teamslide;
 			};
-			buildConfigurationList = 2A7C64CE15BB1AF0000E3943 /* Build configuration list for PBXProject "SlideDash" */;
+			buildConfigurationList = 3DC0810215BB84CD003BB12C /* Build configuration list for PBXProject "SlideDash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2A7C64C915BB1AF0000E3943;
-			productRefGroup = 2A7C64D515BB1AF1000E3943 /* Products */;
+			mainGroup = 3DC080FD15BB84CD003BB12C;
+			productRefGroup = 3DC0810915BB84CD003BB12C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A7C64D315BB1AF1000E3943 /* SlideDash */,
+				3DC0810715BB84CD003BB12C /* SlideDash */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A7C64D215BB1AF1000E3943 /* Resources */ = {
+		3DC0810615BB84CD003BB12C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7C64E315BB1AF1000E3943 /* InfoPlist.strings in Resources */,
-				2A7C64EF15BB1AF1000E3943 /* ViewController.xib in Resources */,
-				D6009A9E15BB52A9007CCC3E /* iPhone.storyboard in Resources */,
-				D66EABDC15BB57D8003E4387 /* VerticalWidget.xib in Resources */,
-				D66EABE315BB57E2003E4387 /* DashboardView.xib in Resources */,
-				D66EABE415BB57E2003E4387 /* GitaddedDAVEL.rtf in Resources */,
-				D66EABE515BB57E2003E4387 /* hello.txt in Resources */,
-				D66EABE615BB57E2003E4387 /* HorizontalWidget.xib in Resources */,
-				D66EABE715BB57E2003E4387 /* README.md in Resources */,
-				D63C3B3615BB5DDF0059F721 /* PagedViewController.xib in Resources */,
-				D63768D015BB612400821773 /* Calendar.png in Resources */,
-				D63768D115BB612400821773 /* f_logo.png in Resources */,
-				D63768D215BB612400821773 /* FB People.png in Resources */,
-				D63768D315BB612400821773 /* FBmessage.png in Resources */,
-				D63768D415BB612400821773 /* fbworld.png in Resources */,
-				D63768D515BB612400821773 /* Slidedashlogo.png in Resources */,
-				D63768D615BB612400821773 /* Sunny.png in Resources */,
-				D63768D715BB612400821773 /* twitter-bird-light-bgs.png in Resources */,
-				D63768D815BB612400821773 /* wireframe.png in Resources */,
-				3DBB9E2415BB746A00067443 /* MainStoryboard.storyboard in Resources */,
+				3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */,
+				3D2DECB315BB859E002111B7 /* MainStoryboard.storyboard in Resources */,
+				3D2DECB915BB85B0002111B7 /* DashboardView.xib in Resources */,
+				3D2DECBA15BB85B0002111B7 /* HorizontalWidget.xib in Resources */,
+				3D2DECBB15BB85B0002111B7 /* PagedViewController.xib in Resources */,
+				3D2DECBC15BB85B0002111B7 /* VerticalWidget.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A7C64D015BB1AF1000E3943 /* Sources */ = {
+		3DC0810415BB84CD003BB12C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7C64E515BB1AF1000E3943 /* main.m in Sources */,
-				2A7C64E915BB1AF1000E3943 /* AppDelegate.m in Sources */,
-				2A7C64EC15BB1AF1000E3943 /* ViewController.m in Sources */,
-				3DBB9E2115BB73B100067443 /* PageViewManager.m in Sources */,
-				3DBB9E2715BB76A300067443 /* MainViewController.m in Sources */,
+				3DC0811915BB84CD003BB12C /* main.m in Sources */,
+				3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */,
+				3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */,
+				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A7C64E115BB1AF1000E3943 /* InfoPlist.strings */ = {
+		3DC0811515BB84CD003BB12C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2A7C64E215BB1AF1000E3943 /* en */,
+				3DC0811615BB84CD003BB12C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2A7C64ED15BB1AF1000E3943 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A7C64EE15BB1AF1000E3943 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2A7C64F015BB1AF1000E3943 /* Debug */ = {
+		3DC0812415BB84CD003BB12C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -312,11 +238,14 @@
 			};
 			name = Debug;
 		};
-		2A7C64F115BB1AF1000E3943 /* Release */ = {
+		3DC0812515BB84CD003BB12C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -331,25 +260,23 @@
 			};
 			name = Release;
 		};
-		2A7C64F315BB1AF1000E3943 /* Debug */ = {
+		3DC0812715BB84CD003BB12C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
-				INFOPLIST_FILE = "SlideDash/SlideDash-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		2A7C64F415BB1AF1000E3943 /* Release */ = {
+		3DC0812815BB84CD003BB12C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
-				INFOPLIST_FILE = "SlideDash/SlideDash-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -358,25 +285,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A7C64CE15BB1AF0000E3943 /* Build configuration list for PBXProject "SlideDash" */ = {
+		3DC0810215BB84CD003BB12C /* Build configuration list for PBXProject "SlideDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A7C64F015BB1AF1000E3943 /* Debug */,
-				2A7C64F115BB1AF1000E3943 /* Release */,
+				3DC0812415BB84CD003BB12C /* Debug */,
+				3DC0812515BB84CD003BB12C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A7C64F215BB1AF1000E3943 /* Build configuration list for PBXNativeTarget "SlideDash" */ = {
+		3DC0812615BB84CD003BB12C /* Build configuration list for PBXNativeTarget "SlideDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A7C64F315BB1AF1000E3943 /* Debug */,
-				2A7C64F415BB1AF1000E3943 /* Release */,
+				3DC0812715BB84CD003BB12C /* Debug */,
+				3DC0812815BB84CD003BB12C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2A7C64CB15BB1AF0000E3943 /* Project object */;
+	rootObject = 3DC080FF15BB84CD003BB12C /* Project object */;
 }

@@ -55,11 +55,8 @@
 
 - (void)viewDidUnload
 {
-    [scrollView release];
     scrollView = nil;
-    [pageControl release];
     pageControl = nil;
-    [slideMenu release];
     slideMenu = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -70,12 +67,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [scrollView release];
-    [pageControl release];
-    [slideMenu release];
-    [super dealloc];
-}
 - (IBAction)addDashboardClicked:(id)sender {
     UIView* newDashboard = [[UIView alloc] initWithFrame: scrollView.frame];
     newDashboard.backgroundColor = [UIColor blueColor];
