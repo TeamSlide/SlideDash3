@@ -10,6 +10,7 @@
 #import "DashboardViewController.h"
 #import "PageViewManager.h"
 #import "SelectWidgetViewController.h"
+#import "EventsModel.h"
 
 @interface MainViewController ()
 
