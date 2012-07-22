@@ -18,6 +18,7 @@
     IBOutlet UIView *slideMenu;
     BOOL isAnimatingMenu;
     NSMutableArray *dashboardViewControllers;
+    __weak IBOutlet UIView *overlayView;
 }
 
 - (IBAction)addDashboardClicked:(id)sender;

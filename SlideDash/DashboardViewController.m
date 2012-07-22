@@ -31,13 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    WeatherViewController *weatherWidget = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
-    
-    [[self leftWidget] addSubview:[weatherWidget view]];
-    
-//    [[self view] addSubview:[weatherWidget view]];
-    
 	// Do any additional setup after loading the view.
 }
 
@@ -59,5 +52,9 @@
 - (IBAction)addWidgetClicked:(id)sender {
     UIButton *button = (UIButton*)sender;
     NSLog(@"Add widget: %d", button.tag);
+    
+    // Add weather widget
+    WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
+    [button.superview addSubview:weatherWidgetController.view];
 }
 @end

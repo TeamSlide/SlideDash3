@@ -60,6 +60,7 @@
     scrollView = nil;
     pageControl = nil;
     slideMenu = nil;
+    overlayView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -113,18 +114,23 @@
     if (isAnimatingMenu)
         return;
     
+    BOOL showMenu = (slideMenu.frame.origin.y < 0);
+    
+    [overlayView setHidden:NO];//!showMenu];
+    
     [UIView animateWithDuration:0.4f animations:^{
         isAnimatingMenu = YES;
         
         CGFloat newY = 0;
         
-        if (slideMenu.frame.origin.y < 0)
-        {
+        if (showMenu) {
+            // Show menu
             newY = 0;
-        }
-        else
-        {
-            newY = -slideMenu.frame.size.height;
+            [overlayView setAlpha:0.6f];
+        } else {
+            // Hide menu
+            newY = -(slideMenu.frame.size.height + 44.0);
+            [overlayView setAlpha:0.0f];
         }
         
         [slideMenu setFrame:CGRectMake(slideMenu.frame.origin.x, newY, slideMenu.frame.size.width, slideMenu.frame.size.height)];
