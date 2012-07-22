@@ -149,23 +149,27 @@
     }];
 }
 
-- (void)didClickAddWidget:(UIView*)widgetView
+- (void)didClickAddWidget:(int)location
 {
-    NSLog(@"You clicked a widget add button!");
-    [self performSegueWithIdentifier:@"SelectWidgetSegue" sender:self];
+    NSLog(@"You clicked a widget add button! %d", location);
+    [self performSegueWithIdentifier:@"SelectWidgetSegue" sender:[NSNumber numberWithInt:location]];
 }
 
 - (void)didSelectWidget:(NSString*)widgetId forLocation:(int)location
 {
-    
+    DashboardViewController *dashboardViewController = (DashboardViewController*)[dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+    [dashboardViewController setWidget:widgetId inLocation:location];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"SelectWidgetSegue"])
     {
+        NSNumber *location = (NSNumber*)sender;
+        
         SelectWidgetViewController *selectWidgetViewController = [segue destinationViewController];
         [selectWidgetViewController setDelegate:self];
+        [selectWidgetViewController setLocation:[location intValue]];
     }
 }
 

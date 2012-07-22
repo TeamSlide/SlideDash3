@@ -12,7 +12,7 @@
 
 @protocol DashboardViewControllerDelegate <NSObject>
 @optional
-- (void)didClickAddWidget:(UIView*)widgetView;
+- (void)didClickAddWidget:(int)location;
 @end
 
 
@@ -28,5 +28,6 @@
 @property (strong) id <DashboardViewControllerDelegate> delegate;
 
 - (IBAction)addWidgetClicked:(id)sender;
+- (void)setWidget:(NSString*)widget inLocation:(int)location;
 
 @end

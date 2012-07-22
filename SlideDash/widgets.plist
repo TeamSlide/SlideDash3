@@ -10,7 +10,7 @@
 			<key>id</key>
 			<string>WEATHER</string>
 			<key>icon</key>
-			<string>weather</string>
+			<string>WeatherSun</string>
 			<key>name</key>
 			<string>Weather</string>
 		</dict>

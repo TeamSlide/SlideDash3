@@ -21,5 +21,6 @@
 }
 
 @property (strong) id <SelectViewControllerDelegate> delegate;
+@property (readwrite) int location;
 
 @end

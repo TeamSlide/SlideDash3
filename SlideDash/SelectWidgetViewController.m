@@ -16,6 +16,7 @@
 @implementation SelectWidgetViewController
 
 @synthesize delegate;
+@synthesize location;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -37,7 +38,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     NSDictionary *widgetsData = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"widgets" ofType:@"plist"]];
-    widgets = [widgetsData objectForKey:@"vertical"];
+    
+    NSString *direction = (self.location == 100 || self.location == 103) ? @"horizontal" : @"vertical";
+    widgets = [widgetsData objectForKey:direction];
 }
 
 - (void)viewDidUnload
@@ -71,6 +74,7 @@
     
     NSDictionary *widget = [widgets objectAtIndex:[indexPath row]];
     cell.widgetNameLabel.text = [widget objectForKey:@"name"];
+    cell.widgetImageView.image = [UIImage imageNamed:[widget objectForKey:@"icon"]];
     
     return cell;
 }
@@ -121,7 +125,7 @@
     NSDictionary *widget = [widgets objectAtIndex:[indexPath row]];
     if (delegate)
     {
-        [delegate didSelectWidget:[widget objectForKey:@"id"] forLocation:0];
+        [delegate didSelectWidget:[widget objectForKey:@"id"] forLocation:location];
     }
     
     // Remove this view controller

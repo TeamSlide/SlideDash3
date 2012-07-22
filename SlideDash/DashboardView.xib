@@ -48,7 +48,7 @@
 								<reference key="NSNextKeyView" ref="41885492"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
-								<int key="IBUITag">1</int>
+								<int key="IBUITag">42</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -84,6 +84,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="939080344"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUITag">100</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="571526740">
@@ -99,7 +100,7 @@
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
-								<int key="IBUITag">4</int>
+								<int key="IBUITag">42</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -119,6 +120,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="18398400"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUITag">103</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="907968286">
@@ -134,7 +136,7 @@
 								<reference key="NSNextKeyView" ref="11082554"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
-								<int key="IBUITag">2</int>
+								<int key="IBUITag">42</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -154,6 +156,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="747385444"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUITag">101</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="928521873">
@@ -169,7 +172,7 @@
 								<reference key="NSNextKeyView" ref="930712390"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
-								<int key="IBUITag">3</int>
+								<int key="IBUITag">42</int>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -189,6 +192,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1054962575"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<int key="IBUITag">102</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="11082554">
@@ -469,17 +473,12 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="bottomButton">UIButton</string>
 						<string key="bottomView">UIView</string>
 						<string key="leftWidget">UIView</string>
 						<string key="rightWidget">UIView</string>
 						<string key="topWidget">UIView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="bottomButton">
-							<string key="name">bottomButton</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="bottomView">
 							<string key="name">bottomView</string>
 							<string key="candidateClassName">UIView</string>

@@ -9,6 +9,8 @@
 #import "DashboardViewController.h"
 #import "WeatherViewController.h"
 
+#define kAddWidgetButtonTag 42
+
 @interface DashboardViewController ()
 
 @end
@@ -53,16 +55,31 @@
 
 - (IBAction)addWidgetClicked:(id)sender {
     UIButton *button = (UIButton*)sender;
-    NSLog(@"Add widget: %d", button.tag);
     
     if (delegate)
     {
-        [delegate didClickAddWidget:button.superview];
+        [delegate didClickAddWidget:button.superview.tag];
     }
     
     // Add weather widget
     /*WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
     [button.superview addSubview:weatherWidgetController.view];*/
+}
+
+- (void)setWidget:(NSString*)widget inLocation:(int)location
+{
+    UIView *view = [self.view viewWithTag:location];
+    
+    NSLog(@"Add widget at location: %d", location);
+    
+    if ([widget isEqualToString:@"WEATHER"])
+    {
+        WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
+        [view addSubview:weatherWidgetController.view];
+    }
+    
+    // Hide the "Add widget" button
+    [[view viewWithTag:kAddWidgetButtonTag] setHidden:YES];
 }
 
 @end
