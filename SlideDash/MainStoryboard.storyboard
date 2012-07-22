@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KWU-BF-7qK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KWU-BF-7qK">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -29,14 +29,20 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="kNy-IK-XSS">
+                                <rect key="frame" x="0.0" y="388" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="zea-Ry-2Be">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="kNy-IK-XSS">
-                                <rect key="frame" x="20" y="388" width="280" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" id="Iyx-MD-AV7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="396"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" id="gpk-yE-HGo">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,6 +119,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="overlayView" destination="Iyx-MD-AV7" id="UCY-30-yNA"/>
                         <outlet property="pageControl" destination="kNy-IK-XSS" id="1bC-Oq-PhL"/>
                         <outlet property="scrollView" destination="zea-Ry-2Be" id="9tg-rh-B30"/>
                         <outlet property="slideMenu" destination="gpk-yE-HGo" id="buj-1N-QuG"/>

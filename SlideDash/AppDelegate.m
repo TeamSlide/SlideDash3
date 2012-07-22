@@ -13,6 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"NavigationBarLogo"] forBarMetrics:UIBarMetricsDefault];
+    
     // Override point for customization after application launch.
     return YES;
 }
