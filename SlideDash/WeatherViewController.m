@@ -31,11 +31,16 @@
 {
     [super viewDidLoad];
     
+    dispatch_queue_t queue = dispatch_queue_create("q", NULL);
+    dispatch_async(queue, ^{
+    
     if ([self zipCode] == nil) {
         [self setZipCode:[NSString stringWithString:@"95231"]];
     }
     
     NSString *zipCodeToAppend = [NSString stringWithString:[self zipCode]];
+    
+    
     NSString *primaryURLString = [NSString stringWithString:@"http://slidedash.codemonkey.io/weather/"];
     primaryURLString = [primaryURLString stringByAppendingString:zipCodeToAppend];
     
@@ -104,6 +109,7 @@
         
         [[self tempLabel] setText:[NSString stringWithString:@"off"]];
     }
+    });
 }
 
 - (void)viewDidUnload
