@@ -10,60 +10,26 @@
 		3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECAD15BB859E002111B7 /* MainViewController.m */; };
 		3D2DECB315BB859E002111B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */; };
 		3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECB015BB859E002111B7 /* PageViewManager.m */; };
-		3D805BE515BBF1CA006438E3 /* AddDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE115BBF1CA006438E3 /* AddDash.png */; };
-		3D805BE615BBF1CA006438E3 /* AddDashselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE215BBF1CA006438E3 /* AddDashselected.png */; };
-		3D805BE715BBF1CA006438E3 /* AddDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE315BBF1CA006438E3 /* AddDash@2x.png */; };
-		3D805BE815BBF1CA006438E3 /* AddDashselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE415BBF1CA006438E3 /* AddDashselected@2x.png */; };
 		3D9C319F15BBC2D600A52ADA /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4234FD15BBA38300C0F3B5 /* WeatherViewController.m */; };
-		3D9C31A115BBC2DD00A52ADA /* WeatherWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4234FE15BBA38300C0F3B5 /* WeatherWidget.xib */; };
-		3D9C31A215BBC32100A52ADA /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350315BBAC4000C0F3B5 /* cloudy.png */; };
-		3D9C31A315BBC32100A52ADA /* CloudywRain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350415BBAC4000C0F3B5 /* CloudywRain.png */; };
-		3D9C31A415BBC32100A52ADA /* FOG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350515BBAC4000C0F3B5 /* FOG.png */; };
-		3D9C31A515BBC32100A52ADA /* hail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350615BBAC4000C0F3B5 /* hail.png */; };
-		3D9C31A615BBC32100A52ADA /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350715BBAC4000C0F3B5 /* rain.png */; };
-		3D9C31A715BBC32100A52ADA /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350815BBAC4000C0F3B5 /* snow.png */; };
-		3D9C31A815BBC32100A52ADA /* thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350915BBAC4000C0F3B5 /* thunder.png */; };
-		3D9C31A915BBC32100A52ADA /* WeatherSun.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350A15BBAC4000C0F3B5 /* WeatherSun.png */; };
-		3D9C31AA15BBC32100A52ADA /* windy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350B15BBAC4000C0F3B5 /* windy.png */; };
-		3D9C31AB15BBC32100A52ADA /* windy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42350C15BBAC4000C0F3B5 /* windy2.png */; };
-		3D9C31AE15BBC49800A52ADA /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */; };
-		3D9C31B115BBC65A00A52ADA /* NavigationBarLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C31AF15BBC65A00A52ADA /* NavigationBarLogo@2x.png */; };
-		3D9C31B215BBC65A00A52ADA /* NavigationBarLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C31B015BBC65A00A52ADA /* NavigationBarLogo.png */; };
-		3D9C7C7C15BBD7B800D9F62A /* WidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */; };
-		3D9C7C8115BBDDCC00D9F62A /* SelectWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8015BBDDCC00D9F62A /* SelectWidgetViewController.m */; };
-		3D9C7C8315BBDE1C00D9F62A /* widgets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8215BBDE1C00D9F62A /* widgets.plist */; };
-		3D9C7C8815BBEB8C00D9F62A /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A42352915BBC4CF00C0F3B5 /* DashboardView.xib */; };
-		3D9C7C8A15BBECA800D9F62A /* noun_moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42354415BBD74700C0F3B5 /* noun_moon.png */; };
-		3D9C7C8B15BBECAC00D9F62A /* noun_moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A42354615BBD76600C0F3B5 /* noun_moon@2x.png */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
 		3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DC0811515BB84CD003BB12C /* InfoPlist.strings */; };
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
-		3DF20DA815BBAD9400A9CCBE /* addwidget.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA615BBAD9400A9CCBE /* addwidget.png */; };
-		3DF20DA915BBAD9400A9CCBE /* addwidget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */; };
+		3DC75A5915BBF72000048BFF /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */; };
+		3DC75A5B15BBF72800048BFF /* WidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */; };
+		3DC75A5C15BBF72800048BFF /* SelectWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8015BBDDCC00D9F62A /* SelectWidgetViewController.m */; };
+		D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63383E915BBB69E0035BB36 /* EventKit.framework */; };
+		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
+		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
+		D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D693A10A15BB8AA200101222 /* FacebookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A4234FC15BBA38300C0F3B5 /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		2A4234FD15BBA38300C0F3B5 /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		2A4234FE15BBA38300C0F3B5 /* WeatherWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherWidget.xib; sourceTree = "<group>"; };
-		2A42350315BBAC4000C0F3B5 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
-		2A42350415BBAC4000C0F3B5 /* CloudywRain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloudywRain.png; sourceTree = "<group>"; };
-		2A42350515BBAC4000C0F3B5 /* FOG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOG.png; sourceTree = "<group>"; };
-		2A42350615BBAC4000C0F3B5 /* hail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hail.png; sourceTree = "<group>"; };
-		2A42350715BBAC4000C0F3B5 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
-		2A42350815BBAC4000C0F3B5 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
-		2A42350915BBAC4000C0F3B5 /* thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunder.png; sourceTree = "<group>"; };
-		2A42350A15BBAC4000C0F3B5 /* WeatherSun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherSun.png; sourceTree = "<group>"; };
-		2A42350B15BBAC4000C0F3B5 /* windy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windy.png; sourceTree = "<group>"; };
-		2A42350C15BBAC4000C0F3B5 /* windy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windy2.png; sourceTree = "<group>"; };
-		2A42352915BBC4CF00C0F3B5 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
-		2A42352A15BBC4CF00C0F3B5 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
-		2A42352B15BBC4CF00C0F3B5 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
-		2A42354415BBD74700C0F3B5 /* noun_moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_moon.png; sourceTree = "<group>"; };
-		2A42354615BBD76600C0F3B5 /* noun_moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noun_moon@2x.png"; sourceTree = "<group>"; };
 		3D2DECAD15BB859E002111B7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3D2DECAE15BB859E002111B7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -94,6 +60,11 @@
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3DF20DA615BBAD9400A9CCBE /* addwidget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addwidget.png; path = Assets/addwidget.png; sourceTree = "<group>"; };
 		3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "addwidget@2x.png"; path = "Assets/addwidget@2x.png"; sourceTree = "<group>"; };
+		D63383E915BBB69E0035BB36 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
+		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
+		D693A10915BB8AA200101222 /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		D693A10A15BB8AA200101222 /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,34 +72,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */,
 				3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */,
 				3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */,
 				3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */,
+				D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A42350215BBAC2600C0F3B5 /* Weather Images */ = {
-			isa = PBXGroup;
-			children = (
-				2A42350315BBAC4000C0F3B5 /* cloudy.png */,
-				2A42350415BBAC4000C0F3B5 /* CloudywRain.png */,
-				2A42350515BBAC4000C0F3B5 /* FOG.png */,
-				2A42350615BBAC4000C0F3B5 /* hail.png */,
-				2A42350715BBAC4000C0F3B5 /* rain.png */,
-				2A42350815BBAC4000C0F3B5 /* snow.png */,
-				2A42350915BBAC4000C0F3B5 /* thunder.png */,
-				2A42350A15BBAC4000C0F3B5 /* WeatherSun.png */,
-				2A42350B15BBAC4000C0F3B5 /* windy.png */,
-				2A42350C15BBAC4000C0F3B5 /* windy2.png */,
-				2A42354415BBD74700C0F3B5 /* noun_moon.png */,
-				2A42354615BBD76600C0F3B5 /* noun_moon@2x.png */,
-			);
-			name = "Weather Images";
-			sourceTree = "<group>";
-		};
 		3D9C7C7E15BBD8C000D9F62A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +93,7 @@
 		3DC080FD15BB84CD003BB12C = {
 			isa = PBXGroup;
 			children = (
+				D63383E915BBB69E0035BB36 /* EventKit.framework */,
 				3DC0811215BB84CD003BB12C /* SlideDash */,
 				3DC0810B15BB84CD003BB12C /* Frameworks */,
 				3DC0810915BB84CD003BB12C /* Products */,
@@ -156,6 +111,7 @@
 		3DC0810B15BB84CD003BB12C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */,
 				3DC0810C15BB84CD003BB12C /* UIKit.framework */,
 				3DC0810E15BB84CD003BB12C /* Foundation.framework */,
 				3DC0811015BB84CD003BB12C /* CoreGraphics.framework */,
@@ -170,9 +126,11 @@
 				3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */,
 				3D9C31AD15BBC49800A52ADA /* DashboardViewController.h */,
 				3DF20DA415BBAD4100A9CCBE /* Assets */,
-				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				3D2DECAE15BB859E002111B7 /* MainViewController.h */,
+				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
+				D693A10915BB8AA200101222 /* FacebookViewController.h */,
+				D693A10A15BB8AA200101222 /* FacebookViewController.m */,
 				3D2DECB015BB859E002111B7 /* PageViewManager.m */,
 				3D2DECB115BB859E002111B7 /* PageViewManager.h */,
 				2A4234FC15BBA38300C0F3B5 /* WeatherViewController.h */,
@@ -180,10 +138,7 @@
 				2A4234FE15BBA38300C0F3B5 /* WeatherWidget.xib */,
 				3DC0811B15BB84CD003BB12C /* AppDelegate.h */,
 				3DC0811C15BB84CD003BB12C /* AppDelegate.m */,
-				2A42352915BBC4CF00C0F3B5 /* DashboardView.xib */,
-				2A42352A15BBC4CF00C0F3B5 /* DashboardViewController.h */,
-				2A42352B15BBC4CF00C0F3B5 /* DashboardViewController.m */,
-				2A42350215BBAC2600C0F3B5 /* Weather Images */,
+				D693A0FC15BB871200101222 /* FBiOSSDK.framework */,
 				3DC0811315BB84CD003BB12C /* Supporting Files */,
 				3D9C7C7A15BBD7B800D9F62A /* WidgetCell.h */,
 				3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */,
@@ -273,29 +228,7 @@
 			files = (
 				3DC0811715BB84CD003BB12C /* InfoPlist.strings in Resources */,
 				3D2DECB315BB859E002111B7 /* MainStoryboard.storyboard in Resources */,
-				3DF20DA815BBAD9400A9CCBE /* addwidget.png in Resources */,
-				3DF20DA915BBAD9400A9CCBE /* addwidget@2x.png in Resources */,
-				3D9C31A115BBC2DD00A52ADA /* WeatherWidget.xib in Resources */,
-				3D9C31A215BBC32100A52ADA /* cloudy.png in Resources */,
-				3D9C31A315BBC32100A52ADA /* CloudywRain.png in Resources */,
-				3D9C31A415BBC32100A52ADA /* FOG.png in Resources */,
-				3D9C31A515BBC32100A52ADA /* hail.png in Resources */,
-				3D9C31A615BBC32100A52ADA /* rain.png in Resources */,
-				3D9C31A715BBC32100A52ADA /* snow.png in Resources */,
-				3D9C31A815BBC32100A52ADA /* thunder.png in Resources */,
-				3D9C31A915BBC32100A52ADA /* WeatherSun.png in Resources */,
-				3D9C31AA15BBC32100A52ADA /* windy.png in Resources */,
-				3D9C31AB15BBC32100A52ADA /* windy2.png in Resources */,
-				3D9C31B115BBC65A00A52ADA /* NavigationBarLogo@2x.png in Resources */,
-				3D9C31B215BBC65A00A52ADA /* NavigationBarLogo.png in Resources */,
-				3D9C7C8315BBDE1C00D9F62A /* widgets.plist in Resources */,
-				3D9C7C8815BBEB8C00D9F62A /* DashboardView.xib in Resources */,
-				3D9C7C8A15BBECA800D9F62A /* noun_moon.png in Resources */,
-				3D9C7C8B15BBECAC00D9F62A /* noun_moon@2x.png in Resources */,
-				3D805BE515BBF1CA006438E3 /* AddDash.png in Resources */,
-				3D805BE615BBF1CA006438E3 /* AddDashselected.png in Resources */,
-				3D805BE715BBF1CA006438E3 /* AddDash@2x.png in Resources */,
-				3D805BE815BBF1CA006438E3 /* AddDashselected@2x.png in Resources */,
+				D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +239,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC75A5B15BBF72800048BFF /* WidgetCell.m in Sources */,
+				3DC75A5C15BBF72800048BFF /* SelectWidgetViewController.m in Sources */,
+				3DC75A5915BBF72000048BFF /* DashboardViewController.m in Sources */,
 				3D9C319F15BBC2D600A52ADA /* WeatherViewController.m in Sources */,
 				3DC0811915BB84CD003BB12C /* main.m in Sources */,
 				3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */,
 				3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */,
 				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
-				3D9C31AE15BBC49800A52ADA /* DashboardViewController.m in Sources */,
-				3D9C7C7C15BBD7B800D9F62A /* WidgetCell.m in Sources */,
-				3D9C7C8115BBDDCC00D9F62A /* SelectWidgetViewController.m in Sources */,
+				D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,9 +317,14 @@
 		3DC0812715BB84CD003BB12C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SlideDash\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,9 +333,14 @@
 		3DC0812815BB84CD003BB12C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SlideDash\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlideDash/SlideDash-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/SlideDash/SlideDash-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
