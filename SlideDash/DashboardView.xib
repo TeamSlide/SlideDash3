@@ -2,32 +2,17 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
-<<<<<<< HEAD
 		<string key="IBDocument.SystemVersion">12A269</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
-=======
-		<string key="IBDocument.SystemVersion">11D2001</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
-		<string key="IBDocument.AppKitVersion">1138.32</string>
-		<string key="IBDocument.HIToolboxVersion">568.00</string>
->>>>>>> remotes/origin/twitter
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">1498</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBUISwipeGestureRecognizer</string>
 			<string>IBProxyObject</string>
-<<<<<<< HEAD
 			<string>IBUIButton</string>
-=======
-			<string>IBUIBarButtonItem</string>
-			<string>IBUIToolbar</string>
-			<string>IBUIWindow</string>
-			<string>IBUIPageControl</string>
->>>>>>> remotes/origin/twitter
 			<string>IBUIView</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
@@ -49,26 +34,7 @@
 			<object class="IBUIView" id="268155220">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
-				<string key="NSFrameSize">{320, 480}</string>
-				<reference key="NSSuperview"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">1</int>
-					<bytes key="NSRGB">MSAxIDEAA</bytes>
-				</object>
-				<bool key="IBUIOpaque">NO</bool>
-				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<array key="IBUIGestureRecognizers" id="0"/>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-				<bool key="IBUIResizesToFullScreen">YES</bool>
-			</object>
-			<object class="IBUISwipeGestureRecognizer" id="324648133"/>
-			<object class="IBUIView" id="77317876">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
-<<<<<<< HEAD
 					<object class="IBUIView" id="801712491">
 						<reference key="NSNextResponder" ref="268155220"/>
 						<int key="NSvFlags">292</int>
@@ -131,7 +97,6 @@
 								<string key="NSFrame">{{113, 2}, {70, 70}}</string>
 								<reference key="NSSuperview" ref="571526740"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">42</int>
@@ -207,108 +172,6 @@
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<int key="IBUITag">42</int>
-=======
-					<object class="IBUIToolbar" id="372631990">
-						<reference key="NSNextResponder" ref="77317876"/>
-						<int key="NSvFlags">266</int>
-						<string key="NSFrameSize">{320, 44}</string>
-						<reference key="NSSuperview" ref="77317876"/>
-						<reference key="NSNextKeyView" ref="968717362"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIBarStyle">2</int>
-						<array class="NSMutableArray" key="IBUIItems">
-							<object class="IBUIBarButtonItem" id="845235879">
-								<int key="IBUITag">-1</int>
-								<string key="IBUITitle">Cog</string>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIToolbar" ref="372631990"/>
-								<object class="NSColor" key="IBUITintColor" id="331958878">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MAA</bytes>
-								</object>
-							</object>
-							<object class="IBUIBarButtonItem" id="139217148">
-								<string key="IBUITitle">slide DASH</string>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<float key="IBUIWidth">199</float>
-								<reference key="IBUIToolbar" ref="372631990"/>
-							</object>
-							<object class="IBUIBarButtonItem" id="236019296">
-								<string key="IBUITitle">Add</string>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<reference key="IBUIToolbar" ref="372631990"/>
-							</object>
-						</array>
-						<reference key="IBUITintColor" ref="331958878"/>
-					</object>
-					<object class="IBUIPageControl" id="200745077">
-						<reference key="NSNextResponder" ref="77317876"/>
-						<int key="NSvFlags">1316</int>
-						<object class="NSPSMatrix" key="NSFrameMatrix"/>
-						<string key="NSFrame">{{141, 424}, {38, 36}}</string>
-						<reference key="NSSuperview" ref="77317876"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<int key="IBUINumberOfPages">3</int>
-					</object>
-					<object class="IBUIView" id="968717362">
-						<reference key="NSNextResponder" ref="77317876"/>
-						<int key="NSvFlags">292</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIView" id="554725189">
-								<reference key="NSNextResponder" ref="968717362"/>
-								<int key="NSvFlags">274</int>
-								<string key="NSFrameSize">{296, 74}</string>
-								<reference key="NSSuperview" ref="968717362"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<object class="NSColor" key="IBUIBackgroundColor" id="586031932">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-								</object>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							</object>
-							<object class="IBUIView" id="562618820">
-								<reference key="NSNextResponder" ref="968717362"/>
-								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{0, 301}, {296, 74}}</string>
-								<reference key="NSSuperview" ref="968717362"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<reference key="IBUIBackgroundColor" ref="586031932"/>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							</object>
-							<object class="IBUIView" id="871107926">
-								<reference key="NSNextResponder" ref="968717362"/>
-								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{0, 82}, {144, 211}}</string>
-								<reference key="NSSuperview" ref="968717362"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<object class="NSColor" key="IBUIBackgroundColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-									<object class="NSColorSpace" key="NSCustomColorSpace" id="643464489">
-										<int key="NSID">2</int>
-									</object>
-								</object>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							</object>
-							<object class="IBUIView" id="178339776">
-								<reference key="NSNextResponder" ref="968717362"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{152, 82}, {144, 211}}</string>
-								<reference key="NSSuperview" ref="968717362"/>
-								<string key="NSReuseIdentifierKey">_NS:9</string>
-								<object class="NSColor" key="IBUIBackgroundColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-									<reference key="NSCustomColorSpace" ref="643464489"/>
-								</object>
->>>>>>> remotes/origin/twitter
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
@@ -323,7 +186,6 @@
 								<reference key="IBUIFont" ref="260676370"/>
 							</object>
 						</array>
-<<<<<<< HEAD
 						<string key="NSFrame">{{164, 92}, {144, 211}}</string>
 						<reference key="NSSuperview" ref="268155220"/>
 						<reference key="NSWindow"/>
@@ -385,32 +247,12 @@
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="801712491"/>
 				<string key="NSReuseIdentifierKey">_NS:10</string>
-=======
-						<string key="NSFrame">{{12, 58}, {296, 375}}</string>
-						<reference key="NSSuperview" ref="77317876"/>
-						<reference key="NSNextKeyView" ref="200745077"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4yODAxMDM2MDA1IDAuMjgwMTAzNjAwNSAwLjI4MDEwMzYwMDUAA</bytes>
-						</object>
-						<reference key="IBUIGestureRecognizers" ref="0"/>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 460}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView" ref="372631990"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<reference key="IBUIBackgroundColor" ref="331958878"/>
->>>>>>> remotes/origin/twitter
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
-<<<<<<< HEAD
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
 						<reference key="source" ref="841351856"/>
@@ -425,16 +267,6 @@
 						<reference key="destination" ref="801712491"/>
 					</object>
 					<int key="connectionID">16</int>
-=======
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">gestureRecognizers</string>
-						<reference key="source" ref="968717362"/>
-						<reference key="destination" ref="324648133"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">YES</bool>
-					</object>
-					<int key="connectionID">19</int>
->>>>>>> remotes/origin/twitter
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -458,10 +290,9 @@
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="571526740"/>
 					</object>
-					<int key="connectionID">20</int>
+					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
-<<<<<<< HEAD
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">addWidgetClicked:</string>
 						<reference key="source" ref="1054962575"/>
@@ -469,16 +300,6 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">29</int>
-=======
-					<object class="IBCocoaTouchOutletCollectionConnection" key="connection">
-						<string key="label">gestureRecognizers</string>
-						<reference key="source" ref="968717362"/>
-						<reference key="destination" ref="324648133"/>
-						<string key="cachedDesigntimeCollectionClassName">NSArray</string>
-						<bool key="addsContentToExistingCollection">YES</bool>
-					</object>
-					<int key="connectionID">12</int>
->>>>>>> remotes/origin/twitter
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -528,7 +349,6 @@
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-<<<<<<< HEAD
 						<int key="objectID">2</int>
 						<reference key="object" ref="268155220"/>
 						<array class="NSMutableArray" key="children">
@@ -540,23 +360,12 @@
 							<reference ref="41885492"/>
 							<reference ref="930712390"/>
 						</array>
-=======
-						<int key="objectID">17</int>
-						<reference key="object" ref="963644716"/>
-						<array class="NSMutableArray" key="children"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="324648133"/>
->>>>>>> remotes/origin/twitter
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
 						<reference key="object" ref="801712491"/>
 						<array class="NSMutableArray" key="children">
-<<<<<<< HEAD
 							<reference ref="939080344"/>
 						</array>
 						<reference key="parent" ref="268155220"/>
@@ -566,44 +375,18 @@
 						<reference key="object" ref="571526740"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="18398400"/>
-=======
-							<reference ref="372631990"/>
-							<reference ref="200745077"/>
-							<reference ref="968717362"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">3</int>
-						<reference key="object" ref="372631990"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="845235879"/>
-							<reference ref="236019296"/>
-							<reference ref="139217148"/>
->>>>>>> remotes/origin/twitter
 						</array>
 						<reference key="parent" ref="268155220"/>
 					</object>
 					<object class="IBObjectRecord">
-<<<<<<< HEAD
 						<int key="objectID">13</int>
 						<reference key="object" ref="907968286"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="747385444"/>
-=======
-						<int key="objectID">10</int>
-						<reference key="object" ref="968717362"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="554725189"/>
-							<reference ref="871107926"/>
-							<reference ref="562618820"/>
-							<reference ref="178339776"/>
->>>>>>> remotes/origin/twitter
 						</array>
 						<reference key="parent" ref="268155220"/>
 					</object>
 					<object class="IBObjectRecord">
-<<<<<<< HEAD
 						<int key="objectID">14</int>
 						<reference key="object" ref="928521873"/>
 						<array class="NSMutableArray" key="children">
@@ -625,11 +408,6 @@
 						<int key="objectID">22</int>
 						<reference key="object" ref="930712390"/>
 						<reference key="parent" ref="268155220"/>
-=======
-						<int key="objectID">13</int>
-						<reference key="object" ref="554725189"/>
-						<reference key="parent" ref="968717362"/>
->>>>>>> remotes/origin/twitter
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
@@ -642,7 +420,6 @@
 						<reference key="parent" ref="801712491"/>
 					</object>
 					<object class="IBObjectRecord">
-<<<<<<< HEAD
 						<int key="objectID">26</int>
 						<reference key="object" ref="747385444"/>
 						<reference key="parent" ref="907968286"/>
@@ -651,26 +428,6 @@
 						<int key="objectID">27</int>
 						<reference key="object" ref="18398400"/>
 						<reference key="parent" ref="571526740"/>
-=======
-						<int key="objectID">16</int>
-						<reference key="object" ref="178339776"/>
-						<reference key="parent" ref="968717362"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">4</int>
-						<reference key="object" ref="845235879"/>
-						<reference key="parent" ref="372631990"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="236019296"/>
-						<reference key="parent" ref="372631990"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">8</int>
-						<reference key="object" ref="139217148"/>
-						<reference key="parent" ref="372631990"/>
->>>>>>> remotes/origin/twitter
 					</object>
 				</array>
 			</object>

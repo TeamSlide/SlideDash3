@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0552A615BC05AD00C6CFB8 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D05529D15BC05AD00C6CFB8 /* DashboardView.xib */; };
+		3D0552A715BC05AD00C6CFB8 /* EmbededTweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D05529F15BC05AD00C6CFB8 /* EmbededTweetViewController.m */; };
+		3D0552A815BC05AD00C6CFB8 /* greytablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0552A015BC05AD00C6CFB8 /* greytablecell.png */; };
+		3D0552A915BC05AD00C6CFB8 /* Tweet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0552A115BC05AD00C6CFB8 /* Tweet.xib */; };
+		3D0552AA15BC05AD00C6CFB8 /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0552A315BC05AD00C6CFB8 /* TweetViewController.m */; };
+		3D0552AB15BC05AD00C6CFB8 /* twitter-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D0552A415BC05AD00C6CFB8 /* twitter-logo.jpg */; };
+		3D0552AC15BC05AD00C6CFB8 /* twitterKODark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0552A515BC05AD00C6CFB8 /* twitterKODark.png */; };
 		3D0DABFC15BBFE2F00B27BBC /* AddDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE115BBF1CA006438E3 /* AddDash.png */; };
 		3D0DABFD15BBFE2F00B27BBC /* AddDashselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE215BBF1CA006438E3 /* AddDashselected.png */; };
 		3D0DABFE15BBFE2F00B27BBC /* AddDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D805BE315BBF1CA006438E3 /* AddDash@2x.png */; };
@@ -16,7 +23,6 @@
 		3D0DAC0215BBFE2F00B27BBC /* addwidget.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA615BBAD9400A9CCBE /* addwidget.png */; };
 		3D0DAC0315BBFE2F00B27BBC /* addwidget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */; };
 		3D0DAC0415BBFEAA00B27BBC /* WeatherWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4234FE15BBA38300C0F3B5 /* WeatherWidget.xib */; };
-		3D0DAC0615BBFED100B27BBC /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC0515BBFED100B27BBC /* DashboardView.xib */; };
 		3D0DAC0715BBFF2300B27BBC /* widgets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8215BBDE1C00D9F62A /* widgets.plist */; };
 		3D0DAC3D15BBFF5700B27BBC /* AddDashselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC0815BBFF5500B27BBC /* AddDashselected.png */; };
 		3D0DAC3E15BBFF5700B27BBC /* AddDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC0915BBFF5500B27BBC /* AddDash.png */; };
@@ -95,7 +101,15 @@
 		2A4234FC15BBA38300C0F3B5 /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
 		2A4234FD15BBA38300C0F3B5 /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		2A4234FE15BBA38300C0F3B5 /* WeatherWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherWidget.xib; sourceTree = "<group>"; };
-		3D0DAC0515BBFED100B27BBC /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardView.xib; path = SlideDash/DashboardView.xib; sourceTree = "<group>"; };
+		3D05529D15BC05AD00C6CFB8 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
+		3D05529E15BC05AD00C6CFB8 /* EmbededTweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbededTweetViewController.h; sourceTree = "<group>"; };
+		3D05529F15BC05AD00C6CFB8 /* EmbededTweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbededTweetViewController.m; sourceTree = "<group>"; };
+		3D0552A015BC05AD00C6CFB8 /* greytablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greytablecell.png; sourceTree = "<group>"; };
+		3D0552A115BC05AD00C6CFB8 /* Tweet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tweet.xib; sourceTree = "<group>"; };
+		3D0552A215BC05AD00C6CFB8 /* TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		3D0552A315BC05AD00C6CFB8 /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		3D0552A415BC05AD00C6CFB8 /* twitter-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "twitter-logo.jpg"; sourceTree = "<group>"; };
+		3D0552A515BC05AD00C6CFB8 /* twitterKODark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterKODark.png; sourceTree = "<group>"; };
 		3D0DAC0815BBFF5500B27BBC /* AddDashselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddDashselected.png; path = "VISDE Elements/AppNAVIcons/AddDashselected.png"; sourceTree = SOURCE_ROOT; };
 		3D0DAC0915BBFF5500B27BBC /* AddDash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddDash.png; path = "VISDE Elements/AppNAVIcons/AddDash.png"; sourceTree = SOURCE_ROOT; };
 		3D0DAC0A15BBFF5500B27BBC /* WeatherSun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherSun.png; sourceTree = "<group>"; };
@@ -215,7 +229,6 @@
 			children = (
 				3D0DAC7415BBFFD800B27BBC /* icon@2x.png */,
 				3D0DAC7215BBFFD600B27BBC /* icon.png */,
-				3D0DAC0515BBFED100B27BBC /* DashboardView.xib */,
 				D63383E915BBB69E0035BB36 /* EventKit.framework */,
 				3DC0811215BB84CD003BB12C /* SlideDash */,
 				3DC0810B15BB84CD003BB12C /* Frameworks */,
@@ -245,6 +258,15 @@
 		3DC0811215BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXGroup;
 			children = (
+				3D05529D15BC05AD00C6CFB8 /* DashboardView.xib */,
+				3D05529E15BC05AD00C6CFB8 /* EmbededTweetViewController.h */,
+				3D05529F15BC05AD00C6CFB8 /* EmbededTweetViewController.m */,
+				3D0552A015BC05AD00C6CFB8 /* greytablecell.png */,
+				3D0552A115BC05AD00C6CFB8 /* Tweet.xib */,
+				3D0552A215BC05AD00C6CFB8 /* TweetViewController.h */,
+				3D0552A315BC05AD00C6CFB8 /* TweetViewController.m */,
+				3D0552A415BC05AD00C6CFB8 /* twitter-logo.jpg */,
+				3D0552A515BC05AD00C6CFB8 /* twitterKODark.png */,
 				3D9C7C7E15BBD8C000D9F62A /* Controllers */,
 				3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */,
 				3D9C31AD15BBC49800A52ADA /* DashboardViewController.h */,
@@ -413,7 +435,6 @@
 				3D0DAC0215BBFE2F00B27BBC /* addwidget.png in Resources */,
 				3D0DAC0315BBFE2F00B27BBC /* addwidget@2x.png in Resources */,
 				3D0DAC0415BBFEAA00B27BBC /* WeatherWidget.xib in Resources */,
-				3D0DAC0615BBFED100B27BBC /* DashboardView.xib in Resources */,
 				3D0DAC0715BBFF2300B27BBC /* widgets.plist in Resources */,
 				3D0DAC3D15BBFF5700B27BBC /* AddDashselected.png in Resources */,
 				3D0DAC3E15BBFF5700B27BBC /* AddDash.png in Resources */,
@@ -469,6 +490,11 @@
 				3D0DAC7115BBFF5700B27BBC /* Slidedashlogo.png in Resources */,
 				3D0DAC7315BBFFD600B27BBC /* icon.png in Resources */,
 				3D0DAC7515BBFFD800B27BBC /* icon@2x.png in Resources */,
+				3D0552A615BC05AD00C6CFB8 /* DashboardView.xib in Resources */,
+				3D0552A815BC05AD00C6CFB8 /* greytablecell.png in Resources */,
+				3D0552A915BC05AD00C6CFB8 /* Tweet.xib in Resources */,
+				3D0552AB15BC05AD00C6CFB8 /* twitter-logo.jpg in Resources */,
+				3D0552AC15BC05AD00C6CFB8 /* twitterKODark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +514,8 @@
 				3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */,
 				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
 				D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */,
+				3D0552A715BC05AD00C6CFB8 /* EmbededTweetViewController.m in Sources */,
+				3D0552AA15BC05AD00C6CFB8 /* TweetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
