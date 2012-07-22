@@ -9,7 +9,7 @@
 #import "FacebookViewController.h"
 #import "AppDelegate.h"
 
-@interface FacebookViewController () <FBLoginViewDelegate>
+@interface FacebookViewController ()
 @property (strong, nonatomic) FBSession *fbMasterSession;
 @end
 
@@ -17,31 +17,14 @@
 @synthesize facebook;
 @synthesize fbMasterSession = _fbMasterSession;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
-
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
     [self setFacebook:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 /**
@@ -105,15 +88,6 @@
     
     [eventConnection start];
 
-}
-- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
-    NSLog(@"loginView, %@ has fetched user, %@", loginView, user);
-}
-- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    NSLog(@"loginView, %@", loginView); 
-}  
-- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
-    // not necessary for now
 }
 
 
