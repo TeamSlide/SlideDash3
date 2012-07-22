@@ -24,6 +24,7 @@
 		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
 		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
 		D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D693A10A15BB8AA200101222 /* FacebookViewController.m */; };
+		D6A3816515BC1E1D00BD2F94 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A3816415BC1E1D00BD2F94 /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D6F1C1EF15BBFA3F00B65C21 /* EventsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F1C1EE15BBFA3F00B65C21 /* EventsModel.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
 		D693A10915BB8AA200101222 /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
 		D693A10A15BB8AA200101222 /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		D6A3816315BC1E1D00BD2F94 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		D6A3816415BC1E1D00BD2F94 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		D6F1C1ED15BBFA3F00B65C21 /* EventsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsModel.h; sourceTree = "<group>"; };
 		D6F1C1EE15BBFA3F00B65C21 /* EventsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +136,8 @@
 				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				D6F1C1ED15BBFA3F00B65C21 /* EventsModel.h */,
 				D6F1C1EE15BBFA3F00B65C21 /* EventsModel.m */,
+				D6A3816315BC1E1D00BD2F94 /* ISO8601DateFormatter.h */,
+				D6A3816415BC1E1D00BD2F94 /* ISO8601DateFormatter.m */,
 				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
 				D693A10915BB8AA200101222 /* FacebookViewController.h */,
 				D693A10A15BB8AA200101222 /* FacebookViewController.m */,
@@ -254,6 +259,7 @@
 				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
 				D693A10B15BB8AA200101222 /* FacebookViewController.m in Sources */,
 				D6F1C1EF15BBFA3F00B65C21 /* EventsModel.m in Sources */,
+				D6A3816515BC1E1D00BD2F94 /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

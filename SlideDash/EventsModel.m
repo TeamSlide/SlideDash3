@@ -9,6 +9,7 @@
 #import "EventsModel.h"
 #import "AppDelegate.h"
 #import <EventKit/EventKit.h>
+#import "ISO8601DateFormatter.h"
 
 
 @interface EventsModel()
@@ -29,6 +30,7 @@
     return self;
 }
 - (NSDictionary *)getNextEvent {
+    [self sortStack];
     NSDictionary *nextEvent = [self popEventFromStack];
     return nextEvent;
 }
@@ -77,7 +79,7 @@
                                               }
                                               // set eventTime
                                               if (event.startDate) {
-                                                  [eventsDict setObject:event.startDate forKey:@"eventStartDate"];
+                                                  [eventsDict setObject:event.startDate forKey:@"eventTime"];
                                               }
                                               // set eventType
                                               [eventsDict setObject:@"ical" forKey:@"eventType"];                                              
@@ -126,15 +128,29 @@
                  if ([actualEvent objectForKey:@"name"]) {
                      [parsedEvent setObject:[actualEvent objectForKey:@"name"] forKey:@"eventName"];
                  }
-                 // set eventLocation
+                 // set eventLocation (title)
                  if ([actualEvent objectForKey:@"location"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"location"] forKey:@"eventLocation"];
-                 } else if ([actualEvent objectForKey:@"venue"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"venue"] forKey:@"eventVenue"];
+                     [parsedEvent setObject:[actualEvent objectForKey:@"location"] forKey:@"eventLocationTitle"];
+                 }    
+                 // set eventLocation
+                 if ([actualEvent objectForKey:@"venue"]) {
+                     [parsedEvent setObject:[actualEvent objectForKey:@"venue"] forKey:@"eventLocation"];
                  }
                  // set eventTime
                  if ([actualEvent objectForKey:@"start_time"]) {
-                     [parsedEvent setObject:[actualEvent objectForKey:@"start_time"] forKey:@"eventTime"];
+                     NSLog(@"unformatted time = %@",[actualEvent objectForKey:@"start_time"]);
+                     
+                     ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
+
+                     [NSTimeZone setDefaultTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:+0]];
+
+                     [formatter setFormat:ISO8601DateFormatCalendar];
+                     [formatter setIncludeTime:NO];
+//                     [formatter setParsesStrictly:YES];
+                     
+                     NSDate *properDate = [formatter dateFromString:[actualEvent objectForKey:@"start_time"]];
+                     
+                     [parsedEvent setObject:properDate forKey:@"eventTime"];
                  }
                  // set eventType
                  [parsedEvent setObject:@"fb" forKey:@"eventType"];
@@ -142,6 +158,7 @@
                  [array addObject:parsedEvent];
              }
              [self performSelectorOnMainThread:@selector(pushEventsToStack:) withObject:array waitUntilDone:YES];
+             [self sortStack];
          }
      }];
     
@@ -155,17 +172,11 @@
     }
     NSLog(@"self.arrayOfSortedEvents = %@",self.arrayOfSortedEvents);
 }
-
-- (void)addEventsToStackFromFacebook:(NSArray *)arrayOfEventsFromFacebook {
-    
-    NSArray *array = [self.arrayOfSortedEvents arrayByAddingObjectsFromArray:arrayOfEventsFromFacebook];
-    
-    NSSortDescriptor *eventTimeDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"eventTime" ascending:YES];
-    
-    NSArray *sortDescriptors = [NSArray arrayWithObject:eventTimeDescriptor];
-    NSArray *sortedArray = [array sortedArrayUsingDescriptors:sortDescriptors];
-
-    NSLog(@"sortedArray = %@",sortedArray);
+- (void)sortStack {
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
+    NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
+    [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
+    NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);
 }
 
 @end
