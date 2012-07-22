@@ -11,6 +11,4 @@
 
 @interface FacebookViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *facebook;
-@property (strong, nonatomic) NSArray *arrayOfEventsFromCalendars;
-@property (strong, nonatomic) NSMutableArray *arrayOfEvents;
 @end
