@@ -47,6 +47,19 @@
     // Hide slide menu
     [slideMenu setFrame:CGRectMake(slideMenu.frame.origin.x, -slideMenu.frame.size.height, slideMenu.frame.size.width, slideMenu.frame.size.height)];
     isAnimatingMenu = NO;
+    
+    // Make overlay tappable
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(overlayTapped:)];
+    [overlayView addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)overlayTapped:(id)sender
+{
+    if (isAnimatingMenu)
+        return;
+    
+    // Hide menu
+    [self menuButtonClicked:nil];
 }
 
 - (void)reloadPages
@@ -100,8 +113,16 @@
     if (isAnimatingMenu)
         return;
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"Are you sure that you want remove the active dashboard?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
-    [alertView show];
+    if ([dashboardViewControllers count] <= 1)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"You need to have at least one dashboard." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"Are you sure that you want remove the active dashboard?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
+        [alertView show];
+    }
     
     // Hide the menu
     [self menuButtonClicked:nil];
