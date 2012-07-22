@@ -55,6 +55,9 @@
 		3DBBD5B915BC156E0038267B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B715BC156E0038267B /* calendar.png */; };
 		3DBBD5BA15BC156E0038267B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B815BC156E0038267B /* facebook.png */; };
 		3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BD15BC16390038267B /* WidgetViewController.m */; };
+		3DBBD5C015BC189F0038267B /* CommuteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BF15BC189F0038267B /* CommuteViewController.xib */; };
+		3DBBD5C215BC18B20038267B /* highway.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5C115BC18B20038267B /* highway.png */; };
+		3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5C415BC18C00038267B /* CommuteViewController.m */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -125,6 +128,10 @@
 		3DBBD5B815BC156E0038267B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Assets/UI/facebook.png; sourceTree = "<group>"; };
 		3DBBD5BC15BC16390038267B /* WidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidgetViewController.h; path = Classes/Widgets/WidgetViewController.h; sourceTree = "<group>"; };
 		3DBBD5BD15BC16390038267B /* WidgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidgetViewController.m; path = Classes/Widgets/WidgetViewController.m; sourceTree = "<group>"; };
+		3DBBD5BF15BC189F0038267B /* CommuteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommuteViewController.xib; path = UI/CommuteViewController.xib; sourceTree = "<group>"; };
+		3DBBD5C115BC18B20038267B /* highway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = highway.png; path = Assets/UI/highway.png; sourceTree = "<group>"; };
+		3DBBD5C315BC18C00038267B /* CommuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommuteViewController.h; path = Classes/Widgets/CommuteViewController.h; sourceTree = "<group>"; };
+		3DBBD5C415BC18C00038267B /* CommuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommuteViewController.m; path = Classes/Widgets/CommuteViewController.m; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +187,7 @@
 		3D654BFC15BC0E900070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBD5BF15BC189F0038267B /* CommuteViewController.xib */,
 				3D654C5615BC13020070CB50 /* FacebookNotifications.xib */,
 				3D654BFD15BC0E990070CB50 /* DashboardView.xib */,
 				3D654BFE15BC0E990070CB50 /* MainStoryboard.storyboard */,
@@ -212,6 +220,7 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBD5C115BC18B20038267B /* highway.png */,
 				3DBBD5B715BC156E0038267B /* calendar.png */,
 				3DBBD5B815BC156E0038267B /* facebook.png */,
 				3D654C5815BC13440070CB50 /* facebook_friends.png */,
@@ -257,6 +266,8 @@
 		3D654C3315BC0F190070CB50 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBD5C315BC18C00038267B /* CommuteViewController.h */,
+				3DBBD5C415BC18C00038267B /* CommuteViewController.m */,
 				3D654C4715BC0F530070CB50 /* FacebookViewController.h */,
 				3D654C4815BC0F530070CB50 /* FacebookViewController.m */,
 				3D654C4915BC0F530070CB50 /* TweetViewController.h */,
@@ -425,6 +436,8 @@
 				3D654C5D15BC13440070CB50 /* facebook_notification.png in Resources */,
 				3DBBD5B915BC156E0038267B /* calendar.png in Resources */,
 				3DBBD5BA15BC156E0038267B /* facebook.png in Resources */,
+				3DBBD5C015BC189F0038267B /* CommuteViewController.xib in Resources */,
+				3DBBD5C215BC18B20038267B /* highway.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +461,7 @@
 				3D654C4F15BC0F530070CB50 /* WeatherViewController.m in Sources */,
 				3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */,
 				3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */,
+				3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

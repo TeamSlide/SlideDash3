@@ -31,6 +31,14 @@
 			<key>name</key>
 			<string>Weather</string>
 		</dict>
+        <dict>
+			<key>id</key>
+			<string>COMMUTE</string>
+			<key>icon</key>
+			<string>highway</string>
+			<key>name</key>
+			<string>Commute</string>
+		</dict>
 	</array>
 </dict>
 </plist>

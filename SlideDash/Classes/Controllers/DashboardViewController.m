@@ -10,6 +10,7 @@
 #import "WeatherViewController.h"
 #import "TweetViewController.h"
 #import "FacebookNotificationsViewController.h"
+#import "CommuteViewController.h"
 
 #define kAddWidgetButtonTag 42
 
@@ -86,6 +87,11 @@
     {
         FacebookNotificationsViewController *facebookNotificationsViewController = [[FacebookNotificationsViewController alloc] initWithNibName:@"FacebookNotifications" bundle:nil];
         [view addSubview:facebookNotificationsViewController.view];
+    }
+    else if ([widget isEqualToString:@"COMMUTE"])
+    {
+        CommuteViewController *commuteViewController = [[CommuteViewController alloc] initWithNibName:@"CommuteViewController" bundle:nil];
+        [view addSubview:commuteViewController.view];
     }
     
     // Hide the "Add widget" button
