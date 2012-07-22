@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DashboardViewController.h"
+#import "PageViewManager.h"
 
 @interface MainViewController ()
 
@@ -28,25 +29,30 @@
 {
     [super viewDidLoad];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    DashboardViewController *dashboardViewController = [storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
+    // Initialize the pageview manager
+    pageViewManager = [[PageViewManager alloc]  initWithScrollView:scrollView pageControl:pageControl];
     
-    // Put the views inside an NSArray:
-    dashboardViews = [NSMutableArray arrayWithObjects:dashboardViewController.view, nil];
+    // Initialize initial dashboard view controller
+    dashboardViewControllers = [[NSMutableArray alloc] init];
+    [dashboardViewControllers addObject:[[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil]];
     
-    /* Create the PageViewManager, which is a member (or property) of this
-     UIViewController. The UIScrollView and UIPageControl belong to this
-     UIViewController, but we're letting the PageViewManager manage them for us. */
-    pageViewManager = [[PageViewManager alloc]
-                        initWithScrollView:scrollView
-                        pageControl:pageControl];
-    
-    // Make the PageViewManager display our array of UIViews on the UIScrollView.
-    [pageViewManager loadPages:dashboardViews];
+    [self reloadPages];
     
     // Hide slide menu
     [slideMenu setFrame:CGRectMake(slideMenu.frame.origin.x, -slideMenu.frame.size.height, slideMenu.frame.size.width, slideMenu.frame.size.height)];
     isAnimatingMenu = NO;
+}
+
+- (void)reloadPages
+{
+    // Add views to an array
+    NSMutableArray *dashboardViews = [[NSMutableArray alloc] init];
+    for (DashboardViewController *dashboardViewController in dashboardViewControllers) {
+        [dashboardViews addObject:dashboardViewController.view];
+    }
+    
+    // Make the PageViewManager display our array of UIViews on the UIScrollView.
+    [pageViewManager loadPages:dashboardViews];
 }
 
 - (void)viewDidUnload
@@ -68,17 +74,14 @@
         return;
     
     // Create the new dashboard    
-    UIView* newDashboard = [[UIView alloc] initWithFrame: scrollView.frame];
-    newDashboard.backgroundColor = [UIColor blueColor];
-    
-    [dashboardViews addObject:newDashboard];
-    [pageViewManager loadPages:dashboardViews];
+    [dashboardViewControllers addObject:[[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil]];
+    [self reloadPages];
     
     // Hide the menu
     [self menuButtonClicked:nil];
     
     // Animate to the newly created dashboard
-    [pageViewManager animateToPage:dashboardViews.count - 1];
+    [pageViewManager animateToPage:dashboardViewControllers.count - 1];
 }
 
 - (IBAction)replaceWidgetsClicked:(id)sender {
@@ -99,10 +102,10 @@
     if (buttonIndex == 1)
     {
         // Remove the active dashboard
-        [dashboardViews removeObjectAtIndex:pageViewManager.pageIndex];
+        [dashboardViewControllers removeObjectAtIndex:pageViewManager.pageIndex];
         
         // Reload pages
-        [pageViewManager loadPages:dashboardViews];
+        [self reloadPages];
     }
 }
 
@@ -132,4 +135,5 @@
         }
     }];
 }
+
 @end

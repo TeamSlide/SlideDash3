@@ -21,6 +21,9 @@
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
 		3DC2E91315BB932E008A0805 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2E91215BB932E008A0805 /* DashboardViewController.m */; };
+		3DC2E91615BBA131008A0805 /* DashboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DC2E91515BBA131008A0805 /* DashboardView.xib */; };
+		3DF20DA815BBAD9400A9CCBE /* addwidget.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA615BBAD9400A9CCBE /* addwidget.png */; };
+		3DF20DA915BBAD9400A9CCBE /* addwidget@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3DC2E91115BB932E008A0805 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		3DC2E91215BB932E008A0805 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		3DC2E91515BBA131008A0805 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardView.xib; sourceTree = "<group>"; };
+		3DF20DA615BBAD9400A9CCBE /* addwidget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addwidget.png; path = Assets/addwidget.png; sourceTree = "<group>"; };
+		3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "addwidget@2x.png"; path = "Assets/addwidget@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		3DC0811215BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXGroup;
 			children = (
+				3DF20DA415BBAD4100A9CCBE /* Assets */,
 				3D2DECAD15BB859E002111B7 /* MainViewController.m */,
 				3D2DECAE15BB859E002111B7 /* MainViewController.h */,
 				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
@@ -102,6 +109,7 @@
 				3DC0811315BB84CD003BB12C /* Supporting Files */,
 				3DC2E91115BB932E008A0805 /* DashboardViewController.h */,
 				3DC2E91215BB932E008A0805 /* DashboardViewController.m */,
+				3DC2E91515BBA131008A0805 /* DashboardView.xib */,
 			);
 			path = SlideDash;
 			sourceTree = "<group>";
@@ -115,6 +123,15 @@
 				3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF20DA415BBAD4100A9CCBE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3DF20DA615BBAD9400A9CCBE /* addwidget.png */,
+				3DF20DA715BBAD9400A9CCBE /* addwidget@2x.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		3DF37F4715BB855D00322903 /* UI Templates */ = {
@@ -185,6 +202,9 @@
 				3D2DECBA15BB85B0002111B7 /* HorizontalWidget.xib in Resources */,
 				3D2DECBB15BB85B0002111B7 /* PagedViewController.xib in Resources */,
 				3D2DECBC15BB85B0002111B7 /* VerticalWidget.xib in Resources */,
+				3DC2E91615BBA131008A0805 /* DashboardView.xib in Resources */,
+				3DF20DA815BBAD9400A9CCBE /* addwidget.png in Resources */,
+				3DF20DA915BBAD9400A9CCBE /* addwidget@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
