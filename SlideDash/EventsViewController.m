@@ -24,6 +24,7 @@
         NSLog(@"in initwithnibname");
         if (!_eventHandler) {
             _eventHandler = [[EventsModel alloc] init];
+            [_eventHandler setDelegate:self];
         }
     }
     return self;

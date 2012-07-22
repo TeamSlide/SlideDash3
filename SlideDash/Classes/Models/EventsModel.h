@@ -10,8 +10,13 @@
 
 @class FBSession;
 
+@protocol EventsModelDelegate <NSObject>
+- (void)didGetSortedStackOfEvents;
+@end
+
 @interface EventsModel : NSObject
 
+@property (assign) id<EventsModelDelegate>delegate;
 - (NSDictionary *)getNextEvent;
 - (void)updateStack;
 - (void)getEventsFromCalendarAndPushToStack;

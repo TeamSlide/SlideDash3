@@ -18,6 +18,7 @@
 
 @implementation EventsModel
 @synthesize arrayOfSortedEvents = _arrayOfSortedEvents;
+@synthesize delegate = _delegate;
 
 - (id)init {
     NSLog(@"in init events model");
@@ -172,6 +173,7 @@
         [array addObject:parsedEvent];
     }
     NSLog(@"parsed array = %@", array);
+    [self.arrayOfSortedEvents addObjectsFromArray:array];
 
 }
 - (void)pushEventsToStack:(NSArray *)events {
