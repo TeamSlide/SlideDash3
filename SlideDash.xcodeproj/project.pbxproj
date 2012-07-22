@@ -14,6 +14,18 @@
 		36C0D5F315BBBAC000FB3EF2 /* twitter-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D5F215BBBAC000FB3EF2 /* twitter-logo.jpg */; };
 		36C0D5F515BBC9E200FB3EF2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C0D5F415BBC9E200FB3EF2 /* QuartzCore.framework */; };
 		36C0D5F715BBCA9B00FB3EF2 /* twitterKODark.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D5F615BBCA9B00FB3EF2 /* twitterKODark.png */; };
+		36C0D5FF15BBEF8500FB3EF2 /* CommuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C0D5FD15BBEF8500FB3EF2 /* CommuteViewController.m */; };
+		36C0D60015BBEF8500FB3EF2 /* CommuteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D5FE15BBEF8500FB3EF2 /* CommuteViewController.xib */; };
+		36C0D60A15BBF7F900FB3EF2 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60115BBF7F900FB3EF2 /* Calendar.png */; };
+		36C0D60B15BBF7F900FB3EF2 /* f_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60215BBF7F900FB3EF2 /* f_logo.png */; };
+		36C0D60C15BBF7F900FB3EF2 /* FB People.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60315BBF7F900FB3EF2 /* FB People.png */; };
+		36C0D60D15BBF7F900FB3EF2 /* FBmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60415BBF7F900FB3EF2 /* FBmessage.png */; };
+		36C0D60E15BBF7F900FB3EF2 /* fbworld.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60515BBF7F900FB3EF2 /* fbworld.png */; };
+		36C0D60F15BBF7F900FB3EF2 /* Slidedashlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60615BBF7F900FB3EF2 /* Slidedashlogo.png */; };
+		36C0D61015BBF7F900FB3EF2 /* Sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60715BBF7F900FB3EF2 /* Sunny.png */; };
+		36C0D61115BBF7F900FB3EF2 /* twitter-bird-light-bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60815BBF7F900FB3EF2 /* twitter-bird-light-bgs.png */; };
+		36C0D61215BBF7F900FB3EF2 /* wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D60915BBF7F900FB3EF2 /* wireframe.png */; };
+		36C0D61415BBF8F000FB3EF2 /* highway.png in Resources */ = {isa = PBXBuildFile; fileRef = 36C0D61315BBF8EF00FB3EF2 /* highway.png */; };
 		3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECAD15BB859E002111B7 /* MainViewController.m */; };
 		3D2DECB315BB859E002111B7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */; };
 		3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DECB015BB859E002111B7 /* PageViewManager.m */; };
@@ -39,6 +51,19 @@
 		36C0D5F215BBBAC000FB3EF2 /* twitter-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "twitter-logo.jpg"; sourceTree = "<group>"; };
 		36C0D5F415BBC9E200FB3EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		36C0D5F615BBCA9B00FB3EF2 /* twitterKODark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterKODark.png; sourceTree = "<group>"; };
+		36C0D5FC15BBEF8500FB3EF2 /* CommuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommuteViewController.h; sourceTree = "<group>"; };
+		36C0D5FD15BBEF8500FB3EF2 /* CommuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommuteViewController.m; sourceTree = "<group>"; };
+		36C0D5FE15BBEF8500FB3EF2 /* CommuteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommuteViewController.xib; sourceTree = "<group>"; };
+		36C0D60115BBF7F900FB3EF2 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		36C0D60215BBF7F900FB3EF2 /* f_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f_logo.png; sourceTree = "<group>"; };
+		36C0D60315BBF7F900FB3EF2 /* FB People.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB People.png"; sourceTree = "<group>"; };
+		36C0D60415BBF7F900FB3EF2 /* FBmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBmessage.png; sourceTree = "<group>"; };
+		36C0D60515BBF7F900FB3EF2 /* fbworld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbworld.png; sourceTree = "<group>"; };
+		36C0D60615BBF7F900FB3EF2 /* Slidedashlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slidedashlogo.png; sourceTree = "<group>"; };
+		36C0D60715BBF7F900FB3EF2 /* Sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sunny.png; sourceTree = "<group>"; };
+		36C0D60815BBF7F900FB3EF2 /* twitter-bird-light-bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-bird-light-bgs.png"; sourceTree = "<group>"; };
+		36C0D60915BBF7F900FB3EF2 /* wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wireframe.png; sourceTree = "<group>"; };
+		36C0D61315BBF8EF00FB3EF2 /* highway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highway.png; sourceTree = "<group>"; };
 		3D2DECAD15BB859E002111B7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3D2DECAE15BB859E002111B7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -110,11 +135,14 @@
 				3D2DECAE15BB859E002111B7 /* MainViewController.h */,
 				3D2DECAF15BB859E002111B7 /* MainStoryboard.storyboard */,
 				36C0D5E515BB8D8A00FB3EF2 /* EmbededTweetViewController.h */,
+				36C0D5FC15BBEF8500FB3EF2 /* CommuteViewController.h */,
+				36C0D5FD15BBEF8500FB3EF2 /* CommuteViewController.m */,
+				36C0D5FE15BBEF8500FB3EF2 /* CommuteViewController.xib */,
 				36C0D5E615BB8D8A00FB3EF2 /* EmbededTweetViewController.m */,
 				36C0D5DF15BB8A2700FB3EF2 /* Tweet.xib */,
 				36C0D5E215BB8AD200FB3EF2 /* TweetViewController.h */,
-				36C0D5E315BB8AD200FB3EF2 /* TweetViewController.m */,
 				3D2DECB015BB859E002111B7 /* PageViewManager.m */,
+				36C0D5E315BB8AD200FB3EF2 /* TweetViewController.m */,
 				3D2DECB115BB859E002111B7 /* PageViewManager.h */,
 				3DF37F4715BB855D00322903 /* UI Templates */,
 				3DC0811B15BB84CD003BB12C /* AppDelegate.h */,
@@ -132,6 +160,16 @@
 				36C0D5F615BBCA9B00FB3EF2 /* twitterKODark.png */,
 				36C0D5F215BBBAC000FB3EF2 /* twitter-logo.jpg */,
 				3DC0811515BB84CD003BB12C /* InfoPlist.strings */,
+				36C0D61315BBF8EF00FB3EF2 /* highway.png */,
+				36C0D60115BBF7F900FB3EF2 /* Calendar.png */,
+				36C0D60215BBF7F900FB3EF2 /* f_logo.png */,
+				36C0D60315BBF7F900FB3EF2 /* FB People.png */,
+				36C0D60415BBF7F900FB3EF2 /* FBmessage.png */,
+				36C0D60515BBF7F900FB3EF2 /* fbworld.png */,
+				36C0D60615BBF7F900FB3EF2 /* Slidedashlogo.png */,
+				36C0D60715BBF7F900FB3EF2 /* Sunny.png */,
+				36C0D60815BBF7F900FB3EF2 /* twitter-bird-light-bgs.png */,
+				36C0D60915BBF7F900FB3EF2 /* wireframe.png */,
 				3DC0811815BB84CD003BB12C /* main.m */,
 				3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */,
 			);
@@ -210,6 +248,17 @@
 				36C0D5F115BBBA6C00FB3EF2 /* greytablecell.png in Resources */,
 				36C0D5F315BBBAC000FB3EF2 /* twitter-logo.jpg in Resources */,
 				36C0D5F715BBCA9B00FB3EF2 /* twitterKODark.png in Resources */,
+				36C0D60015BBEF8500FB3EF2 /* CommuteViewController.xib in Resources */,
+				36C0D60A15BBF7F900FB3EF2 /* Calendar.png in Resources */,
+				36C0D60B15BBF7F900FB3EF2 /* f_logo.png in Resources */,
+				36C0D60C15BBF7F900FB3EF2 /* FB People.png in Resources */,
+				36C0D60D15BBF7F900FB3EF2 /* FBmessage.png in Resources */,
+				36C0D60E15BBF7F900FB3EF2 /* fbworld.png in Resources */,
+				36C0D60F15BBF7F900FB3EF2 /* Slidedashlogo.png in Resources */,
+				36C0D61015BBF7F900FB3EF2 /* Sunny.png in Resources */,
+				36C0D61115BBF7F900FB3EF2 /* twitter-bird-light-bgs.png in Resources */,
+				36C0D61215BBF7F900FB3EF2 /* wireframe.png in Resources */,
+				36C0D61415BBF8F000FB3EF2 /* highway.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +275,7 @@
 				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
 				36C0D5E415BB8AD200FB3EF2 /* TweetViewController.m in Sources */,
 				36C0D5E715BB8D8A00FB3EF2 /* EmbededTweetViewController.m in Sources */,
+				36C0D5FF15BBEF8500FB3EF2 /* CommuteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

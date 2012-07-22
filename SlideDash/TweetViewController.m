@@ -119,7 +119,7 @@
       if (-1* self.TweetTextLabel.center.x > self.TweetTextLabel.frame.size.width -390 ) {
          [self loadTweet:1];
          // NSLog(@"MOVE XXXXXXXXX");
-          NSLog(@"self.image %@", self.ImageTweet);
+        
           if (self.ImageTweet.image.description != nil) {
               
       self.timer2 = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(moveY:) userInfo:nil repeats:YES];

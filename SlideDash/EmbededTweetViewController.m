@@ -8,6 +8,7 @@
 
 #import "EmbededTweetViewController.h"
 #import "TweetViewController.h"
+#import "CommuteViewController.h"
 #import <QuartzCore/QuartzCore.h>
 @interface EmbededTweetViewController ()
 
@@ -36,7 +37,8 @@
     TweetViewController *TweetCon =[[TweetViewController alloc]initWithNibName:@"Tweet" bundle:nil ];
     [TweetCon.view setCenter:CGPointMake(TweetCon.view.center.x+12, TweetCon.view.center.y+58) ];
     [self.view addSubview:TweetCon.view];
-    
+    CommuteViewController *cvc =[[CommuteViewController alloc]init];
+    [self.TrafficView addSubview:cvc.view];
    
     //self.TweetView = TweetCon.view;
 	// Do any additional setup after loading the view.
