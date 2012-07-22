@@ -13,6 +13,7 @@
 @interface EventsModel : NSObject
 
 - (NSDictionary *)getNextEvent;
+- (void)updateStack;
 - (void)getEventsFromCalendarAndPushToStack;
 - (void)queryAndPushFacebookEventsToStack;
 

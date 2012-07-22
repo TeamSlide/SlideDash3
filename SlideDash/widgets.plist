@@ -20,6 +20,15 @@
 			<key>id</key>
 			<string>FACEBOOKNOTIFICATIONS</string>
 		</dict>
+        <dict>
+			<key>name</key>
+			<string>Next Event</string>
+			<key>icon</key>
+			<string>calendar</string>
+			<key>id</key>
+			<string>EVENT</string>
+		</dict>
+
 	</array>
 	<key>vertical</key>
 	<array>

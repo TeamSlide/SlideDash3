@@ -173,14 +173,18 @@
     }
     NSLog(@"parsed array = %@", array);
 
-    
-    
 }
 - (void)pushEventsToStack:(NSArray *)events {
     for (NSDictionary *event in events) {
         [self.arrayOfSortedEvents addObject:event];
     }
     NSLog(@"self.arrayOfSortedEvents = %@",self.arrayOfSortedEvents);
+}
+- (void)updateStack {
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
+    NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
+    [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
+    NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);    
 }
 - (void)sortStack {
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];

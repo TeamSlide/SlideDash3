@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WidgetViewController.h"
+#import "EventsModel.h"
 
-@interface EventsViewController : UIViewController
+@interface EventsViewController : WidgetViewController
+@property (strong, nonatomic) EventsModel *eventHandler;
+
+@property (weak, nonatomic) IBOutlet UIImageView *eventImageView;
+@property (weak, nonatomic) IBOutlet UIView *textView;
+@property (weak, nonatomic) IBOutlet UILabel *mainLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subTitle;
+
+- (void)loadNewEvent;
 
 @end
