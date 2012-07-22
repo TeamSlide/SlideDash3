@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		2A0E9BD615BC785800D92A1C /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E9BC315BC785800D92A1C /* cloudy.png */; };
 		2A0E9BD715BC785800D92A1C /* cloudy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E9BC415BC785800D92A1C /* cloudy@2x.png */; };
 		2A0E9BD815BC785800D92A1C /* CloudywRain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E9BC515BC785800D92A1C /* CloudywRain.png */; };
@@ -27,6 +28,13 @@
 		2A0E9BEC15BC7A1100D92A1C /* rain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A0E9BEA15BC7A1000D92A1C /* rain@2x.png */; };
 		2A57957615BC81D100B914D0 /* WeatherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A57957415BC81D100B914D0 /* WeatherSettingsViewController.m */; };
 		2A57957715BC81D100B914D0 /* WeatherSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A57957515BC81D100B914D0 /* WeatherSettingsViewController.xib */; };
+=======
+		03DA859C15BC871E00BA0C3A /* gradientTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */; };
+		03DA85A615BC8F8600BA0C3A /* gradientBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */; };
+		03DA85AA15BC92F800BA0C3A /* FBnotifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */; };
+		03DA85AB15BC92F800BA0C3A /* FBfriends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */; };
+		03DA85AE15BC942000BA0C3A /* FBmessages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */; };
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 		3D0DAC0715BBFF2300B27BBC /* widgets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8215BBDE1C00D9F62A /* widgets.plist */; };
 		3D0DAC7315BBFFD600B27BBC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC7215BBFFD600B27BBC /* icon.png */; };
 		3D0DAC7515BBFFD800B27BBC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC7415BBFFD800B27BBC /* icon@2x.png */; };
@@ -34,6 +42,22 @@
 		3D654C0215BC0E990070CB50 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D654BFE15BC0E990070CB50 /* MainStoryboard.storyboard */; };
 		3D654C0315BC0E990070CB50 /* Tweet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D654BFF15BC0E990070CB50 /* Tweet.xib */; };
 		3D654C0415BC0E990070CB50 /* WeatherWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0015BC0E990070CB50 /* WeatherWidget.xib */; };
+<<<<<<< HEAD
+=======
+		3D654C1415BC0EAF0070CB50 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0715BC0EAF0070CB50 /* cloudy.png */; };
+		3D654C1515BC0EAF0070CB50 /* CloudywRain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0815BC0EAF0070CB50 /* CloudywRain.png */; };
+		3D654C1615BC0EAF0070CB50 /* FOG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0915BC0EAF0070CB50 /* FOG.png */; };
+		3D654C1715BC0EAF0070CB50 /* hail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0A15BC0EAF0070CB50 /* hail.png */; };
+		3D654C1815BC0EAF0070CB50 /* noun_moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0B15BC0EAF0070CB50 /* noun_moon.png */; };
+		3D654C1915BC0EAF0070CB50 /* noun_moon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0C15BC0EAF0070CB50 /* noun_moon@2x.png */; };
+		3D654C1A15BC0EAF0070CB50 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0D15BC0EAF0070CB50 /* rain.png */; };
+		3D654C1B15BC0EAF0070CB50 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0E15BC0EAF0070CB50 /* snow.png */; };
+		3D654C1C15BC0EAF0070CB50 /* Sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C0F15BC0EAF0070CB50 /* Sunny.png */; };
+		3D654C1D15BC0EAF0070CB50 /* thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C1015BC0EAF0070CB50 /* thunder.png */; };
+		3D654C1E15BC0EAF0070CB50 /* WeatherSun.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C1115BC0EAF0070CB50 /* WeatherSun.png */; };
+		3D654C1F15BC0EAF0070CB50 /* windy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C1215BC0EAF0070CB50 /* windy.png */; };
+		3D654C2015BC0EAF0070CB50 /* windy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C1315BC0EAF0070CB50 /* windy2.png */; };
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 		3D654C2915BC0EB60070CB50 /* AddDash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C2115BC0EB60070CB50 /* AddDash.png */; };
 		3D654C2A15BC0EB60070CB50 /* AddDash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C2215BC0EB60070CB50 /* AddDash@2x.png */; };
 		3D654C2B15BC0EB60070CB50 /* AddDashselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C2315BC0EB60070CB50 /* AddDashselected.png */; };
@@ -59,8 +83,6 @@
 		3D654C5C15BC13440070CB50 /* facebook_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5915BC13440070CB50 /* facebook_message.png */; };
 		3D654C5D15BC13440070CB50 /* facebook_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5A15BC13440070CB50 /* facebook_notification.png */; };
 		3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */; };
-		3DB5ABCD15BC6CA400AAC355 /* EventsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */; };
-		3DB5ABD015BC6CBE00AAC355 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3DBBD5B915BC156E0038267B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B715BC156E0038267B /* calendar.png */; };
 		3DBBD5BA15BC156E0038267B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B815BC156E0038267B /* facebook.png */; };
 		3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BD15BC16390038267B /* WidgetViewController.m */; };
@@ -72,14 +94,19 @@
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
+		3DC56CBA15BC8AF900749F03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC56CB915BC8AF900749F03 /* CoreLocation.framework */; };
+		3DC56CBE15BC98CB00749F03 /* CommuteSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC56CBD15BC98CB00749F03 /* CommuteSettingsViewController.m */; };
 		3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD815BC1AE00099297B /* facebook_signin.png */; };
 		3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */; };
+		3DF81A0C15BC75FA00D0BF9F /* EventsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81A0B15BC75FA00D0BF9F /* EventsModel.m */; };
+		3DF81A0F15BC760500D0BF9F /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF81A0E15BC760500D0BF9F /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63383E915BBB69E0035BB36 /* EventKit.framework */; };
 		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
 		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		2A0E9BC315BC785800D92A1C /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloudy.png; path = Assets/Weather/cloudy.png; sourceTree = "<group>"; };
 		2A0E9BC415BC785800D92A1C /* cloudy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloudy@2x.png"; path = "Assets/Weather/cloudy@2x.png"; sourceTree = "<group>"; };
 		2A0E9BC515BC785800D92A1C /* CloudywRain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloudywRain.png; path = Assets/Weather/CloudywRain.png; sourceTree = "<group>"; };
@@ -101,12 +128,35 @@
 		2A57957315BC81D100B914D0 /* WeatherSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherSettingsViewController.h; path = Classes/Widgets/WeatherSettingsViewController.h; sourceTree = "<group>"; };
 		2A57957415BC81D100B914D0 /* WeatherSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherSettingsViewController.m; path = Classes/Widgets/WeatherSettingsViewController.m; sourceTree = "<group>"; };
 		2A57957515BC81D100B914D0 /* WeatherSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherSettingsViewController.xib; path = Classes/Widgets/WeatherSettingsViewController.xib; sourceTree = "<group>"; };
+=======
+		03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradientTop@2x.png"; sourceTree = "<group>"; };
+		03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradientBottom@2x.png"; sourceTree = "<group>"; };
+		03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBnotifications@2x.png"; sourceTree = "<group>"; };
+		03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBfriends@2x.png"; sourceTree = "<group>"; };
+		03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBmessages@2x.png"; sourceTree = "<group>"; };
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 		3D0DAC7215BBFFD600B27BBC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3D0DAC7415BBFFD800B27BBC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		3D654BFD15BC0E990070CB50 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardView.xib; path = UI/DashboardView.xib; sourceTree = "<group>"; };
 		3D654BFE15BC0E990070CB50 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = UI/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3D654BFF15BC0E990070CB50 /* Tweet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Tweet.xib; path = UI/Tweet.xib; sourceTree = "<group>"; };
 		3D654C0015BC0E990070CB50 /* WeatherWidget.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherWidget.xib; path = UI/WeatherWidget.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		3D654C0715BC0EAF0070CB50 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloudy.png; path = Assets/Weather/cloudy.png; sourceTree = "<group>"; };
+		3D654C0815BC0EAF0070CB50 /* CloudywRain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloudywRain.png; path = Assets/Weather/CloudywRain.png; sourceTree = "<group>"; };
+		3D654C0915BC0EAF0070CB50 /* FOG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FOG.png; path = Assets/Weather/FOG.png; sourceTree = "<group>"; };
+		3D654C0A15BC0EAF0070CB50 /* hail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hail.png; path = Assets/Weather/hail.png; sourceTree = "<group>"; };
+		3D654C0B15BC0EAF0070CB50 /* noun_moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_moon.png; path = Assets/Weather/noun_moon.png; sourceTree = "<group>"; };
+		3D654C0C15BC0EAF0070CB50 /* noun_moon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "noun_moon@2x.png"; path = "Assets/Weather/noun_moon@2x.png"; sourceTree = "<group>"; };
+		3D654C0D15BC0EAF0070CB50 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rain.png; path = Assets/Weather/rain.png; sourceTree = "<group>"; };
+		3D654C0E15BC0EAF0070CB50 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snow.png; path = Assets/Weather/snow.png; sourceTree = "<group>"; };
+		3D654C0F15BC0EAF0070CB50 /* Sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sunny.png; path = Assets/Weather/Sunny.png; sourceTree = "<group>"; };
+		3D654C1015BC0EAF0070CB50 /* thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thunder.png; path = Assets/Weather/thunder.png; sourceTree = "<group>"; };
+		3D654C1115BC0EAF0070CB50 /* WeatherSun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeatherSun.png; path = Assets/Weather/WeatherSun.png; sourceTree = "<group>"; };
+		3D654C1215BC0EAF0070CB50 /* windy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windy.png; path = Assets/Weather/windy.png; sourceTree = "<group>"; };
+		3D654C1315BC0EAF0070CB50 /* windy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windy2.png; path = Assets/Weather/windy2.png; sourceTree = "<group>"; };
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 		3D654C2115BC0EB60070CB50 /* AddDash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddDash.png; path = Assets/UI/AddDash.png; sourceTree = "<group>"; };
 		3D654C2215BC0EB60070CB50 /* AddDash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AddDash@2x.png"; path = "Assets/UI/AddDash@2x.png"; sourceTree = "<group>"; };
 		3D654C2315BC0EB60070CB50 /* AddDashselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AddDashselected.png; path = Assets/UI/AddDashselected.png; sourceTree = "<group>"; };
@@ -143,10 +193,6 @@
 		3D654C5E15BC13740070CB50 /* FacebookNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookNotificationsViewController.h; path = Classes/Widgets/FacebookNotificationsViewController.h; sourceTree = "<group>"; };
 		3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookNotificationsViewController.m; path = Classes/Widgets/FacebookNotificationsViewController.m; sourceTree = "<group>"; };
 		3D9C7C8215BBDE1C00D9F62A /* widgets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widgets.plist; sourceTree = "<group>"; };
-		3DB5ABCB15BC6CA400AAC355 /* EventsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsModel.h; path = Classes/Models/EventsModel.h; sourceTree = "<group>"; };
-		3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsModel.m; path = Classes/Models/EventsModel.m; sourceTree = "<group>"; };
-		3DB5ABCE15BC6CBE00AAC355 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISO8601DateFormatter.h; path = Classes/ISO8601DateFormatter.h; sourceTree = "<group>"; };
-		3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISO8601DateFormatter.m; path = Classes/ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		3DBBD5B715BC156E0038267B /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = Assets/UI/calendar.png; sourceTree = "<group>"; };
 		3DBBD5B815BC156E0038267B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Assets/UI/facebook.png; sourceTree = "<group>"; };
 		3DBBD5BC15BC16390038267B /* WidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidgetViewController.h; path = Classes/Widgets/WidgetViewController.h; sourceTree = "<group>"; };
@@ -164,8 +210,15 @@
 		3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
 		3DC0811B15BB84CD003BB12C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DC56CB915BC8AF900749F03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3DC56CBC15BC98CB00749F03 /* CommuteSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommuteSettingsViewController.h; path = Classes/Widgets/CommuteSettingsViewController.h; sourceTree = "<group>"; };
+		3DC56CBD15BC98CB00749F03 /* CommuteSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommuteSettingsViewController.m; path = Classes/Widgets/CommuteSettingsViewController.m; sourceTree = "<group>"; };
 		3DDDBFD815BC1AE00099297B /* facebook_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_signin.png; path = Assets/UI/facebook_signin.png; sourceTree = "<group>"; };
 		3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook_signin@2x.png"; path = "Assets/UI/facebook_signin@2x.png"; sourceTree = "<group>"; };
+		3DF81A0A15BC75FA00D0BF9F /* EventsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventsModel.h; path = Classes/Models/EventsModel.h; sourceTree = "<group>"; };
+		3DF81A0B15BC75FA00D0BF9F /* EventsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventsModel.m; path = Classes/Models/EventsModel.m; sourceTree = "<group>"; };
+		3DF81A0D15BC760500D0BF9F /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISO8601DateFormatter.h; path = Classes/ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		3DF81A0E15BC760500D0BF9F /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISO8601DateFormatter.m; path = Classes/ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		D63383E915BBB69E0035BB36 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
 		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
@@ -176,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC56CBA15BC8AF900749F03 /* CoreLocation.framework in Frameworks */,
 				D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */,
 				3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */,
 				3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */,
@@ -190,9 +244,9 @@
 		3D654BDC15BC0E760070CB50 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3DB5ABCE15BC6CBE00AAC355 /* ISO8601DateFormatter.h */,
-				3DB5ABCF15BC6CBE00AAC355 /* ISO8601DateFormatter.m */,
-				3DB5ABC915BC6C9A00AAC355 /* Models */,
+				3DF81A0D15BC760500D0BF9F /* ISO8601DateFormatter.h */,
+				3DF81A0E15BC760500D0BF9F /* ISO8601DateFormatter.m */,
+				3DF81A0815BC75EA00D0BF9F /* Models */,
 				3D654C3515BC0F300070CB50 /* PageViewManager.h */,
 				3D654C3615BC0F300070CB50 /* PageViewManager.m */,
 				3D654C3415BC0F240070CB50 /* Test */,
@@ -228,6 +282,7 @@
 		3D654C0515BC0E9F0070CB50 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				2A0E9BE915BC7A1000D92A1C /* rain.png */,
 				2A0E9BEA15BC7A1000D92A1C /* rain@2x.png */,
 				2A0E9BC315BC785800D92A1C /* cloudy.png */,
@@ -246,6 +301,21 @@
 				2A0E9BD315BC785800D92A1C /* windy.png */,
 				2A0E9BD415BC785800D92A1C /* windy2.png */,
 				2A0E9BD515BC785800D92A1C /* windy2@2x.png */,
+=======
+				3D654C0715BC0EAF0070CB50 /* cloudy.png */,
+				3D654C0815BC0EAF0070CB50 /* CloudywRain.png */,
+				3D654C0915BC0EAF0070CB50 /* FOG.png */,
+				3D654C0A15BC0EAF0070CB50 /* hail.png */,
+				3D654C0B15BC0EAF0070CB50 /* noun_moon.png */,
+				3D654C0C15BC0EAF0070CB50 /* noun_moon@2x.png */,
+				3D654C0D15BC0EAF0070CB50 /* rain.png */,
+				3D654C0E15BC0EAF0070CB50 /* snow.png */,
+				3D654C0F15BC0EAF0070CB50 /* Sunny.png */,
+				3D654C1015BC0EAF0070CB50 /* thunder.png */,
+				3D654C1115BC0EAF0070CB50 /* WeatherSun.png */,
+				3D654C1215BC0EAF0070CB50 /* windy.png */,
+				3D654C1315BC0EAF0070CB50 /* windy2.png */,
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 			);
 			name = Weather;
 			sourceTree = "<group>";
@@ -253,6 +323,11 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */,
+				03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */,
+				03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */,
+				03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */,
+				03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */,
 				3DDDBFD815BC1AE00099297B /* facebook_signin.png */,
 				3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */,
 				3DBBD5C115BC18B20038267B /* highway.png */,
@@ -316,6 +391,8 @@
 				3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */,
 				3DBBD5BC15BC16390038267B /* WidgetViewController.h */,
 				3DBBD5BD15BC16390038267B /* WidgetViewController.m */,
+				3DC56CBC15BC98CB00749F03 /* CommuteSettingsViewController.h */,
+				3DC56CBD15BC98CB00749F03 /* CommuteSettingsViewController.m */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -329,18 +406,10 @@
 			name = Test;
 			sourceTree = "<group>";
 		};
-		3DB5ABC915BC6C9A00AAC355 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3DB5ABCB15BC6CA400AAC355 /* EventsModel.h */,
-				3DB5ABCC15BC6CA400AAC355 /* EventsModel.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		3DC080FD15BB84CD003BB12C = {
 			isa = PBXGroup;
 			children = (
+				3DC56CB915BC8AF900749F03 /* CoreLocation.framework */,
 				3D0DAC7415BBFFD800B27BBC /* icon@2x.png */,
 				3D0DAC7215BBFFD600B27BBC /* icon.png */,
 				D63383E915BBB69E0035BB36 /* EventKit.framework */,
@@ -392,6 +461,15 @@
 				3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DF81A0815BC75EA00D0BF9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DF81A0A15BC75FA00D0BF9F /* EventsModel.h */,
+				3DF81A0B15BC75FA00D0BF9F /* EventsModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +531,22 @@
 				3D654C0215BC0E990070CB50 /* MainStoryboard.storyboard in Resources */,
 				3D654C0315BC0E990070CB50 /* Tweet.xib in Resources */,
 				3D654C0415BC0E990070CB50 /* WeatherWidget.xib in Resources */,
+<<<<<<< HEAD
+=======
+				3D654C1415BC0EAF0070CB50 /* cloudy.png in Resources */,
+				3D654C1515BC0EAF0070CB50 /* CloudywRain.png in Resources */,
+				3D654C1615BC0EAF0070CB50 /* FOG.png in Resources */,
+				3D654C1715BC0EAF0070CB50 /* hail.png in Resources */,
+				3D654C1815BC0EAF0070CB50 /* noun_moon.png in Resources */,
+				3D654C1915BC0EAF0070CB50 /* noun_moon@2x.png in Resources */,
+				3D654C1A15BC0EAF0070CB50 /* rain.png in Resources */,
+				3D654C1B15BC0EAF0070CB50 /* snow.png in Resources */,
+				3D654C1C15BC0EAF0070CB50 /* Sunny.png in Resources */,
+				3D654C1D15BC0EAF0070CB50 /* thunder.png in Resources */,
+				3D654C1E15BC0EAF0070CB50 /* WeatherSun.png in Resources */,
+				3D654C1F15BC0EAF0070CB50 /* windy.png in Resources */,
+				3D654C2015BC0EAF0070CB50 /* windy2.png in Resources */,
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 				3D654C2915BC0EB60070CB50 /* AddDash.png in Resources */,
 				3D654C2A15BC0EB60070CB50 /* AddDash@2x.png in Resources */,
 				3D654C2B15BC0EB60070CB50 /* AddDashselected.png in Resources */,
@@ -474,6 +568,7 @@
 				3DBBD5C215BC18B20038267B /* highway.png in Resources */,
 				3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */,
 				3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */,
+<<<<<<< HEAD
 				2A0E9BD615BC785800D92A1C /* cloudy.png in Resources */,
 				2A0E9BD715BC785800D92A1C /* cloudy@2x.png in Resources */,
 				2A0E9BD815BC785800D92A1C /* CloudywRain.png in Resources */,
@@ -493,6 +588,13 @@
 				2A0E9BEB15BC7A1100D92A1C /* rain.png in Resources */,
 				2A0E9BEC15BC7A1100D92A1C /* rain@2x.png in Resources */,
 				2A57957715BC81D100B914D0 /* WeatherSettingsViewController.xib in Resources */,
+=======
+				03DA859C15BC871E00BA0C3A /* gradientTop@2x.png in Resources */,
+				03DA85A615BC8F8600BA0C3A /* gradientBottom@2x.png in Resources */,
+				03DA85AA15BC92F800BA0C3A /* FBnotifications@2x.png in Resources */,
+				03DA85AB15BC92F800BA0C3A /* FBfriends@2x.png in Resources */,
+				03DA85AE15BC942000BA0C3A /* FBmessages@2x.png in Resources */,
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,9 +619,15 @@
 				3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */,
 				3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */,
 				3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */,
+<<<<<<< HEAD
 				3DB5ABCD15BC6CA400AAC355 /* EventsModel.m in Sources */,
 				3DB5ABD015BC6CBE00AAC355 /* ISO8601DateFormatter.m in Sources */,
 				2A57957615BC81D100B914D0 /* WeatherSettingsViewController.m in Sources */,
+=======
+				3DF81A0C15BC75FA00D0BF9F /* EventsModel.m in Sources */,
+				3DF81A0F15BC760500D0BF9F /* ISO8601DateFormatter.m in Sources */,
+				3DC56CBE15BC98CB00749F03 /* CommuteSettingsViewController.m in Sources */,
+>>>>>>> 4b79c442ee15bf95cbdf11d63887f81f8d1aa95c
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,6 +48,16 @@
         [facebookButton setHidden:NO];
         [notificationsView setHidden:YES];
     }
+    
+    
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(notificationsViewTapped:)];
+    [notificationsView addGestureRecognizer:gestureRecognizer];
+}
+
+- (void)notificationsViewTapped:(id)sender
+{
+    NSURL *facebookAppUrl = [NSURL URLWithString:@"fb://feed"];
+    [[UIApplication sharedApplication] openURL:facebookAppUrl];
 }
 
 - (void)viewDidUnload

@@ -47,6 +47,19 @@
     // Hide slide menu
     [slideMenu setFrame:CGRectMake(slideMenu.frame.origin.x, -slideMenu.frame.size.height, slideMenu.frame.size.width, slideMenu.frame.size.height)];
     isAnimatingMenu = NO;
+    
+    // Make overlay tappable
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(overlayTapped:)];
+    [overlayView addGestureRecognizer:tapGestureRecognizer];
+}
+
+- (void)overlayTapped:(id)sender
+{
+    if (isAnimatingMenu)
+        return;
+    
+    // Hide menu
+    [self menuButtonClicked:nil];
 }
 
 - (void)reloadPages
@@ -94,14 +107,39 @@
 }
 
 - (IBAction)replaceWidgetsClicked:(id)sender {
+    if (isAnimatingMenu)
+        return;
+    
+    DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+    [dashboardViewController showAddWidgetButtons];
+    
+    [self menuButtonClicked:nil];
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneReplacingWidgets:)];
+    [self.navigationController.navigationBar.topItem setLeftBarButtonItem:doneButton]; 
+}
+
+- (void)doneReplacingWidgets:(id)sender
+{
+    [self.navigationController.navigationBar.topItem setLeftBarButtonItem:nil];
+    DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+    [dashboardViewController hideAddWidgetButtons];
 }
 
 - (IBAction)removeDashboardClicked:(id)sender {
     if (isAnimatingMenu)
         return;
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"Are you sure that you want remove the active dashboard?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
-    [alertView show];
+    if ([dashboardViewControllers count] <= 1)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"You need to have at least one dashboard." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    else
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"Are you sure that you want remove the active dashboard?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
+        [alertView show];
+    }
     
     // Hide the menu
     [self menuButtonClicked:nil];
@@ -111,7 +149,10 @@
     if (buttonIndex == 1)
     {
         // Remove the active dashboard
-        [dashboardViewControllers removeObjectAtIndex:pageViewManager.pageIndex];
+        DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+        [dashboardViewController removeAllWidgets];
+        [dashboardViewControllers removeObject:dashboardViewController];
+        dashboardViewController = nil;
         
         // Reload pages
         [self reloadPages];
@@ -152,7 +193,6 @@
 
 - (void)didClickAddWidget:(int)location
 {
-    NSLog(@"You clicked a widget add button! %d", location);
     [self performSegueWithIdentifier:@"SelectWidgetSegue" sender:[NSNumber numberWithInt:location]];
 }
 
