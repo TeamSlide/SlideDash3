@@ -107,6 +107,23 @@
 }
 
 - (IBAction)replaceWidgetsClicked:(id)sender {
+    if (isAnimatingMenu)
+        return;
+    
+    DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+    [dashboardViewController showAddWidgetButtons];
+    
+    [self menuButtonClicked:nil];
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneReplacingWidgets:)];
+    [self.navigationController.navigationBar.topItem setLeftBarButtonItem:doneButton]; 
+}
+
+- (void)doneReplacingWidgets:(id)sender
+{
+    [self.navigationController.navigationBar.topItem setLeftBarButtonItem:nil];
+    DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+    [dashboardViewController hideAddWidgetButtons];
 }
 
 - (IBAction)removeDashboardClicked:(id)sender {
@@ -132,7 +149,10 @@
     if (buttonIndex == 1)
     {
         // Remove the active dashboard
-        [dashboardViewControllers removeObjectAtIndex:pageViewManager.pageIndex];
+        DashboardViewController *dashboardViewController = [dashboardViewControllers objectAtIndex:pageViewManager.pageIndex];
+        [dashboardViewController removeAllWidgets];
+        [dashboardViewControllers removeObject:dashboardViewController];
+        dashboardViewController = nil;
         
         // Reload pages
         [self reloadPages];
@@ -173,7 +193,6 @@
 
 - (void)didClickAddWidget:(int)location
 {
-    NSLog(@"You clicked a widget add button! %d", location);
     [self performSegueWithIdentifier:@"SelectWidgetSegue" sender:[NSNumber numberWithInt:location]];
 }
 

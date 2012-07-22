@@ -74,6 +74,9 @@
 {
     UIView *view = [self.view viewWithTag:location];
     
+    // Remove existing view if we have one
+    [[view viewWithTag:999] removeFromSuperview];
+    
     WidgetViewController *widgetViewController = nil;
     
     if ([widget isEqualToString:@"WEATHER"])
@@ -97,9 +100,40 @@
     {
         // Save widget and show it
         [widgets addObject:widgetViewController];
+        [widgetViewController.view setTag:999];
         [view addSubview:widgetViewController.view];
         
         // Hide the "Add widget" button
+        [[view viewWithTag:kAddWidgetButtonTag] setHidden:YES];
+    }
+}
+
+- (void)removeAllWidgets
+{
+    for (int i = 100; i < 104; i++)
+    {
+        UIView *view = [self.view viewWithTag:i];
+        [[view viewWithTag:999] removeFromSuperview];
+    }
+}
+
+- (void)showAddWidgetButtons
+{
+    for (int i = 100; i < 104; i++)
+    {
+        UIView *view = [self.view viewWithTag:i];
+        [[view viewWithTag:999] setAlpha:0.1f];
+        [[view viewWithTag:kAddWidgetButtonTag] setHidden:NO];
+        [view bringSubviewToFront:[view viewWithTag:kAddWidgetButtonTag]];
+    }
+}
+
+- (void)hideAddWidgetButtons
+{
+    for (int i = 100; i < 104; i++)
+    {
+        UIView *view = [self.view viewWithTag:i];
+        [[view viewWithTag:999] setAlpha:1.0f];
         [[view viewWithTag:kAddWidgetButtonTag] setHidden:YES];
     }
 }

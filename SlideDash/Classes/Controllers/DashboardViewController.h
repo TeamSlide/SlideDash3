@@ -30,5 +30,8 @@
 
 - (IBAction)addWidgetClicked:(id)sender;
 - (void)setWidget:(NSString*)widget inLocation:(int)location;
+- (void)removeAllWidgets;
+- (void)showAddWidgetButtons;
+- (void)hideAddWidgetButtons;
 
 @end
