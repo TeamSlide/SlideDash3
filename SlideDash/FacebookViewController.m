@@ -9,7 +9,7 @@
 #import "FacebookViewController.h"
 #import "AppDelegate.h"
 
-@interface FacebookViewController ()
+@interface FacebookViewController () <FBLoginViewDelegate>
 
 @end
 
@@ -43,9 +43,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+/**
+ facebook
+ */
 - (IBAction)facebookPressed:(id)sender {
     
-    [FBSession sessionOpenWithPermissions:nil 
+    NSArray *arrayOfPermissions = [NSArray arrayWithObject:@"user_events"];
+    [FBSession sessionOpenWithPermissions:arrayOfPermissions
                         completionHandler:^(FBSession *session, 
                                             FBSessionState status, 
                                             NSError *error) {
@@ -63,5 +67,26 @@
                         }];
     
 }
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
+    NSLog(@"loginView, %@ has fetched user, %@", loginView, user);
+}
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
+    NSLog(@"loginView, %@", loginView); 
+}  
+- (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
+    // not necessary for now
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
