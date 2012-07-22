@@ -11,6 +11,8 @@
 
 @implementation PageViewManager
 
+@synthesize pageIndex = pageIndex_;
+
 - (id)initWithScrollView:(UIScrollView*)scrollView
              pageControl:(UIPageControl*)pageControl
 {
@@ -96,6 +98,16 @@
             pageIndex_ = index;
             pageControl_.currentPage = index;
         }
+    }
+}
+
+- (void)animateToPage:(NSInteger)newPageIndex
+{
+    if (newPageIndex >= 0 && newPageIndex < [pages_ count])
+    {
+        pageIndex_ = newPageIndex;
+        pageControl_.currentPage = newPageIndex;
+        [self pageControlChanged];
     }
 }
 

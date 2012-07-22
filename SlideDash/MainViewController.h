@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PageViewManager.h"
 
-@interface MainViewController : UIViewController {
+@interface MainViewController : UIViewController<UIAlertViewDelegate> {
     PageViewManager *pageViewManager;
     IBOutlet UIScrollView *scrollView;
     IBOutlet UIPageControl *pageControl;

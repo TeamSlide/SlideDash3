@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "DashboardViewController.h"
 
 @interface MainViewController ()
 
@@ -26,17 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    // Create some views dynamically
-    UIView* v1 = [[UIView alloc] initWithFrame: scrollView.frame];
-    UIView* v2 = [[UIView alloc] initWithFrame: scrollView.frame];
-    
-    v1.backgroundColor = [UIColor redColor];
-    v2.backgroundColor = [UIColor greenColor];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    DashboardViewController *dashboardViewController = [storyboard instantiateViewControllerWithIdentifier:@"DashboardViewController"];
     
     // Put the views inside an NSArray:
-    dashboardViews = [NSMutableArray arrayWithObjects:v1, v2, nil];
+    dashboardViews = [NSMutableArray arrayWithObjects:dashboardViewController.view, nil];
     
     /* Create the PageViewManager, which is a member (or property) of this
      UIViewController. The UIScrollView and UIPageControl belong to this
@@ -68,17 +64,46 @@
 }
 
 - (IBAction)addDashboardClicked:(id)sender {
+    if (isAnimatingMenu)
+        return;
+    
+    // Create the new dashboard    
     UIView* newDashboard = [[UIView alloc] initWithFrame: scrollView.frame];
     newDashboard.backgroundColor = [UIColor blueColor];
     
     [dashboardViews addObject:newDashboard];
     [pageViewManager loadPages:dashboardViews];
+    
+    // Hide the menu
+    [self menuButtonClicked:nil];
+    
+    // Animate to the newly created dashboard
+    [pageViewManager animateToPage:dashboardViews.count - 1];
 }
 
 - (IBAction)replaceWidgetsClicked:(id)sender {
 }
 
 - (IBAction)removeDashboardClicked:(id)sender {
+    if (isAnimatingMenu)
+        return;
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Remove dashboard" message:@"Are you sure that you want remove the active dashboard?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes!", nil];
+    [alertView show];
+    
+    // Hide the menu
+    [self menuButtonClicked:nil];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1)
+    {
+        // Remove the active dashboard
+        [dashboardViews removeObjectAtIndex:pageViewManager.pageIndex];
+        
+        // Reload pages
+        [pageViewManager loadPages:dashboardViews];
+    }
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
