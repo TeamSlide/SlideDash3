@@ -57,7 +57,6 @@
         
         result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         if (error == nil) {
-            NSLog(@"this is result %@", result);
             
             NSDictionary *jsonResult = [result objectAtIndex:0];
             
@@ -67,7 +66,6 @@
             NSInteger weatherCode = [theWeather intValue];
             NSString *weatherImagPath; //weatherImagPath = [[NSBundle mainBundle] pathForResource:@"" ofType:@""];
             
-            NSLog(@"code: %d", weatherCode);
             if ((weatherCode >= 26 && weatherCode <= 30) || weatherCode == 40) {
                 // Cloudy
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"cloudy" ofType:@"png"];
@@ -92,7 +90,6 @@
             } else if (weatherCode == 0) {
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"windy" ofType:@"png"];
             } else if (weatherCode == 33){
-                NSLog(@"code: %d", weatherCode);
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"noun_moon" ofType:@"png"];
             } else {
                 weatherImagPath = [[NSBundle mainBundle] pathForResource:@"WeatherSun" ofType:@"png"];
