@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>horizontal</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Twitter</string>
+			<key>icon</key>
+			<string>twitter</string>
+			<key>id</key>
+			<string>TWITTER</string>
+		</dict>
+        <dict>
+			<key>name</key>
+			<string>Facebook Notifications</string>
+			<key>icon</key>
+			<string>facebook</string>
+			<key>id</key>
+			<string>FACEBOOKNOTIFICATIONS</string>
+		</dict>
+	</array>
+	<key>vertical</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>WEATHER</string>
+			<key>icon</key>
+			<string>WeatherSun</string>
+			<key>name</key>
+			<string>Weather</string>
+		</dict>
+        <dict>
+			<key>id</key>
+			<string>COMMUTE</string>
+			<key>icon</key>
+			<string>highway</string>
+			<key>name</key>
+			<string>Commute</string>
+		</dict>
+	</array>
+</dict>
+</plist>
