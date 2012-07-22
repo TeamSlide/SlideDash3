@@ -6,6 +6,8 @@
 //
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "MainViewController.h"
 #import "DashboardViewController.h"
 #import "PageViewManager.h"
@@ -51,6 +53,10 @@
     // Make overlay tappable
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(overlayTapped:)];
     [overlayView addGestureRecognizer:tapGestureRecognizer];
+    
+    // Make corners rounded
+    self.view.layer.cornerRadius = 8;
+    self.view.layer.masksToBounds = YES;
 }
 
 - (void)overlayTapped:(id)sender
