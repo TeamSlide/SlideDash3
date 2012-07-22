@@ -39,6 +39,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    widgets = [[NSMutableArray alloc] init];
 }
 
 - (void)viewDidUnload
@@ -73,29 +74,34 @@
 {
     UIView *view = [self.view viewWithTag:location];
     
+    WidgetViewController *widgetViewController = nil;
+    
     if ([widget isEqualToString:@"WEATHER"])
     {
-        WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
-        [view addSubview:weatherWidgetController.view];
+        widgetViewController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
     }
     else if ([widget isEqualToString:@"TWITTER"])
     {
-        TweetViewController *tweetViewController = [[TweetViewController alloc] initWithNibName:@"Tweet" bundle:nil];
-        [view addSubview:tweetViewController.view];
+        widgetViewController = [[TweetViewController alloc] initWithNibName:@"Tweet" bundle:nil];
     }
     else if ([widget isEqualToString:@"FACEBOOKNOTIFICATIONS"])
     {
-        FacebookNotificationsViewController *facebookNotificationsViewController = [[FacebookNotificationsViewController alloc] initWithNibName:@"FacebookNotifications" bundle:nil];
-        [view addSubview:facebookNotificationsViewController.view];
+        widgetViewController = [[FacebookNotificationsViewController alloc] initWithNibName:@"FacebookNotifications" bundle:nil];
     }
     else if ([widget isEqualToString:@"COMMUTE"])
     {
-        CommuteViewController *commuteViewController = [[CommuteViewController alloc] initWithNibName:@"CommuteViewController" bundle:nil];
-        [view addSubview:commuteViewController.view];
+       widgetViewController = [[CommuteViewController alloc] initWithNibName:@"CommuteViewController" bundle:nil];
     }
     
-    // Hide the "Add widget" button
-    [[view viewWithTag:kAddWidgetButtonTag] setHidden:YES];
+    if (widgetViewController != nil)
+    {
+        // Save widget and show it
+        [widgets addObject:widgetViewController];
+        [view addSubview:widgetViewController.view];
+        
+        // Hide the "Add widget" button
+        [[view viewWithTag:kAddWidgetButtonTag] setHidden:YES];
+    }
 }
 
 @end

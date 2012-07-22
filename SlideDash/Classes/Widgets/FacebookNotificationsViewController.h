@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "WidgetViewController.h"
 
-@interface FacebookNotificationsViewController : WidgetViewController
+@class FBSession;
+
+@interface FacebookNotificationsViewController : WidgetViewController {
+    
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *labelFriends;
 @property (weak, nonatomic) IBOutlet UILabel *labelMessages;
 @property (weak, nonatomic) IBOutlet UILabel *labelNotifications;
+@property (weak, nonatomic) IBOutlet UIView *notificationsView;
+@property (weak, nonatomic) IBOutlet UIButton *facebookButton;
+- (IBAction)facebookButtonClicked:(id)sender;
 
 @end

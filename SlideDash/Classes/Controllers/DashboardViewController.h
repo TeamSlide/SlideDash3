@@ -19,6 +19,7 @@
 @interface DashboardViewController : UIViewController
 {
     id <DashboardViewControllerDelegate> delegate;
+    NSMutableArray *widgets;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *topWidget;

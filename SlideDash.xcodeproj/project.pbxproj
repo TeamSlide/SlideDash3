@@ -63,6 +63,8 @@
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
 		3DC0811915BB84CD003BB12C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811815BB84CD003BB12C /* main.m */; };
 		3DC0811D15BB84CD003BB12C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC0811C15BB84CD003BB12C /* AppDelegate.m */; };
+		3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD815BC1AE00099297B /* facebook_signin.png */; };
+		3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */; };
 		D63383EA15BBB69E0035BB36 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63383E915BBB69E0035BB36 /* EventKit.framework */; };
 		D693A0FD15BB871200101222 /* FBiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D693A0FC15BB871200101222 /* FBiOSSDK.framework */; };
 		D693A10015BB871F00101222 /* FBiOSSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */; };
@@ -141,6 +143,8 @@
 		3DC0811A15BB84CD003BB12C /* SlideDash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideDash-Prefix.pch"; sourceTree = "<group>"; };
 		3DC0811B15BB84CD003BB12C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DC0811C15BB84CD003BB12C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DDDBFD815BC1AE00099297B /* facebook_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_signin.png; path = Assets/UI/facebook_signin.png; sourceTree = "<group>"; };
+		3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook_signin@2x.png"; path = "Assets/UI/facebook_signin@2x.png"; sourceTree = "<group>"; };
 		D63383E915BBB69E0035BB36 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		D693A0FC15BB871200101222 /* FBiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBiOSSDK.framework; sourceTree = "<group>"; };
 		D693A0FF15BB871F00101222 /* FBiOSSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBiOSSDKResources.bundle; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3DDDBFD815BC1AE00099297B /* facebook_signin.png */,
+				3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */,
 				3DBBD5C115BC18B20038267B /* highway.png */,
 				3DBBD5B715BC156E0038267B /* calendar.png */,
 				3DBBD5B815BC156E0038267B /* facebook.png */,
@@ -438,6 +444,8 @@
 				3DBBD5BA15BC156E0038267B /* facebook.png in Resources */,
 				3DBBD5C015BC189F0038267B /* CommuteViewController.xib in Resources */,
 				3DBBD5C215BC18B20038267B /* highway.png in Resources */,
+				3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */,
+				3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
