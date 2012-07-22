@@ -19,6 +19,8 @@
 @synthesize rightWidget;
 @synthesize bottomView;
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -53,8 +55,14 @@
     UIButton *button = (UIButton*)sender;
     NSLog(@"Add widget: %d", button.tag);
     
+    if (delegate)
+    {
+        [delegate didClickAddWidget:button.superview];
+    }
+    
     // Add weather widget
-    WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
-    [button.superview addSubview:weatherWidgetController.view];
+    /*WeatherViewController *weatherWidgetController = [[WeatherViewController alloc] initWithNibName:@"WeatherWidget" bundle:nil];
+    [button.superview addSubview:weatherWidgetController.view];*/
 }
+
 @end

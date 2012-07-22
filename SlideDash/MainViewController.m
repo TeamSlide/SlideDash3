@@ -9,12 +9,15 @@
 #import "MainViewController.h"
 #import "DashboardViewController.h"
 #import "PageViewManager.h"
+#import "SelectWidgetViewController.h"
 
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +37,9 @@
     
     // Initialize initial dashboard view controller
     dashboardViewControllers = [[NSMutableArray alloc] init];
-    [dashboardViewControllers addObject:[[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil]];
+    DashboardViewController *dashboardViewController = [[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil];
+    [dashboardViewController setDelegate:self];
+    [dashboardViewControllers addObject:dashboardViewController];
     
     [self reloadPages];
     
@@ -74,8 +79,10 @@
     if (isAnimatingMenu)
         return;
     
-    // Create the new dashboard    
-    [dashboardViewControllers addObject:[[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil]];
+    // Create the new dashboard
+    DashboardViewController *dashboardViewController = [[DashboardViewController alloc] initWithNibName:@"DashboardView" bundle:nil];
+    [dashboardViewController setDelegate:self];
+    [dashboardViewControllers addObject:dashboardViewController];
     [self reloadPages];
     
     // Hide the menu
@@ -140,6 +147,26 @@
             isAnimatingMenu = NO;
         }
     }];
+}
+
+- (void)didClickAddWidget:(UIView*)widgetView
+{
+    NSLog(@"You clicked a widget add button!");
+    [self performSegueWithIdentifier:@"SelectWidgetSegue" sender:self];
+}
+
+- (void)didSelectWidget:(NSString*)widgetId forLocation:(int)location
+{
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"SelectWidgetSegue"])
+    {
+        SelectWidgetViewController *selectWidgetViewController = [segue destinationViewController];
+        [selectWidgetViewController setDelegate:self];
+    }
 }
 
 @end

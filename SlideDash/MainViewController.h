@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DashboardViewController.h"
 
-@class DashboardViewController;
 @class PageViewManager;
 
-@interface MainViewController : UIViewController<UIAlertViewDelegate> {
+@interface MainViewController : UIViewController<UIAlertViewDelegate, DashboardViewControllerDelegate> {
     PageViewManager *pageViewManager;
     IBOutlet UIScrollView *scrollView;
     IBOutlet UIPageControl *pageControl;
@@ -25,5 +25,7 @@
 - (IBAction)replaceWidgetsClicked:(id)sender;
 - (IBAction)removeDashboardClicked:(id)sender;
 - (IBAction)menuButtonClicked:(id)sender;
+
+@property (strong) id <DashboardViewControllerDelegate> delegate;
 
 @end

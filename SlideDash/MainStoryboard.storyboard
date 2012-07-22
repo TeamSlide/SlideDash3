@@ -123,10 +123,58 @@
                         <outlet property="pageControl" destination="kNy-IK-XSS" id="1bC-Oq-PhL"/>
                         <outlet property="scrollView" destination="zea-Ry-2Be" id="9tg-rh-B30"/>
                         <outlet property="slideMenu" destination="gpk-yE-HGo" id="buj-1N-QuG"/>
+                        <segue destination="pOE-yL-r5l" kind="push" identifier="SelectWidgetSegue" id="l6Z-iT-Je3"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="595" y="-162"/>
+        </scene>
+        <!--Select Widget View Controller-->
+        <scene sceneID="mDo-kr-LUy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPE-Ks-8DV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="pOE-yL-r5l" customClass="SelectWidgetViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="X07-FS-LQl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WidgetCell" id="0X5-Fh-vhu" customClass="WidgetCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="DA4-4Z-4F6">
+                                            <rect key="frame" x="4" y="4" width="58" height="58"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Widget name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="wfR-Ef-F6o">
+                                            <rect key="frame" x="72" y="4" width="220" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="widgetImageView" destination="DA4-4Z-4F6" id="f4t-9q-3Wl"/>
+                                    <outlet property="widgetNameLabel" destination="wfR-Ef-F6o" id="gf3-2S-zcw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pOE-yL-r5l" id="vUh-DZ-mpU"/>
+                            <outlet property="delegate" destination="pOE-yL-r5l" id="uAK-CW-OiJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Q41-f2-APa"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1027" y="-162"/>
         </scene>
     </scenes>
     <classes>
@@ -137,9 +185,20 @@
                 <relationship kind="action" name="menuButtonClicked:"/>
                 <relationship kind="action" name="removeDashboardClicked:"/>
                 <relationship kind="action" name="replaceWidgetsClicked:"/>
+                <relationship kind="outlet" name="overlayView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="slideMenu" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="SelectWidgetViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectWidgetViewController.h"/>
+        </class>
+        <class className="WidgetCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WidgetCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="widgetImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="widgetNameLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

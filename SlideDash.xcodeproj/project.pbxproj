@@ -25,6 +25,9 @@
 		3D9C31AE15BBC49800A52ADA /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */; };
 		3D9C31B115BBC65A00A52ADA /* NavigationBarLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C31AF15BBC65A00A52ADA /* NavigationBarLogo@2x.png */; };
 		3D9C31B215BBC65A00A52ADA /* NavigationBarLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C31B015BBC65A00A52ADA /* NavigationBarLogo.png */; };
+		3D9C7C7C15BBD7B800D9F62A /* WidgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */; };
+		3D9C7C8115BBDDCC00D9F62A /* SelectWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8015BBDDCC00D9F62A /* SelectWidgetViewController.m */; };
+		3D9C7C8315BBDE1C00D9F62A /* widgets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8215BBDE1C00D9F62A /* widgets.plist */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -58,6 +61,11 @@
 		3D9C31AD15BBC49800A52ADA /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		3D9C31AF15BBC65A00A52ADA /* NavigationBarLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavigationBarLogo@2x.png"; sourceTree = "<group>"; };
 		3D9C31B015BBC65A00A52ADA /* NavigationBarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavigationBarLogo.png; sourceTree = "<group>"; };
+		3D9C7C7A15BBD7B800D9F62A /* WidgetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetCell.h; sourceTree = "<group>"; };
+		3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetCell.m; sourceTree = "<group>"; };
+		3D9C7C7F15BBDDCC00D9F62A /* SelectWidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectWidgetViewController.h; sourceTree = "<group>"; };
+		3D9C7C8015BBDDCC00D9F62A /* SelectWidgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectWidgetViewController.m; sourceTree = "<group>"; };
+		3D9C7C8215BBDE1C00D9F62A /* widgets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widgets.plist; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +111,13 @@
 			name = "Weather Images";
 			sourceTree = "<group>";
 		};
+		3D9C7C7E15BBD8C000D9F62A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		3DC080FD15BB84CD003BB12C = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +148,7 @@
 		3DC0811215BB84CD003BB12C /* SlideDash */ = {
 			isa = PBXGroup;
 			children = (
+				3D9C7C7E15BBD8C000D9F62A /* Controllers */,
 				3D9C31AC15BBC49800A52ADA /* DashboardViewController.m */,
 				3D9C31AD15BBC49800A52ADA /* DashboardViewController.h */,
 				3DF20DA415BBAD4100A9CCBE /* Assets */,
@@ -148,6 +164,11 @@
 				3DC0811C15BB84CD003BB12C /* AppDelegate.m */,
 				2A42350215BBAC2600C0F3B5 /* Weather Images */,
 				3DC0811315BB84CD003BB12C /* Supporting Files */,
+				3D9C7C7A15BBD7B800D9F62A /* WidgetCell.h */,
+				3D9C7C7B15BBD7B800D9F62A /* WidgetCell.m */,
+				3D9C7C7F15BBDDCC00D9F62A /* SelectWidgetViewController.h */,
+				3D9C7C8015BBDDCC00D9F62A /* SelectWidgetViewController.m */,
+				3D9C7C8215BBDE1C00D9F62A /* widgets.plist */,
 			);
 			path = SlideDash;
 			sourceTree = "<group>";
@@ -242,6 +263,7 @@
 				3D9C31AB15BBC32100A52ADA /* windy2.png in Resources */,
 				3D9C31B115BBC65A00A52ADA /* NavigationBarLogo@2x.png in Resources */,
 				3D9C31B215BBC65A00A52ADA /* NavigationBarLogo.png in Resources */,
+				3D9C7C8315BBDE1C00D9F62A /* widgets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +280,8 @@
 				3D2DECB215BB859E002111B7 /* MainViewController.m in Sources */,
 				3D2DECB415BB859E002111B7 /* PageViewManager.m in Sources */,
 				3D9C31AE15BBC49800A52ADA /* DashboardViewController.m in Sources */,
+				3D9C7C7C15BBD7B800D9F62A /* WidgetCell.m in Sources */,
+				3D9C7C8115BBDDCC00D9F62A /* SelectWidgetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
