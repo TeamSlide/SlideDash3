@@ -11,7 +11,7 @@
 @class FBSession;
 
 @protocol EventsModelDelegate <NSObject>
-- (void)didGetSortedStackOfEvents;
+- (void)didGetNextEvent:(NSDictionary *)event;
 @end
 
 @interface EventsModel : NSObject

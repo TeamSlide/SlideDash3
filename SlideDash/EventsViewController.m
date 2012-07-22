@@ -8,7 +8,7 @@
 
 #import "EventsViewController.h"
 
-@interface EventsViewController ()
+@interface EventsViewController () <EventsModelDelegate>
 @end
 
 @implementation EventsViewController
@@ -47,23 +47,46 @@
 
 - (void)loadNewEvent {
     
-    [self.eventHandler updateStack];
-    NSDictionary *newEvent = [self.eventHandler getNextEvent];
+//    NSDictionary *newEvent = [self.eventHandler getNextEvent];
+//    
+//    if ([newEvent objectForKey:@"eventName"]) {
+//        self.mainLabel.text = [newEvent objectForKey:@"eventName"];
+//    } else {
+//        NSLog(@"no eventName");
+//    }
+//    
+//    if ([newEvent objectForKey:@"eventLocation"]) {
+//        self.subTitle.text = [newEvent objectForKey:@"eventLocation"];
+//    } else if ([newEvent objectForKey:@"eventLocationTitle"]) {
+//        self.subTitle.text = [newEvent objectForKey:@"eventLocationTitle"];
+//    } else 
+//        NSLog(@"no location");
+//    }
     
-    if ([newEvent objectForKey:@"eventName"]) {
-        self.mainLabel.text = [newEvent objectForKey:@"eventName"];
+}
+
+- (void)didGetNextEvent:(NSDictionary *)event {
+ 
+    if ([event objectForKey:@"eventName"]) {
+        self.mainLabel.text = [event objectForKey:@"eventName"];
     } else {
         NSLog(@"no eventName");
     }
     
-    if ([newEvent objectForKey:@"eventLocation"]) {
-        self.subTitle.text = [newEvent objectForKey:@"eventLocation"];
-    } else if ([newEvent objectForKey:@"eventLocationTitle"]) {
-        self.subTitle.text = [newEvent objectForKey:@"eventLocationTitle"];
+    if ([event objectForKey:@"eventLocation"]) {
+        self.subTitle.text = [event objectForKey:@"eventLocation"];
+    } else if ([event objectForKey:@"eventLocationTitle"]) {
+        self.subTitle.text = [event objectForKey:@"eventLocationTitle"];
     } else {
         NSLog(@"no location");
     }
     
+    [UIView animateWithDuration:.5 animations:^{
+        [self.mainLabel setAlpha:1];
+        [self.subTitle setAlpha:1];
+        [self.eventImageView setAlpha:1];
+    }];
+
 }
 
 @end

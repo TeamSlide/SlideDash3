@@ -31,7 +31,6 @@
     return self;
 }
 - (NSDictionary *)getNextEvent {
-    [self sortStack];
     NSDictionary *nextEvent = [self popEventFromStack];
     return nextEvent;
 }
@@ -181,12 +180,14 @@
         [self.arrayOfSortedEvents addObject:event];
     }
     NSLog(@"self.arrayOfSortedEvents = %@",self.arrayOfSortedEvents);
+    [self updateStack];
 }
 - (void)updateStack {
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
     NSArray *sorter = [NSArray arrayWithObject:sortDescriptor];
     [self.arrayOfSortedEvents sortUsingDescriptors:sorter];
     NSLog(@"sortedStack = %@", self.arrayOfSortedEvents);    
+    [self.delegate didGetNextEvent:[self getNextEvent]];
 }
 - (void)sortStack {
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"eventTime" ascending:YES];
