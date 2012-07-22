@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03DA859C15BC871E00BA0C3A /* gradientTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */; };
-		03DA85A615BC8F8600BA0C3A /* gradientBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */; };
-		03DA85AA15BC92F800BA0C3A /* FBnotifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */; };
-		03DA85AB15BC92F800BA0C3A /* FBfriends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */; };
-		03DA85AE15BC942000BA0C3A /* FBmessages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */; };
 		3D0DAC0715BBFF2300B27BBC /* widgets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C7C8215BBDE1C00D9F62A /* widgets.plist */; };
 		3D0DAC7315BBFFD600B27BBC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC7215BBFFD600B27BBC /* icon.png */; };
 		3D0DAC7515BBFFD800B27BBC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D0DAC7415BBFFD800B27BBC /* icon@2x.png */; };
@@ -63,6 +58,16 @@
 		3DBBD5C015BC189F0038267B /* CommuteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BF15BC189F0038267B /* CommuteViewController.xib */; };
 		3DBBD5C215BC18B20038267B /* highway.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5C115BC18B20038267B /* highway.png */; };
 		3DBBD5C515BC18C00038267B /* CommuteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5C415BC18C00038267B /* CommuteViewController.m */; };
+		3DBCE44815BC9FE5005CCBDE /* FBfriends.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44015BC9FE5005CCBDE /* FBfriends.png */; };
+		3DBCE44915BC9FE5005CCBDE /* FBfriends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44115BC9FE5005CCBDE /* FBfriends@2x.png */; };
+		3DBCE44A15BC9FE5005CCBDE /* FBmessages.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44215BC9FE5005CCBDE /* FBmessages.png */; };
+		3DBCE44B15BC9FE5005CCBDE /* FBmessages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44315BC9FE5005CCBDE /* FBmessages@2x.png */; };
+		3DBCE44C15BC9FE5005CCBDE /* FBnotifications.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44415BC9FE5005CCBDE /* FBnotifications.png */; };
+		3DBCE44D15BC9FE5005CCBDE /* FBnotifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44515BC9FE5005CCBDE /* FBnotifications@2x.png */; };
+		3DBCE44E15BC9FE5005CCBDE /* gradientBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44615BC9FE5005CCBDE /* gradientBottom@2x.png */; };
+		3DBCE44F15BC9FE5005CCBDE /* gradientTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE44715BC9FE5005CCBDE /* gradientTop@2x.png */; };
+		3DBCE45315BCA013005CCBDE /* WeatherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCE45215BCA013005CCBDE /* WeatherSettingsViewController.m */; };
+		3DBCE45515BCA04B005CCBDE /* WeatherSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCE45415BCA04B005CCBDE /* WeatherSettingsViewController.xib */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -80,11 +85,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradientTop@2x.png"; sourceTree = "<group>"; };
-		03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradientBottom@2x.png"; sourceTree = "<group>"; };
-		03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBnotifications@2x.png"; sourceTree = "<group>"; };
-		03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBfriends@2x.png"; sourceTree = "<group>"; };
-		03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBmessages@2x.png"; sourceTree = "<group>"; };
 		3D0DAC7215BBFFD600B27BBC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3D0DAC7415BBFFD800B27BBC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		3D654BFD15BC0E990070CB50 /* DashboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardView.xib; path = UI/DashboardView.xib; sourceTree = "<group>"; };
@@ -148,6 +148,17 @@
 		3DBBD5C115BC18B20038267B /* highway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = highway.png; path = Assets/UI/highway.png; sourceTree = "<group>"; };
 		3DBBD5C315BC18C00038267B /* CommuteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommuteViewController.h; path = Classes/Widgets/CommuteViewController.h; sourceTree = "<group>"; };
 		3DBBD5C415BC18C00038267B /* CommuteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommuteViewController.m; path = Classes/Widgets/CommuteViewController.m; sourceTree = "<group>"; };
+		3DBCE44015BC9FE5005CCBDE /* FBfriends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBfriends.png; path = Assets/UI/FBfriends.png; sourceTree = "<group>"; };
+		3DBCE44115BC9FE5005CCBDE /* FBfriends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FBfriends@2x.png"; path = "Assets/UI/FBfriends@2x.png"; sourceTree = "<group>"; };
+		3DBCE44215BC9FE5005CCBDE /* FBmessages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBmessages.png; path = Assets/UI/FBmessages.png; sourceTree = "<group>"; };
+		3DBCE44315BC9FE5005CCBDE /* FBmessages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FBmessages@2x.png"; path = "Assets/UI/FBmessages@2x.png"; sourceTree = "<group>"; };
+		3DBCE44415BC9FE5005CCBDE /* FBnotifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBnotifications.png; path = Assets/UI/FBnotifications.png; sourceTree = "<group>"; };
+		3DBCE44515BC9FE5005CCBDE /* FBnotifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FBnotifications@2x.png"; path = "Assets/UI/FBnotifications@2x.png"; sourceTree = "<group>"; };
+		3DBCE44615BC9FE5005CCBDE /* gradientBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gradientBottom@2x.png"; path = "Assets/UI/gradientBottom@2x.png"; sourceTree = "<group>"; };
+		3DBCE44715BC9FE5005CCBDE /* gradientTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gradientTop@2x.png"; path = "Assets/UI/gradientTop@2x.png"; sourceTree = "<group>"; };
+		3DBCE45115BCA013005CCBDE /* WeatherSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherSettingsViewController.h; path = Classes/Widgets/WeatherSettingsViewController.h; sourceTree = "<group>"; };
+		3DBCE45215BCA013005CCBDE /* WeatherSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherSettingsViewController.m; path = Classes/Widgets/WeatherSettingsViewController.m; sourceTree = "<group>"; };
+		3DBCE45415BCA04B005CCBDE /* WeatherSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeatherSettingsViewController.xib; path = Classes/Widgets/WeatherSettingsViewController.xib; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -216,6 +227,7 @@
 		3D654BFC15BC0E900070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3DBCE45415BCA04B005CCBDE /* WeatherSettingsViewController.xib */,
 				3DBBD5BF15BC189F0038267B /* CommuteViewController.xib */,
 				3D654C5615BC13020070CB50 /* FacebookNotifications.xib */,
 				3D654BFD15BC0E990070CB50 /* DashboardView.xib */,
@@ -249,11 +261,14 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				03DA85A715BC92F800BA0C3A /* FBnotifications@2x.png */,
-				03DA85AD15BC942000BA0C3A /* FBmessages@2x.png */,
-				03DA85A815BC92F800BA0C3A /* FBfriends@2x.png */,
-				03DA85A515BC8F8600BA0C3A /* gradientBottom@2x.png */,
-				03DA859B15BC871E00BA0C3A /* gradientTop@2x.png */,
+				3DBCE44015BC9FE5005CCBDE /* FBfriends.png */,
+				3DBCE44115BC9FE5005CCBDE /* FBfriends@2x.png */,
+				3DBCE44215BC9FE5005CCBDE /* FBmessages.png */,
+				3DBCE44315BC9FE5005CCBDE /* FBmessages@2x.png */,
+				3DBCE44415BC9FE5005CCBDE /* FBnotifications.png */,
+				3DBCE44515BC9FE5005CCBDE /* FBnotifications@2x.png */,
+				3DBCE44615BC9FE5005CCBDE /* gradientBottom@2x.png */,
+				3DBCE44715BC9FE5005CCBDE /* gradientTop@2x.png */,
 				3DDDBFD815BC1AE00099297B /* facebook_signin.png */,
 				3DDDBFD915BC1AE00099297B /* facebook_signin@2x.png */,
 				3DBBD5C115BC18B20038267B /* highway.png */,
@@ -302,6 +317,8 @@
 		3D654C3315BC0F190070CB50 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				3DBCE45115BCA013005CCBDE /* WeatherSettingsViewController.h */,
+				3DBCE45215BCA013005CCBDE /* WeatherSettingsViewController.m */,
 				3DBBD5C315BC18C00038267B /* CommuteViewController.h */,
 				3DBBD5C415BC18C00038267B /* CommuteViewController.m */,
 				3D654C4715BC0F530070CB50 /* FacebookViewController.h */,
@@ -488,11 +505,15 @@
 				3DBBD5C215BC18B20038267B /* highway.png in Resources */,
 				3DDDBFDA15BC1AE00099297B /* facebook_signin.png in Resources */,
 				3DDDBFDB15BC1AE00099297B /* facebook_signin@2x.png in Resources */,
-				03DA859C15BC871E00BA0C3A /* gradientTop@2x.png in Resources */,
-				03DA85A615BC8F8600BA0C3A /* gradientBottom@2x.png in Resources */,
-				03DA85AA15BC92F800BA0C3A /* FBnotifications@2x.png in Resources */,
-				03DA85AB15BC92F800BA0C3A /* FBfriends@2x.png in Resources */,
-				03DA85AE15BC942000BA0C3A /* FBmessages@2x.png in Resources */,
+				3DBCE44815BC9FE5005CCBDE /* FBfriends.png in Resources */,
+				3DBCE44915BC9FE5005CCBDE /* FBfriends@2x.png in Resources */,
+				3DBCE44A15BC9FE5005CCBDE /* FBmessages.png in Resources */,
+				3DBCE44B15BC9FE5005CCBDE /* FBmessages@2x.png in Resources */,
+				3DBCE44C15BC9FE5005CCBDE /* FBnotifications.png in Resources */,
+				3DBCE44D15BC9FE5005CCBDE /* FBnotifications@2x.png in Resources */,
+				3DBCE44E15BC9FE5005CCBDE /* gradientBottom@2x.png in Resources */,
+				3DBCE44F15BC9FE5005CCBDE /* gradientTop@2x.png in Resources */,
+				3DBCE45515BCA04B005CCBDE /* WeatherSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +541,7 @@
 				3DF81A0C15BC75FA00D0BF9F /* EventsModel.m in Sources */,
 				3DF81A0F15BC760500D0BF9F /* ISO8601DateFormatter.m in Sources */,
 				3DC56CBE15BC98CB00749F03 /* CommuteSettingsViewController.m in Sources */,
+				3DBCE45315BCA013005CCBDE /* WeatherSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
