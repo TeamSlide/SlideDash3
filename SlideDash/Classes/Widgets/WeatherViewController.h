@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WidgetViewController.h"
 
-@interface WeatherViewController : UIViewController {
+@interface WeatherViewController : WidgetViewController {
     NSString *_zipCode;
 }
 

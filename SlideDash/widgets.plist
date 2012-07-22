@@ -12,6 +12,14 @@
 			<key>id</key>
 			<string>TWITTER</string>
 		</dict>
+        <dict>
+			<key>name</key>
+			<string>Facebook Notifications</string>
+			<key>icon</key>
+			<string>facebook</string>
+			<key>id</key>
+			<string>FACEBOOKNOTIFICATIONS</string>
+		</dict>
 	</array>
 	<key>vertical</key>
 	<array>

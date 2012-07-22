@@ -9,6 +9,7 @@
 #import "DashboardViewController.h"
 #import "WeatherViewController.h"
 #import "TweetViewController.h"
+#import "FacebookNotificationsViewController.h"
 
 #define kAddWidgetButtonTag 42
 
@@ -80,6 +81,11 @@
     {
         TweetViewController *tweetViewController = [[TweetViewController alloc] initWithNibName:@"Tweet" bundle:nil];
         [view addSubview:tweetViewController.view];
+    }
+    else if ([widget isEqualToString:@"FACEBOOKNOTIFICATIONS"])
+    {
+        FacebookNotificationsViewController *facebookNotificationsViewController = [[FacebookNotificationsViewController alloc] initWithNibName:@"FacebookNotifications" bundle:nil];
+        [view addSubview:facebookNotificationsViewController.view];
     }
     
     // Hide the "Add widget" button

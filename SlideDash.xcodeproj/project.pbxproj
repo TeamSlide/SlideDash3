@@ -46,6 +46,15 @@
 		3D654C4F15BC0F530070CB50 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C4C15BC0F530070CB50 /* WeatherViewController.m */; };
 		3D654C5215BC106D0070CB50 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5015BC106D0070CB50 /* twitter.png */; };
 		3D654C5315BC106D0070CB50 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5115BC106D0070CB50 /* twitter@2x.png */; };
+		3D654C5515BC11340070CB50 /* twitterKODark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5415BC11340070CB50 /* twitterKODark.png */; };
+		3D654C5715BC13020070CB50 /* FacebookNotifications.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5615BC13020070CB50 /* FacebookNotifications.xib */; };
+		3D654C5B15BC13440070CB50 /* facebook_friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5815BC13440070CB50 /* facebook_friends.png */; };
+		3D654C5C15BC13440070CB50 /* facebook_message.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5915BC13440070CB50 /* facebook_message.png */; };
+		3D654C5D15BC13440070CB50 /* facebook_notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D654C5A15BC13440070CB50 /* facebook_notification.png */; };
+		3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */; };
+		3DBBD5B915BC156E0038267B /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B715BC156E0038267B /* calendar.png */; };
+		3DBBD5BA15BC156E0038267B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DBBD5B815BC156E0038267B /* facebook.png */; };
+		3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBBD5BD15BC16390038267B /* WidgetViewController.m */; };
 		3DC0810D15BB84CD003BB12C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810C15BB84CD003BB12C /* UIKit.framework */; };
 		3DC0810F15BB84CD003BB12C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0810E15BB84CD003BB12C /* Foundation.framework */; };
 		3DC0811115BB84CD003BB12C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC0811015BB84CD003BB12C /* CoreGraphics.framework */; };
@@ -104,7 +113,18 @@
 		3D654C4C15BC0F530070CB50 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherViewController.m; path = Classes/Widgets/WeatherViewController.m; sourceTree = "<group>"; };
 		3D654C5015BC106D0070CB50 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Assets/UI/twitter.png; sourceTree = "<group>"; };
 		3D654C5115BC106D0070CB50 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "Assets/UI/twitter@2x.png"; sourceTree = "<group>"; };
+		3D654C5415BC11340070CB50 /* twitterKODark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitterKODark.png; path = Assets/UI/twitterKODark.png; sourceTree = "<group>"; };
+		3D654C5615BC13020070CB50 /* FacebookNotifications.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FacebookNotifications.xib; path = UI/FacebookNotifications.xib; sourceTree = "<group>"; };
+		3D654C5815BC13440070CB50 /* facebook_friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_friends.png; path = Assets/UI/facebook_friends.png; sourceTree = "<group>"; };
+		3D654C5915BC13440070CB50 /* facebook_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_message.png; path = Assets/UI/facebook_message.png; sourceTree = "<group>"; };
+		3D654C5A15BC13440070CB50 /* facebook_notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook_notification.png; path = Assets/UI/facebook_notification.png; sourceTree = "<group>"; };
+		3D654C5E15BC13740070CB50 /* FacebookNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookNotificationsViewController.h; path = Classes/Widgets/FacebookNotificationsViewController.h; sourceTree = "<group>"; };
+		3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookNotificationsViewController.m; path = Classes/Widgets/FacebookNotificationsViewController.m; sourceTree = "<group>"; };
 		3D9C7C8215BBDE1C00D9F62A /* widgets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = widgets.plist; sourceTree = "<group>"; };
+		3DBBD5B715BC156E0038267B /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = Assets/UI/calendar.png; sourceTree = "<group>"; };
+		3DBBD5B815BC156E0038267B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Assets/UI/facebook.png; sourceTree = "<group>"; };
+		3DBBD5BC15BC16390038267B /* WidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidgetViewController.h; path = Classes/Widgets/WidgetViewController.h; sourceTree = "<group>"; };
+		3DBBD5BD15BC16390038267B /* WidgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidgetViewController.m; path = Classes/Widgets/WidgetViewController.m; sourceTree = "<group>"; };
 		3DC0810815BB84CD003BB12C /* SlideDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC0810C15BB84CD003BB12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DC0810E15BB84CD003BB12C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +180,7 @@
 		3D654BFC15BC0E900070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3D654C5615BC13020070CB50 /* FacebookNotifications.xib */,
 				3D654BFD15BC0E990070CB50 /* DashboardView.xib */,
 				3D654BFE15BC0E990070CB50 /* MainStoryboard.storyboard */,
 				3D654BFF15BC0E990070CB50 /* Tweet.xib */,
@@ -191,6 +212,12 @@
 		3D654C0615BC0EA20070CB50 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3DBBD5B715BC156E0038267B /* calendar.png */,
+				3DBBD5B815BC156E0038267B /* facebook.png */,
+				3D654C5815BC13440070CB50 /* facebook_friends.png */,
+				3D654C5915BC13440070CB50 /* facebook_message.png */,
+				3D654C5A15BC13440070CB50 /* facebook_notification.png */,
+				3D654C5415BC11340070CB50 /* twitterKODark.png */,
 				3D654C5015BC106D0070CB50 /* twitter.png */,
 				3D654C5115BC106D0070CB50 /* twitter@2x.png */,
 				3D654C2115BC0EB60070CB50 /* AddDash.png */,
@@ -236,6 +263,10 @@
 				3D654C4A15BC0F530070CB50 /* TweetViewController.m */,
 				3D654C4B15BC0F530070CB50 /* WeatherViewController.h */,
 				3D654C4C15BC0F530070CB50 /* WeatherViewController.m */,
+				3D654C5E15BC13740070CB50 /* FacebookNotificationsViewController.h */,
+				3D654C5F15BC13740070CB50 /* FacebookNotificationsViewController.m */,
+				3DBBD5BC15BC16390038267B /* WidgetViewController.h */,
+				3DBBD5BD15BC16390038267B /* WidgetViewController.m */,
 			);
 			name = Widgets;
 			sourceTree = "<group>";
@@ -387,6 +418,13 @@
 				3D654C3015BC0EB60070CB50 /* NavigationBarLogo@2x.png in Resources */,
 				3D654C5215BC106D0070CB50 /* twitter.png in Resources */,
 				3D654C5315BC106D0070CB50 /* twitter@2x.png in Resources */,
+				3D654C5515BC11340070CB50 /* twitterKODark.png in Resources */,
+				3D654C5715BC13020070CB50 /* FacebookNotifications.xib in Resources */,
+				3D654C5B15BC13440070CB50 /* facebook_friends.png in Resources */,
+				3D654C5C15BC13440070CB50 /* facebook_message.png in Resources */,
+				3D654C5D15BC13440070CB50 /* facebook_notification.png in Resources */,
+				3DBBD5B915BC156E0038267B /* calendar.png in Resources */,
+				3DBBD5BA15BC156E0038267B /* facebook.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +446,8 @@
 				3D654C4D15BC0F530070CB50 /* FacebookViewController.m in Sources */,
 				3D654C4E15BC0F530070CB50 /* TweetViewController.m in Sources */,
 				3D654C4F15BC0F530070CB50 /* WeatherViewController.m in Sources */,
+				3D654C6015BC13740070CB50 /* FacebookNotificationsViewController.m in Sources */,
+				3DBBD5BE15BC16390038267B /* WidgetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

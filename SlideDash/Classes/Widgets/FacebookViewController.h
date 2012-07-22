@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
+#import "WidgetViewController.h"
 
-@interface FacebookViewController : UIViewController
+@interface FacebookViewController : WidgetViewController
 @property (weak, nonatomic) IBOutlet UIButton *facebook;
 @property (strong, nonatomic) NSArray *arrayOfEventsFromCalendars;
 @property (strong, nonatomic) NSMutableArray *arrayOfEvents;

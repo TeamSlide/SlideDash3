@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WidgetViewController.h"
 
-@interface TweetViewController : UIViewController
+@interface TweetViewController : WidgetViewController
 {
     NSMutableArray * array;
     int myint;
