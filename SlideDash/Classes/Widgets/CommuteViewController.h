@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WidgetViewController.h"
 
-@interface CommuteViewController : UIViewController
+@interface CommuteViewController : WidgetViewController
 {
 
 }
