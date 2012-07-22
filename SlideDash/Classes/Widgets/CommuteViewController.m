@@ -56,9 +56,9 @@
         
         NSURL *url2 = [NSURL URLWithString:urlString2];
         
-       
+        
         NSData *data2 = [NSData dataWithContentsOfURL:url2];
-     
+        
         
         id result2;
         
@@ -67,7 +67,7 @@
             
             result2 = [NSJSONSerialization JSONObjectWithData:data2 options:NSJSONReadingAllowFragments error:&error];
             if (error == nil) {
-             //   NSLog(@"this is result %@", result2);
+                //   NSLog(@"this is result %@", result2);
                 //self.array = result2;
             }
         }
@@ -78,18 +78,18 @@
                 
                 //elf.step = [step objectForKey:@"travle_mode" is
                 self.step3 =  [[ step objectForKey:@"transit_details"] objectForKey:@"headsign"]; 
-              self.step2 =  [[[ step objectForKey:@"transit_details"] objectForKey:@"departure_time"] objectForKey:@"text"];
-               
+                self.step2 =  [[[ step objectForKey:@"transit_details"] objectForKey:@"departure_time"] objectForKey:@"text"];
+                
                 //NSString * stringDepart = [NSString stringWithFormat: [self.step2 objectAtIndex:0]];
                 [self performSelectorOnMainThread:@selector(setDeparture_time) withObject:nil waitUntilDone:NO];
-               
-              //  NSLog(@"ths is departure time !!!!!!! %@", stringDepart);
+                
+                //  NSLog(@"ths is departure time !!!!!!! %@", stringDepart);
             }
         }
-     //   NSLog(@"this DEPARTURE TIME !!!!!!!!!!!!!! %@",[[[[[[result2 objectForKey:@"routes"] objectAtIndex:0] objectForKey:@"legs"]objectAtIndex:0] objectForKey:@"steps"] objectAtIndex:0]    );
+        //   NSLog(@"this DEPARTURE TIME !!!!!!!!!!!!!! %@",[[[[[[result2 objectForKey:@"routes"] objectAtIndex:0] objectForKey:@"legs"]objectAtIndex:0] objectForKey:@"steps"] objectAtIndex:0]    );
     });
 }
-                 
+
 -(void) setDeparture_time
 {   self.line_id.text =[NSString stringWithFormat:@"%@", self.step3];
     self.departure_time.text =[NSString stringWithFormat:@"%@", self.step2];
