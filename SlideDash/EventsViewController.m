@@ -57,6 +57,7 @@
         self.mainLabel.text = [event objectForKey:@"eventName"];
     } else {
         NSLog(@"no eventName");
+        self.mainLabel.text = @"iOSDevCamp 2012";
     }
     
     if ([event objectForKey:@"eventLocation"]) {
@@ -65,9 +66,10 @@
         self.subTitle.text = [event objectForKey:@"eventLocationTitle"];
     } else {
         NSLog(@"no location");
+        self.subTitle.text = @"at EBAY!!";
     }
     
-    [UIView animateWithDuration:.5 animations:^{
+    [UIView animateWithDuration:3 animations:^{
         [self.mainLabel setAlpha:1];
         [self.subTitle setAlpha:1];
         [self.eventImageView setAlpha:1];
